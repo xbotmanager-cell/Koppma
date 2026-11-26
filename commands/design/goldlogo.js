@@ -11,7 +11,7 @@ export default {
     try {
       if (_0x277300.length === 0) {
         await _0x58bdf0.sendMessage(_0x2195be, {
-          text: '╭─⌈\x20' + DESIGN.GOLD + " *GOLD LOGO* ⌋\n│\n├─⊷ *goldlogo*\n│  └⊷ " + global.prefix + "goldlogo <text>\n│\n├─⊷ *Example:*\n│  └⊷ " + global.prefix + "goldlogo WOLF\n│  └⊷ " + global.prefix + "goldlogo ROYAL\n│  └⊷ " + global.prefix + 'goldlogo\x20LUXURY\x0a│\x0a╰⊷\x20' + getFooter(_0x592ba3.key.participant || _0x592ba3.key.remoteJid)
+          text: '╭┄〔 \x20' + DESIGN.GOLD + " *GOLD LOGO* 〕┄╮\n┆\n┆ ✦ *goldlogo*\n┆   └─ " + global.prefix + "goldlogo <text>\n┆\n┆ ✦ *Example:*\n┆   └─ " + global.prefix + "goldlogo WOLF\n┆   └─ " + global.prefix + "goldlogo ROYAL\n┆   └─ " + global.prefix + 'goldlogo\x20LUXURY\x0a┆\x0a╰┄ \x20' + getFooter(_0x592ba3.key.participant || _0x592ba3.key.remoteJid)
         }, {
           quoted: _0x592ba3
         });
@@ -20,7 +20,7 @@ export default {
       const _0x2222ed = _0x277300.join('\x20');
       if (_0x2222ed.length > 15) {
         await _0x58bdf0.sendMessage(_0x2195be, {
-          text: "╭─⌈ " + STATUS.ERROR + " *ERROR* ⌋\n│\n├─⊷ Text too long!\n│  └⊷ Maximum 15 characters\n│  └⊷ Your text: \"" + _0x2222ed + "\" (" + _0x2222ed.length + " chars)\n│\n╰───"
+          text: "╭┄〔 " + STATUS.ERROR + " *ERROR* 〕┄╮\n┆\n┆ ✦ Text too long!\n┆   └─ Maximum 15 characters\n┆   └─ Your text: \"" + _0x2222ed + "\" (" + _0x2222ed.length + " chars)\n┆\n╰───"
         }, {
           quoted: _0x592ba3
         });
@@ -51,7 +51,7 @@ export default {
           key: _0x592ba3.key
         }
       }).catch(() => {}), await _0x58bdf0.sendMessage(_0x2195be, {
-        text: "╭─⌈ " + STATUS.ERROR + " *ERROR* ⌋\n│\n├─⊷ " + _0x3dc20e.message + "\n│  └⊷ Please try again with shorter text\n│\n╰───"
+        text: "╭┄〔 " + STATUS.ERROR + " *ERROR* 〕┄╮\n┆\n┆ ✦ " + _0x3dc20e.message + "\n┆   └─ Please try again with shorter text\n┆\n╰───"
       }, {
         quoted: _0x592ba3
       }));

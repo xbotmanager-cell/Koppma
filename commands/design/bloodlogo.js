@@ -11,7 +11,7 @@ export default {
     try {
       if (_0x435b3f.length === 0) {
         await _0x379b85.sendMessage(_0x333b58, {
-          text: "╭─⌈ " + DESIGN.BLOOD + " *BLOOD LOGO* ⌋\n│\n├─⊷ *bloodlogo*\n│  └⊷ bloodlogo <text>\n│\n├─⊷ *Example:*\n│  └⊷ bloodlogo BLOOD\n│  └⊷ bloodlogo GORE\n│  └⊷ bloodlogo HORROR\n│\n╰⊷ " + getFooter(_0x2e5a88.key.participant || _0x2e5a88.key.remoteJid)
+          text: "╭┄〔 " + DESIGN.BLOOD + " *BLOOD LOGO* 〕┄╮\n┆\n┆ ✦ *bloodlogo*\n┆   └─ bloodlogo <text>\n┆\n┆ ✦ *Example:*\n┆   └─ bloodlogo BLOOD\n┆   └─ bloodlogo GORE\n┆   └─ bloodlogo HORROR\n┆\n╰┄ " + getFooter(_0x2e5a88.key.participant || _0x2e5a88.key.remoteJid)
         }, {
           quoted: _0x2e5a88
         });
@@ -20,7 +20,7 @@ export default {
       const _0x130848 = _0x435b3f.join('\x20');
       if (_0x130848.length > 10) {
         await _0x379b85.sendMessage(_0x333b58, {
-          text: "╭─⌈ " + STATUS.ERROR + " *ERROR* ⌋\n│\n├─⊷ Text too long!\n│  └⊷ Maximum 10 characters\n│  └⊷ Your text: \"" + _0x130848 + "\" (" + _0x130848.length + " chars)\n│\n╰───"
+          text: "╭┄〔 " + STATUS.ERROR + " *ERROR* 〕┄╮\n┆\n┆ ✦ Text too long!\n┆   └─ Maximum 10 characters\n┆   └─ Your text: \"" + _0x130848 + "\" (" + _0x130848.length + " chars)\n┆\n╰───"
         }, {
           quoted: _0x2e5a88
         });
@@ -51,7 +51,7 @@ export default {
           key: _0x2e5a88.key
         }
       }).catch(() => {}), await _0x379b85.sendMessage(_0x333b58, {
-        text: "╭─⌈ " + STATUS.ERROR + " *ERROR* ⌋\n│\n├─⊷ " + _0xba2033.message + "\n│  └⊷ Please try again with shorter text\n│\n╰───"
+        text: "╭┄〔 " + STATUS.ERROR + " *ERROR* 〕┄╮\n┆\n┆ ✦ " + _0xba2033.message + "\n┆   └─ Please try again with shorter text\n┆\n╰───"
       }, {
         quoted: _0x2e5a88
       }));
@@ -314,7 +314,7 @@ function addBloodCorners(_0x4d386b, _0x5eec96, _0x233528) {
 function addBloodSignature(_0x38445f, _0x5376f5, _0x538138) {
   _0x38445f.save();
   const _0xa63d42 = _0x5376f5 - 110, _0x71e2c6 = _0x538138 - 25;
-  (_0x38445f.font = "italic 14px \"Arial\"", _0x38445f.fillStyle = "rgba(150, 0, 0, 0.9)", _0x38445f.textAlign = 'right', _0x38445f.textBaseline = "bottom", _0x38445f.shadowColor = "rgba(100, 0, 0, 0.6)", _0x38445f.shadowBlur = 10, _0x38445f.fillText("by Silent Wolf", _0xa63d42, _0x71e2c6));
+  (_0x38445f.font = "italic 14px \"Arial\"", _0x38445f.fillStyle = "rgba(150, 0, 0, 0.9)", _0x38445f.textAlign = 'right', _0x38445f.textBaseline = "bottom", _0x38445f.shadowColor = "rgba(100, 0, 0, 0.6)", _0x38445f.shadowBlur = 10, _0x38445f.fillText("by Lupin Stanley", _0xa63d42, _0x71e2c6));
   const _0xf4d84b = _0x38445f.createRadialGradient(_0xa63d42 + 5, _0x71e2c6 - 8, 0, _0xa63d42 + 5, _0x71e2c6 - 8, 4);
   (_0xf4d84b.addColorStop(0, 'rgba(180,\x200,\x200,\x200.9)'), _0xf4d84b.addColorStop(1, "rgba(120, 0, 0, 0.6)"), _0x38445f.fillStyle = _0xf4d84b, _0x38445f.beginPath(), _0x38445f.arc(_0xa63d42 + 5, _0x71e2c6 - 8, 4, 0, Math.PI * 2), _0x38445f.fill(), _0x38445f.strokeStyle = "rgba(150, 0, 0, 0.8)", _0x38445f.lineWidth = 2, _0x38445f.lineCap = "round", _0x38445f.beginPath(), _0x38445f.moveTo(_0xa63d42 + 5, _0x71e2c6 - 4), _0x38445f.lineTo(_0xa63d42 + 5, _0x71e2c6 - 1), _0x38445f.stroke(), _0x38445f.restore());
 }

@@ -11,7 +11,7 @@ export default {
     try {
       if (_0x5b2f15.length === 0) {
         await _0x194b09.sendMessage(_0x390307, {
-          text: "╭─⌈ " + DESIGN.CRYSTAL + " *DIAMOND LOGO* ⌋\n│\n├─⊷ *diamondlogo*\n│  └⊷ diamondlogo <text>\n│\n├─⊷ *Example:*\n│  └⊷ diamondlogo WOLF\n│  └⊷ diamondlogo DIAMOND\n│  └⊷ diamondlogo CRYSTAL\n│\n╰⊷ " + getFooter(_0xec503a.key.participant || _0xec503a.key.remoteJid)
+          text: "╭┄〔 " + DESIGN.CRYSTAL + " *DIAMOND LOGO* 〕┄╮\n┆\n┆ ✦ *diamondlogo*\n┆   └─ diamondlogo <text>\n┆\n┆ ✦ *Example:*\n┆   └─ diamondlogo WOLF\n┆   └─ diamondlogo DIAMOND\n┆   └─ diamondlogo CRYSTAL\n┆\n╰┄ " + getFooter(_0xec503a.key.participant || _0xec503a.key.remoteJid)
         }, {
           quoted: _0xec503a
         });
@@ -20,7 +20,7 @@ export default {
       const _0x5181af = _0x5b2f15.join('\x20');
       if (_0x5181af.length > 12) {
         await _0x194b09.sendMessage(_0x390307, {
-          text: "╭─⌈ " + STATUS.ERROR + " *ERROR* ⌋\n│\n├─⊷ Text too long!\n│  └⊷ Maximum 12 characters\n│  └⊷ Your text: \"" + _0x5181af + "\" (" + _0x5181af.length + " chars)\n│\n╰───"
+          text: "╭┄〔 " + STATUS.ERROR + " *ERROR* 〕┄╮\n┆\n┆ ✦ Text too long!\n┆   └─ Maximum 12 characters\n┆   └─ Your text: \"" + _0x5181af + "\" (" + _0x5181af.length + " chars)\n┆\n╰───"
         }, {
           quoted: _0xec503a
         });
@@ -51,7 +51,7 @@ export default {
           key: _0xec503a.key
         }
       }).catch(() => {}), await _0x194b09.sendMessage(_0x390307, {
-        text: "╭─⌈ " + STATUS.ERROR + '\x20*ERROR*\x20⌋\x0a│\x0a├─⊷\x20' + _0x5f1b54.message + "\n│  └⊷ Please try again with shorter text\n│\n╰───"
+        text: "╭┄〔 " + STATUS.ERROR + '\x20*ERROR*\x20 〕┄╮\x0a┆\x0a┆ ✦ \x20' + _0x5f1b54.message + "\n┆   └─ Please try again with shorter text\n┆\n╰───"
       }, {
         quoted: _0xec503a
       }));

@@ -9,7 +9,7 @@ export default {
   async execute(_0x5d021a, _0x14a2c0, _0x593c65, _0x22df9f) {
     const _0xc24921 = _0x14a2c0.key.remoteJid;
     if (_0x593c65.length === 0) return _0x5d021a.sendMessage(_0xc24921, {
-      text: "╭─⌈ " + SOCIAL.BOT + " *PERPLEXITY AI* ⌋\n├─⊷ *" + _0x22df9f + "perplexity <question>*\n│  └⊷ Ask Perplexity anything\n├─⊷ *" + _0x22df9f + 'plex\x20<question>*\x0a│\x20\x20└⊷\x20Alias\x20for\x20perplexity\x0a├─⊷\x20*' + _0x22df9f + "searchai <question>*\n│  └⊷ Alias for perplexity\n╰⊷ " + getFooter(_0x14a2c0.key.participant || _0x14a2c0.key.remoteJid)
+      text: "╭┄〔 " + SOCIAL.BOT + " *PERPLEXITY AI* 〕┄╮\n┆ ✦ *" + _0x22df9f + "perplexity <question>*\n┆   └─ Ask Perplexity anything\n┆ ✦ *" + _0x22df9f + 'plex\x20<question>*\x0a┆ \x20╰┄ \x20Alias\x20for\x20perplexity\x0a┆ ✦ *' + _0x22df9f + "searchai <question>*\n┆   └─ Alias for perplexity\n╰┄ " + getFooter(_0x14a2c0.key.participant || _0x14a2c0.key.remoteJid)
     }, {
       quoted: _0x14a2c0
     });
@@ -29,7 +29,7 @@ export default {
           const _0x502b19 = await _0x514357.get(_0x253b0e, {
             timeout: 25000,
             headers: {
-              'User-Agent': "WolfBot/1.0"
+              'User-Agent': "VIPBOT/1.0"
             }
           });
           if (_0x502b19.data?.status && _0x502b19.data.result && !_0x502b19.data.result.includes("failed") && !_0x502b19.data.result.includes("error") && !_0x502b19.data.result.includes("500") && !_0x502b19.data.result.includes('Request\x20failed')) {
@@ -53,10 +53,10 @@ export default {
             }
           }
         }
-        _0x43c67f = "WolfBot Fallback";
+        _0x43c67f = "VIPBOT Fallback";
       }
       let _0x884020 = SOCIAL.BOT + " *PERPLEXITY AI*\n\n";
-      (_0x884020 += UI.THOUGHT + " *Your Query:*\n" + _0x4406c5 + '\x0a\x0a', _0x884020 += STATUS.INFO + '\x20*Response:*\x0a' + _0x97e074 + '\x0a\x0a', _0x43c67f !== "WolfBot Fallback" && (_0x884020 += UI.TOOL + '\x20*Source:*\x20' + _0x43c67f + '\x0a'), _0x884020 += STATUS.SPARKLE + " *Note:* Responses may include web search information", await _0x5d021a.sendMessage(_0xc24921, {
+      (_0x884020 += UI.THOUGHT + " *Your Query:*\n" + _0x4406c5 + '\x0a\x0a', _0x884020 += STATUS.INFO + '\x20*Response:*\x0a' + _0x97e074 + '\x0a\x0a', _0x43c67f !== "VIPBOT Fallback" && (_0x884020 += UI.TOOL + '\x20*Source:*\x20' + _0x43c67f + '\x0a'), _0x884020 += STATUS.SPARKLE + " *Note:* Responses may include web search information", await _0x5d021a.sendMessage(_0xc24921, {
         text: _0x884020
       }, {
         quoted: _0x14a2c0

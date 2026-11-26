@@ -11,7 +11,7 @@ export default {
     const _0x403fc2 = _0x8c0be8.key.remoteJid;
     let _0x2535f0 = _0x56827a.length > 0 ? _0x56827a.join('\x20') : _0x8c0be8.quoted?.text || '';
     if (!_0x2535f0) return _0x592f2d.sendMessage(_0x403fc2, {
-      text: "╭─⌈ " + MEDIA.LLAMA + " *VICUNA AI* ⌋\n├─⊷ *" + _0x38cf6b + 'vicuna\x20<question>*\x0a│\x20\x20└⊷\x20Vicuna\x20fine-tuned\x20LLaMA\x0a╰⊷\x20' + getFooter(_0x8c0be8.key.participant || _0x8c0be8.key.remoteJid)
+      text: "╭┄〔 " + MEDIA.LLAMA + " *VICUNA AI* 〕┄╮\n┆ ✦ *" + _0x38cf6b + 'vicuna\x20<question>*\x0a┆ \x20╰┄ \x20Vicuna\x20fine-tuned\x20LLaMA\x0a╰┄ \x20' + getFooter(_0x8c0be8.key.participant || _0x8c0be8.key.remoteJid)
     }, {
       quoted: _0x8c0be8
     });
@@ -30,7 +30,7 @@ export default {
           key: _0x8c0be8.key
         }
       }), await _0x592f2d.sendMessage(_0x403fc2, {
-        text: MEDIA.LLAMA + " *VICUNA AI*\n━━━━━━━━━━━━━━━━━\n" + _0x36ac8e + "\n━━━━━━━━━━━━━━━━━\n" + getFooter(_0x8c0be8.key.participant || _0x8c0be8.key.remoteJid)
+        text: MEDIA.LLAMA + " *VICUNA AI*\n┈┄┈┄✦┈┄┈┄✦┈┄┈┄\n" + _0x36ac8e + "\n┈┄┈┄✦┈┄┈┄✦┈┄┈┄\n" + getFooter(_0x8c0be8.key.participant || _0x8c0be8.key.remoteJid)
       }, {
         quoted: _0x8c0be8
       }));

@@ -11,7 +11,7 @@ export default {
     const _0x5e1911 = _0x1ca319.key.remoteJid;
     let _0x57632f = _0x311034.length > 0 ? _0x311034.join('\x20') : _0x1ca319.quoted?.text || '';
     if (!_0x57632f) return _0x1722c2.sendMessage(_0x5e1911, {
-      text: "╭─⌈ " + SOCIAL.GLOBE + '\x20*CHATGLM\x20AI*\x20⌋\x0a├─⊷\x20*' + _0x5e44ef + "chatglm <question>*\n│  └⊷ ChatGLM bilingual AI\n╰⊷ " + getFooter(_0x1ca319.key.participant || _0x1ca319.key.remoteJid)
+      text: "╭┄〔 " + SOCIAL.GLOBE + '\x20*CHATGLM\x20AI*\x20 〕┄╮\x0a┆ ✦ *' + _0x5e44ef + "chatglm <question>*\n┆   └─ ChatGLM bilingual AI\n╰┄ " + getFooter(_0x1ca319.key.participant || _0x1ca319.key.remoteJid)
     }, {
       quoted: _0x1ca319
     });
@@ -30,7 +30,7 @@ export default {
           key: _0x1ca319.key
         }
       }), await _0x1722c2.sendMessage(_0x5e1911, {
-        text: SOCIAL.GLOBE + " *CHATGLM AI*\n━━━━━━━━━━━━━━━━━\n" + _0x38e69d + '\x0a━━━━━━━━━━━━━━━━━\x0a' + getFooter(_0x1ca319.key.participant || _0x1ca319.key.remoteJid)
+        text: SOCIAL.GLOBE + " *CHATGLM AI*\n┈┄┈┄✦┈┄┈┄✦┈┄┈┄\n" + _0x38e69d + '\x0a┈┄┈┄✦┈┄┈┄✦┈┄┈┄\x0a' + getFooter(_0x1ca319.key.participant || _0x1ca319.key.remoteJid)
       }, {
         quoted: _0x1ca319
       }));

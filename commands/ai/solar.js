@@ -11,7 +11,7 @@ export default {
     const _0x294f5d = _0x1d9d46.key.remoteJid;
     let _0x4b4cba = _0x4ebafc.length > 0 ? _0x4ebafc.join('\x20') : _0x1d9d46.quoted?.text || '';
     if (!_0x4b4cba) return _0xba1022.sendMessage(_0x294f5d, {
-      text: '╭─⌈\x20' + UI.SOLAR + " *SOLAR AI* ⌋\n├─⊷ *" + _0xdaa824 + "solar <question>*\n│  └⊷ Solar AI by Upstage\n╰⊷ " + getFooter(_0x1d9d46.key.participant || _0x1d9d46.key.remoteJid)
+      text: '╭┄〔 \x20' + UI.SOLAR + " *SOLAR AI* 〕┄╮\n┆ ✦ *" + _0xdaa824 + "solar <question>*\n┆   └─ Solar AI by Upstage\n╰┄ " + getFooter(_0x1d9d46.key.participant || _0x1d9d46.key.remoteJid)
     }, {
       quoted: _0x1d9d46
     });
@@ -30,7 +30,7 @@ export default {
           key: _0x1d9d46.key
         }
       }), await _0xba1022.sendMessage(_0x294f5d, {
-        text: UI.SOLAR + " *SOLAR AI*\n━━━━━━━━━━━━━━━━━\n" + _0x46c731 + '\x0a━━━━━━━━━━━━━━━━━\x0a' + getFooter(_0x1d9d46.key.participant || _0x1d9d46.key.remoteJid)
+        text: UI.SOLAR + " *SOLAR AI*\n┈┄┈┄✦┈┄┈┄✦┈┄┈┄\n" + _0x46c731 + '\x0a┈┄┈┄✦┈┄┈┄✦┈┄┈┄\x0a' + getFooter(_0x1d9d46.key.participant || _0x1d9d46.key.remoteJid)
       }, {
         quoted: _0x1d9d46
       }));

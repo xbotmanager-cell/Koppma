@@ -12,7 +12,7 @@ export default {
   async execute(_0xa34222, _0xd3fcad, _0x1eddbe, _0x45f79a) {
     const _0x17a84f = _0xd3fcad.key.remoteJid, _0x4f9558 = getOwnerName().toUpperCase(), _0x415043 = _0xd3fcad.message?.extendedTextMessage?.contextInfo?.quotedMessage, _0x4c705b = _0x415043?.imageMessage, _0x33f6f5 = (_0x1eddbe.join('\x20').match(/\bhttps?:\/\/\S+/i) || [])[0], _0x51865b = _0x1eddbe.join('\x20').replace(_0x33f6f5 || '', '').trim() || "Analyze this image and describe what you see in detail";
     if (!_0x4c705b && !_0x33f6f5) return _0xa34222.sendMessage(_0x17a84f, {
-      text: "╭─⌈ " + UI.EYE + '\x20*VISION\x20AI*\x20⌋\x0a├─⊷\x20*' + _0x45f79a + 'vision\x20<question>*\x0a│\x20\x20└⊷\x20Reply\x20to\x20an\x20image\x20or\x20add\x20a\x20URL\x0a╰⊷\x20' + getFooter(_0xd3fcad.key.participant || _0xd3fcad.key.remoteJid)
+      text: "╭┄〔 " + UI.EYE + '\x20*VISION\x20AI*\x20 〕┄╮\x0a┆ ✦ *' + _0x45f79a + 'vision\x20<question>*\x0a┆ \x20╰┄ \x20Reply\x20to\x20an\x20image\x20or\x20add\x20a\x20URL\x0a╰┄ \x20' + getFooter(_0xd3fcad.key.participant || _0xd3fcad.key.remoteJid)
     }, {
       quoted: _0xd3fcad
     });
@@ -46,7 +46,7 @@ export default {
           key: _0xd3fcad.key
         }
       }), await _0xa34222.sendMessage(_0x17a84f, {
-        text: UI.EYE + " *VISION AI*\n━━━━━━━━━━━━━━━━━\n" + _0x4af5e7 + '\x0a━━━━━━━━━━━━━━━━━\x0a' + SOCIAL.BOT + '\x20_' + MODEL + '_\x0a' + getFooter(_0xd3fcad.key.participant || _0xd3fcad.key.remoteJid)
+        text: UI.EYE + " *VISION AI*\n┈┄┈┄✦┈┄┈┄✦┈┄┈┄\n" + _0x4af5e7 + '\x0a┈┄┈┄✦┈┄┈┄✦┈┄┈┄\x0a' + SOCIAL.BOT + '\x20_' + MODEL + '_\x0a' + getFooter(_0xd3fcad.key.participant || _0xd3fcad.key.remoteJid)
       }, {
         quoted: _0xd3fcad
       }));

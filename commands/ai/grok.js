@@ -12,7 +12,7 @@ export default {
     if (_0x1e36b8.length > 0) _0xd39519 = _0x1e36b8.join('\x20'); else {
       if (_0xc462f8 && _0xc462f8.text) _0xd39519 = _0xc462f8.text; else {
         await _0x1ceeb5.sendMessage(_0x4b0a7b, {
-          text: "╭─⌈ " + SOCIAL.BOT + '\x20*X\x20AI\x20GROK*\x20⌋\x0a├─⊷\x20*' + _0x4880db + "grok <question>*\n│  └⊷ Ask Grok anything\n├─⊷ *" + _0x4880db + "xgrok <question>*\n│  └⊷ Alias for grok\n├─⊷ *" + _0x4880db + "xai <question>*\n│  └⊷ Alias for grok\n╰⊷ " + getFooter(_0x47aea9.key.participant || _0x47aea9.key.remoteJid)
+          text: "╭┄〔 " + SOCIAL.BOT + '\x20*X\x20AI\x20GROK*\x20 〕┄╮\x0a┆ ✦ *' + _0x4880db + "grok <question>*\n┆   └─ Ask Grok anything\n┆ ✦ *" + _0x4880db + "xgrok <question>*\n┆   └─ Alias for grok\n┆ ✦ *" + _0x4880db + "xai <question>*\n┆   └─ Alias for grok\n╰┄ " + getFooter(_0x47aea9.key.participant || _0x47aea9.key.remoteJid)
         }, {
           quoted: _0x47aea9
         });

@@ -73,7 +73,7 @@ export default {
       } else return _0x522b71 && !HUG_TYPES[_0x522b71] ? await sendHug(_0x2971f9, _0x2a9d00, _0x4940f0, _0x2e91dd, _0x2e91dd, _0x10a4cb, _0x3880d3, false) : (updateHugStats(_0x1d84ce, null, _0x10a4cb), await sendHug(_0x2971f9, _0x2a9d00, _0x4940f0, _0x2e91dd, 'everyone', _0x10a4cb, _0x3880d3, false));
     } catch (_0x2d85c2) {
       (console.error("Hug command error:", _0x2d85c2), await _0x2971f9.sendMessage(_0x2a9d00.key.remoteJid, {
-        text: "╭─⌈ " + ANIME.U274C + " *HUG ERROR* ⌋\n│\n├─⊷ " + _0x2d85c2.message + "\n│  └⊷ Use *.hug help* for instructions\n│\n╰⊷ " + getFooter(_0x2a9d00.key.participant || _0x2a9d00.key.remoteJid)
+        text: "╭┄〔 " + ANIME.U274C + " *HUG ERROR* 〕┄╮\n┆\n┆ ✦ " + _0x2d85c2.message + "\n┆   └─ Use *.hug help* for instructions\n┆\n╰┄ " + getFooter(_0x2a9d00.key.participant || _0x2a9d00.key.remoteJid)
       }, {
         quoted: _0x2a9d00
       }));
@@ -292,12 +292,12 @@ function formatHugTypeName(_0xa9faa9) {
   return _0x5a5ab3[_0xa9faa9] || 'Random\x20Hug';
 }
 async function showHugTypes(_0x507abd, _0x4163bf, _0x16d700) {
-  let _0x1198fc = "╭─⌈ " + ANIME.U1F917 + " *HUG TYPES* " + ANIME.U1F917 + " ⌋\n│\n";
+  let _0x1198fc = "╭┄〔 " + ANIME.U1F917 + " *HUG TYPES* " + ANIME.U1F917 + " 〕┄╮\n┆\n";
   const _0x3b7a55 = Object.keys(HUG_TYPES);
   for (const _0x4dc6b2 of _0x3b7a55) {
-    _0x1198fc += "├─⊷ *.hug " + _0x4dc6b2 + "*\n│  └⊷ " + formatHugTypeName(_0x4dc6b2) + '\x0a';
+    _0x1198fc += "┆ ✦ *.hug " + _0x4dc6b2 + "*\n┆   └─ " + formatHugTypeName(_0x4dc6b2) + '\x0a';
   }
-  (_0x1198fc += "│\n├─⊷ *.hug @user*\n│  └⊷ Random hug for user\n", _0x1198fc += '├─⊷\x20*.hug\x20anime\x20@friend*\x0a│\x20\x20└⊷\x20Anime\x20hug\x0a', _0x1198fc += '├─⊷\x20*.hug\x20bear*\x0a│\x20\x20└⊷\x20Bear\x20hug\x20for\x20yourself\x0a', _0x1198fc += '├─⊷\x20*.hug*\x0a│\x20\x20└⊷\x20Random\x20hug\x20for\x20everyone\x0a│\x0a', _0x1198fc += "╰─── " + ANIME.U1F496 + '\x20*Each\x20type\x20gives\x20different\x20hugs\x20every\x20time!*\x20' + ANIME.U1F496, await _0x507abd.sendMessage(_0x16d700, {
+  (_0x1198fc += "┆\n┆ ✦ *.hug @user*\n┆   └─ Random hug for user\n", _0x1198fc += '┆ ✦ *.hug\x20anime\x20@friend*\x0a┆ \x20╰┄ \x20Anime\x20hug\x0a', _0x1198fc += '┆ ✦ *.hug\x20bear*\x0a┆ \x20╰┄ \x20Bear\x20hug\x20for\x20yourself\x0a', _0x1198fc += '┆ ✦ *.hug*\x0a┆ \x20╰┄ \x20Random\x20hug\x20for\x20everyone\x0a┆\x0a', _0x1198fc += "╰─── " + ANIME.U1F496 + '\x20*Each\x20type\x20gives\x20different\x20hugs\x20every\x20time!*\x20' + ANIME.U1F496, await _0x507abd.sendMessage(_0x16d700, {
     text: _0x1198fc
   }, {
     quoted: _0x4163bf
@@ -335,7 +335,7 @@ async function showStats(_0x518120, _0xfad4a7, _0x20841d, _0x36282c) {
   }));
 }
 async function showHelp(_0x3f729e, _0x26c1b2, _0x3de179) {
-  const _0x552325 = '╭─⌈\x20' + ANIME.U1F917 + " *HUG HELP* " + ANIME.U1F917 + " ⌋\n│\n" + "├─⊷ *.hug*\n│  └⊷ Send random hug to everyone\n" + "├─⊷ *.hug @user*\n│  └⊷ Hug a specific user\n" + "├─⊷ *.hug [type]*\n│  └⊷ Specific hug type\n" + '├─⊷\x20*.hug\x20types*\x0a│\x20\x20└⊷\x20List\x20all\x2015+\x20hug\x20types\x0a' + "├─⊷ *.hug stats*\n│  └⊷ Your hug statistics & variety score\n" + "├─⊷ *.hug help*\n│  └⊷ This help menu\n│\n" + ('│\x20' + ANIME.U2728 + " *Popular Types:*\n│\n") + "├─⊷ *anime*\n│  └⊷ Anime-style hugs\n" + "├─⊷ *bear*\n│  └⊷ Bear hugs\n" + '├─⊷\x20*cat*\x0a│\x20\x20└⊷\x20Cat\x20cuddles\x0a' + '├─⊷\x20*dog*\x0a│\x20\x20└⊷\x20Doggy\x20hugs\x0a' + "├─⊷ *group*\n│  └⊷ Group hugs\n" + "├─⊷ *virtual*\n│  └⊷ Digital hugs\n│\n" + ("╰─── " + ANIME.U1F49D + " *Every hug is unique! Try the same type multiple times!* " + ANIME.U1F49D);
+  const _0x552325 = '╭┄〔 \x20' + ANIME.U1F917 + " *HUG HELP* " + ANIME.U1F917 + " 〕┄╮\n┆\n" + "┆ ✦ *.hug*\n┆   └─ Send random hug to everyone\n" + "┆ ✦ *.hug @user*\n┆   └─ Hug a specific user\n" + "┆ ✦ *.hug [type]*\n┆   └─ Specific hug type\n" + '┆ ✦ *.hug\x20types*\x0a┆ \x20╰┄ \x20List\x20all\x2015+\x20hug\x20types\x0a' + "┆ ✦ *.hug stats*\n┆   └─ Your hug statistics & variety score\n" + "┆ ✦ *.hug help*\n┆   └─ This help menu\n┆\n" + ('┆ ' + ANIME.U2728 + " *Popular Types:*\n┆\n") + "┆ ✦ *anime*\n┆   └─ Anime-style hugs\n" + "┆ ✦ *bear*\n┆   └─ Bear hugs\n" + '┆ ✦ *cat*\x0a┆ \x20╰┄ \x20Cat\x20cuddles\x0a' + '┆ ✦ *dog*\x0a┆ \x20╰┄ \x20Doggy\x20hugs\x0a' + "┆ ✦ *group*\n┆   └─ Group hugs\n" + "┆ ✦ *virtual*\n┆   └─ Digital hugs\n┆\n" + ("╰─── " + ANIME.U1F49D + " *Every hug is unique! Try the same type multiple times!* " + ANIME.U1F49D);
   await _0x3f729e.sendMessage(_0x3de179, {
     text: _0x552325
   }, {

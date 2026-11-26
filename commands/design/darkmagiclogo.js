@@ -11,7 +11,7 @@ export default {
     try {
       if (_0x2c2c2e.length === 0) {
         await _0x5bc7c1.sendMessage(_0x183904, {
-          text: '╭─⌈\x20' + DESIGN.MAGIC + " *DARK MAGIC LOGO* ⌋\n│\n├─⊷ *darkmagiclogo*\n│  └⊷ darkmagiclogo <text>\n│\n├─⊷ *Example:*\n│  └⊷ darkmagiclogo SHADOW\n│  └⊷ darkmagiclogo VOID\n│  └⊷ darkmagiclogo CURSED\n│\n╰⊷ " + getFooter(_0x5b3956.key.participant || _0x5b3956.key.remoteJid)
+          text: '╭┄〔 \x20' + DESIGN.MAGIC + " *DARK MAGIC LOGO* 〕┄╮\n┆\n┆ ✦ *darkmagiclogo*\n┆   └─ darkmagiclogo <text>\n┆\n┆ ✦ *Example:*\n┆   └─ darkmagiclogo SHADOW\n┆   └─ darkmagiclogo VOID\n┆   └─ darkmagiclogo CURSED\n┆\n╰┄ " + getFooter(_0x5b3956.key.participant || _0x5b3956.key.remoteJid)
         }, {
           quoted: _0x5b3956
         });
@@ -20,7 +20,7 @@ export default {
       const _0x1020fd = _0x2c2c2e.join('\x20');
       if (_0x1020fd.length > 10) {
         await _0x5bc7c1.sendMessage(_0x183904, {
-          text: "╭─⌈ " + STATUS.ERROR + " *ERROR* ⌋\n│\n├─⊷ Text too long!\n│  └⊷ Maximum 10 characters\n│  └⊷ Your text: \"" + _0x1020fd + "\" (" + _0x1020fd.length + " chars)\n│\n╰───"
+          text: "╭┄〔 " + STATUS.ERROR + " *ERROR* 〕┄╮\n┆\n┆ ✦ Text too long!\n┆   └─ Maximum 10 characters\n┆   └─ Your text: \"" + _0x1020fd + "\" (" + _0x1020fd.length + " chars)\n┆\n╰───"
         }, {
           quoted: _0x5b3956
         });
@@ -51,7 +51,7 @@ export default {
           key: _0x5b3956.key
         }
       }).catch(() => {}), await _0x5bc7c1.sendMessage(_0x183904, {
-        text: "╭─⌈ " + STATUS.ERROR + '\x20*ERROR*\x20⌋\x0a│\x0a├─⊷\x20' + _0x243a89.message + "\n│  └⊷ Please try again with shorter text\n│\n╰───"
+        text: "╭┄〔 " + STATUS.ERROR + '\x20*ERROR*\x20 〕┄╮\x0a┆\x0a┆ ✦ \x20' + _0x243a89.message + "\n┆   └─ Please try again with shorter text\n┆\n╰───"
       }, {
         quoted: _0x5b3956
       }));
@@ -244,5 +244,5 @@ function addOccultCorners(_0x634e7c, _0x18f171, _0x118732) {
 function addDarkSignature(_0x254209, _0x32815d, _0x206e11) {
   _0x254209.save();
   const _0x1d4aaa = _0x32815d - 110, _0xeeed78 = _0x206e11 - 25;
-  (_0x254209.font = "italic 14px \"Arial\"", _0x254209.fillStyle = "rgba(150, 0, 100, 0.9)", _0x254209.textAlign = "right", _0x254209.textBaseline = "bottom", _0x254209.shadowColor = "rgba(100, 0, 50, 0.6)", _0x254209.shadowBlur = 10, _0x254209.fillText("by Silent Wolf", _0x1d4aaa, _0xeeed78), _0x254209.fillStyle = 'rgba(150,\x200,\x20100,\x200.8)', _0x254209.font = "bold 12px Arial", _0x254209.fillText('†', _0x1d4aaa + 5, _0xeeed78 - 8), _0x254209.fillStyle = 'rgba(100,\x200,\x2050,\x200.3)', _0x254209.beginPath(), _0x254209.arc(_0x1d4aaa + 5, _0xeeed78 - 8, 6, 0, Math.PI * 2), _0x254209.fill(), _0x254209.restore());
+  (_0x254209.font = "italic 14px \"Arial\"", _0x254209.fillStyle = "rgba(150, 0, 100, 0.9)", _0x254209.textAlign = "right", _0x254209.textBaseline = "bottom", _0x254209.shadowColor = "rgba(100, 0, 50, 0.6)", _0x254209.shadowBlur = 10, _0x254209.fillText("by Lupin Stanley", _0x1d4aaa, _0xeeed78), _0x254209.fillStyle = 'rgba(150,\x200,\x20100,\x200.8)', _0x254209.font = "bold 12px Arial", _0x254209.fillText('†', _0x1d4aaa + 5, _0xeeed78 - 8), _0x254209.fillStyle = 'rgba(100,\x200,\x2050,\x200.3)', _0x254209.beginPath(), _0x254209.arc(_0x1d4aaa + 5, _0xeeed78 - 8, 6, 0, Math.PI * 2), _0x254209.fill(), _0x254209.restore());
 }

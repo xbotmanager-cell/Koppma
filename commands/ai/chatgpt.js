@@ -11,7 +11,7 @@ export default {
     const _0x3cff00 = _0x451cee.key.remoteJid;
     let _0x300edc = _0x5e0cf6.length > 0 ? _0x5e0cf6.join('\x20') : _0x451cee.quoted?.text || '';
     if (!_0x300edc) return _0x16c556.sendMessage(_0x3cff00, {
-      text: "╭─⌈ " + SOCIAL.BOT + " *CHATGPT AI* ⌋\n├─⊷ *" + _0x4a7a34 + "chatgpt <question>*\n│  └⊷ ChatGPT via Wolf API\n╰⊷ " + getFooter(_0x451cee.key.participant || _0x451cee.key.remoteJid)
+      text: "╭┄〔 " + SOCIAL.BOT + " *CHATGPT AI* 〕┄╮\n┆ ✦ *" + _0x4a7a34 + "chatgpt <question>*\n┆   └─ ChatGPT via Wolf API\n╰┄ " + getFooter(_0x451cee.key.participant || _0x451cee.key.remoteJid)
     }, {
       quoted: _0x451cee
     });
@@ -30,7 +30,7 @@ export default {
           key: _0x451cee.key
         }
       }), await _0x16c556.sendMessage(_0x3cff00, {
-        text: SOCIAL.BOT + " *CHATGPT AI*\n━━━━━━━━━━━━━━━━━\n" + _0x16c7c2 + '\x0a━━━━━━━━━━━━━━━━━\x0a' + getFooter(_0x451cee.key.participant || _0x451cee.key.remoteJid)
+        text: SOCIAL.BOT + " *CHATGPT AI*\n┈┄┈┄✦┈┄┈┄✦┈┄┈┄\n" + _0x16c7c2 + '\x0a┈┄┈┄✦┈┄┈┄✦┈┄┈┄\x0a' + getFooter(_0x451cee.key.participant || _0x451cee.key.remoteJid)
       }, {
         quoted: _0x451cee
       }));

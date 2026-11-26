@@ -11,7 +11,7 @@ export default {
     const _0x971fe5 = _0x272959.key.remoteJid;
     let _0x11be18 = _0x542c21.length > 0 ? _0x542c21.join('\x20') : _0x272959.quoted?.text || '';
     if (!_0x11be18) return _0x1d9d33.sendMessage(_0x971fe5, {
-      text: "╭─⌈ " + STATUS.STAR + " *STARCODER AI* ⌋\n├─⊷ *" + _0x1239d4 + "starcoder <question>*\n│  └⊷ StarCoder code model\n╰⊷ " + getFooter(_0x272959.key.participant || _0x272959.key.remoteJid)
+      text: "╭┄〔 " + STATUS.STAR + " *STARCODER AI* 〕┄╮\n┆ ✦ *" + _0x1239d4 + "starcoder <question>*\n┆   └─ StarCoder code model\n╰┄ " + getFooter(_0x272959.key.participant || _0x272959.key.remoteJid)
     }, {
       quoted: _0x272959
     });
@@ -30,7 +30,7 @@ export default {
           key: _0x272959.key
         }
       }), await _0x1d9d33.sendMessage(_0x971fe5, {
-        text: STATUS.STAR + " *STARCODER AI*\n━━━━━━━━━━━━━━━━━\n" + _0x1e97a3 + "\n━━━━━━━━━━━━━━━━━\n" + getFooter(_0x272959.key.participant || _0x272959.key.remoteJid)
+        text: STATUS.STAR + " *STARCODER AI*\n┈┄┈┄✦┈┄┈┄✦┈┄┈┄\n" + _0x1e97a3 + "\n┈┄┈┄✦┈┄┈┄✦┈┄┈┄\n" + getFooter(_0x272959.key.participant || _0x272959.key.remoteJid)
       }, {
         quoted: _0x272959
       }));

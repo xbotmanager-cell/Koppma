@@ -12,7 +12,7 @@ export default {
     if (_0x5219e3.length > 0) _0x40dc7f = _0x5219e3.join('\x20'); else {
       if (_0x29cefb && _0x29cefb.text) _0x40dc7f = _0x29cefb.text; else {
         await _0x4f89d6.sendMessage(_0x354c93, {
-          text: "╭─⌈ " + MEDIA.MIC + " *AI SPEECH WRITER* ⌋\n├─⊷ *" + _0x2b0452 + 'speechwriter\x20<topic>*\x0a│\x20\x20└⊷\x20Generate\x20a\x20speech\x0a├─⊷\x20*' + _0x2b0452 + 'speechwriter\x20<topic>\x20-long\x20-formal*\x0a│\x20\x20└⊷\x20With\x20length/type/tone\x20options\x0a├─⊷\x20*' + _0x2b0452 + "speech <topic>*\n│  └⊷ Alias for speechwriter\n╰⊷ " + getFooter(_0x48cc4f.key.participant || _0x48cc4f.key.remoteJid)
+          text: "╭┄〔 " + MEDIA.MIC + " *AI SPEECH WRITER* 〕┄╮\n┆ ✦ *" + _0x2b0452 + 'speechwriter\x20<topic>*\x0a┆ \x20╰┄ \x20Generate\x20a\x20speech\x0a┆ ✦ *' + _0x2b0452 + 'speechwriter\x20<topic>\x20-long\x20-formal*\x0a┆ \x20╰┄ \x20With\x20length/type/tone\x20options\x0a┆ ✦ *' + _0x2b0452 + "speech <topic>*\n┆   └─ Alias for speechwriter\n╰┄ " + getFooter(_0x48cc4f.key.participant || _0x48cc4f.key.remoteJid)
         }, {
           quoted: _0x48cc4f
         });

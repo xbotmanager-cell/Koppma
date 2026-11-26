@@ -11,7 +11,7 @@ export default {
     const _0x1d6c89 = _0x5bdef1.key.remoteJid, _0x1284e1 = getOwnerName().toUpperCase();
     let _0x3a0674 = _0x118cc7.length > 0 ? _0x118cc7.join('\x20') : _0x5bdef1.quoted?.text || '';
     if (!_0x3a0674) return _0x21dbd6.sendMessage(_0x1d6c89, {
-      text: "╭─⌈ " + UI.BRAIN + '\x20*DEEPSEEK\x20V4\x20FLASH*\x20⌋\x0a' + ("├─⊷ *" + _0x1e99a4 + 'deepseekv4\x20<question>*\x0a') + "│  └⊷ Fast frontier reasoning model\n" + ("╰⊷ " + getFooter(_0x5bdef1.key.participant || _0x5bdef1.key.remoteJid))
+      text: "╭┄〔 " + UI.BRAIN + '\x20*DEEPSEEK\x20V4\x20FLASH*\x20 〕┄╮\x0a' + ("┆ ✦ *" + _0x1e99a4 + 'deepseekv4\x20<question>*\x0a') + "┆   └─ Fast frontier reasoning model\n" + ("╰┄ " + getFooter(_0x5bdef1.key.participant || _0x5bdef1.key.remoteJid))
     }, {
       quoted: _0x5bdef1
     });
@@ -38,7 +38,7 @@ export default {
           key: _0x5bdef1.key
         }
       }), await _0x21dbd6.sendMessage(_0x1d6c89, {
-        text: UI.BRAIN + '\x20*DEEPSEEK\x20V4\x20FLASH*\x0a' + "━━━━━━━━━━━━━━━━━\n" + (_0x4f5ea9 + '\x0a') + '━━━━━━━━━━━━━━━━━\x0a' + ('' + getFooter(_0x5bdef1.key.participant || _0x5bdef1.key.remoteJid))
+        text: UI.BRAIN + '\x20*DEEPSEEK\x20V4\x20FLASH*\x0a' + "┈┄┈┄✦┈┄┈┄✦┈┄┈┄\n" + (_0x4f5ea9 + '\x0a') + '┈┄┈┄✦┈┄┈┄✦┈┄┈┄\x0a' + ('' + getFooter(_0x5bdef1.key.participant || _0x5bdef1.key.remoteJid))
       }, {
         quoted: _0x5bdef1
       }));

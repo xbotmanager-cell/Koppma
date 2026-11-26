@@ -47,7 +47,7 @@ export default {
       const _0x430166 = _0x185b9d[0].attributes.id, _0x3c7983 = _0x185b9d.map((_0x52de60, _0x4bda9a) => {
         const _0x2e79d3 = _0x52de60.attributes, _0x119ef2 = _0x2e79d3.id === _0x430166 ? '\x20' + CPANEL.U1F451 + '\x20*Main*' : '';
         return _0x4bda9a + 1 + '.\x20*' + _0x2e79d3.username + "* (ID: " + _0x2e79d3.id + ')' + _0x119ef2 + "\n   " + CPANEL.U1F4E7 + '\x20' + _0x2e79d3.email;
-      }), _0x426a3d = getBotName(), _0x548767 = '' + CPANEL.U256D + CPANEL.U2500 + CPANEL.U2308 + '\x20' + CPANEL.U1F451 + '\x20*PANEL\x20ADMINS\x20(' + _0x185b9d.length + ")* " + CPANEL.U230B + '\x0a' + (CPANEL.U2502 + '\x0a') + (_0x3c7983.map(_0x1d464b => '├─⊷\x20' + _0x1d464b).join('\x0a${CPANEL.U2502}\x0a') + '\x0a') + (CPANEL.U2502 + '\x0a') + (CPANEL.U2570 + "⊷ *Powered by " + _0x426a3d + '*');
+      }), _0x426a3d = getBotName(), _0x548767 = '' + CPANEL.U256D + CPANEL.U2500 + CPANEL.U2308 + '\x20' + CPANEL.U1F451 + '\x20*PANEL\x20ADMINS\x20(' + _0x185b9d.length + ")* " + CPANEL.U230B + '\x0a' + (CPANEL.U2502 + '\x0a') + (_0x3c7983.map(_0x1d464b => '┆ ✦ \x20' + _0x1d464b).join('\x0a${CPANEL.U2502}\x0a') + '\x0a') + (CPANEL.U2502 + '\x0a') + (CPANEL.U2570 + "⊷ *Powered by " + _0x426a3d + '*');
       if (giftedBtns?.sendInteractiveMessage) try {
         await giftedBtns.sendInteractiveMessage(_0x334e67, _0x636ca3, {
           text: _0x548767,

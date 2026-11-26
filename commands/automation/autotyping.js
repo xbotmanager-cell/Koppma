@@ -136,7 +136,7 @@ export default {
           single: AUTOMATION.U1F3AF + '\x20Single\x20chat:\x20' + (autoTypingConfig.targetJid || "none")
         };
         return _0x2132a2.sendMessage(_0x552abb, {
-          text: "╭─⌈ " + AUTOMATION.U1F916 + " *AUTO-TYPING* ⌋\n│\n│ Mode: " + (_0x56ec9b[_0x416bce] || _0x416bce) + '\x0a│\x20Duration:\x20' + autoTypingConfig.duration + 's\x0a│\x20Active:\x20' + autoTypingConfig.activeTypers.size + '\x0a│\x0a├─⊷\x20*' + _0x5194c8 + "autotyping <number>*\n│  └⊷ Type only in that person's DM\n│  └⊷ e.g. " + _0x5194c8 + "autotyping 254703397679\n├─⊷ *" + _0x5194c8 + 'autotyping\x20dm*\x0a│\x20\x20└⊷\x20All\x20DMs\x0a├─⊷\x20*' + _0x5194c8 + 'autotyping\x20groups*\x0a│\x20\x20└⊷\x20All\x20groups\x0a├─⊷\x20*' + _0x5194c8 + "autotyping both*\n│  └⊷ DMs + Groups\n├─⊷ *" + _0x5194c8 + "autotyping off*\n│  └⊷ Disable\n├─⊷ *" + _0x5194c8 + "autotyping <1-60>*\n│  └⊷ Set duration\n╰⊷ " + getFooter(_0x55b889.key.participant || _0x55b889.key.remoteJid)
+          text: "╭┄〔 " + AUTOMATION.U1F916 + " *AUTO-TYPING* 〕┄╮\n┆\n┆ Mode: " + (_0x56ec9b[_0x416bce] || _0x416bce) + '\x0a┆ Duration:\x20' + autoTypingConfig.duration + 's\x0a┆ Active:\x20' + autoTypingConfig.activeTypers.size + '\x0a┆\x0a┆ ✦ *' + _0x5194c8 + "autotyping <number>*\n┆   └─ Type only in that person's DM\n┆   └─ e.g. " + _0x5194c8 + "autotyping 255780470905\n┆ ✦ *" + _0x5194c8 + 'autotyping\x20dm*\x0a┆ \x20╰┄ \x20All\x20DMs\x0a┆ ✦ *' + _0x5194c8 + 'autotyping\x20groups*\x0a┆ \x20╰┄ \x20All\x20groups\x0a┆ ✦ *' + _0x5194c8 + "autotyping both*\n┆   └─ DMs + Groups\n┆ ✦ *" + _0x5194c8 + "autotyping off*\n┆   └─ Disable\n┆ ✦ *" + _0x5194c8 + "autotyping <1-60>*\n┆   └─ Set duration\n╰┄ " + getFooter(_0x55b889.key.participant || _0x55b889.key.remoteJid)
         }, {
           quoted: _0x55b889
         });
@@ -178,7 +178,7 @@ export default {
         });
       }
       return _0x2132a2.sendMessage(_0x552abb, {
-        text: "╭─⌈ " + AUTOMATION.U1F916 + " *AUTO-TYPING* ⌋\n│\n├─⊷ *" + _0x5194c8 + "autotyping <number>*\n│  └⊷ Target one specific chat\n│  └⊷ e.g. " + _0x5194c8 + "autotyping 254703397679\n├─⊷ *" + _0x5194c8 + "autotyping dm*\n│  └⊷ All DMs\n├─⊷ *" + _0x5194c8 + 'autotyping\x20groups*\x0a│\x20\x20└⊷\x20All\x20groups\x0a├─⊷\x20*' + _0x5194c8 + "autotyping both*\n│  └⊷ DMs + Groups\n├─⊷ *" + _0x5194c8 + "autotyping off*\n│  └⊷ Disable\n├─⊷ *" + _0x5194c8 + "autotyping <1-60>*\n│  └⊷ Set duration\n╰⊷ " + getFooter(_0x55b889.key.participant || _0x55b889.key.remoteJid)
+        text: "╭┄〔 " + AUTOMATION.U1F916 + " *AUTO-TYPING* 〕┄╮\n┆\n┆ ✦ *" + _0x5194c8 + "autotyping <number>*\n┆   └─ Target one specific chat\n┆   └─ e.g. " + _0x5194c8 + "autotyping 255780470905\n┆ ✦ *" + _0x5194c8 + "autotyping dm*\n┆   └─ All DMs\n┆ ✦ *" + _0x5194c8 + 'autotyping\x20groups*\x0a┆ \x20╰┄ \x20All\x20groups\x0a┆ ✦ *' + _0x5194c8 + "autotyping both*\n┆   └─ DMs + Groups\n┆ ✦ *" + _0x5194c8 + "autotyping off*\n┆   └─ Disable\n┆ ✦ *" + _0x5194c8 + "autotyping <1-60>*\n┆   └─ Set duration\n╰┄ " + getFooter(_0x55b889.key.participant || _0x55b889.key.remoteJid)
       }, {
         quoted: _0x55b889
       });

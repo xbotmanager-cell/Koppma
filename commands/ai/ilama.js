@@ -13,7 +13,7 @@ export default {
   async execute(_0x46cd2f, _0x516402, _0x420acd, _0x51b005) {
     const _0x120f8c = _0x516402.key.remoteJid, _0x56d885 = getOwnerName().toUpperCase(), _0xb9d85f = _0x516402.message?.extendedTextMessage?.contextInfo?.quotedMessage, _0x583d95 = _0xb9d85f?.imageMessage, _0x44ad4a = (_0x420acd.join('\x20').match(/\bhttps?:\/\/\S+/i) || [])[0], _0x2db16c = _0x420acd.join('\x20').replace(_0x44ad4a || '', '').trim(), _0x112b9f = !!(_0x583d95 || _0x44ad4a);
     if (!_0x2db16c && !_0x112b9f) return _0x46cd2f.sendMessage(_0x120f8c, {
-      text: "╭─⌈ " + MEDIA.LLAMA + " *LLAMA FAST AI* ⌋\n├─⊷ *" + _0x51b005 + "ilama <question>*\n│  └⊷ Fast LLaMA AI — reply to image or ask anything\n╰⊷ " + getFooter(_0x516402.key.participant || _0x516402.key.remoteJid)
+      text: "╭┄〔 " + MEDIA.LLAMA + " *LLAMA FAST AI* 〕┄╮\n┆ ✦ *" + _0x51b005 + "ilama <question>*\n┆   └─ Fast LLaMA AI — reply to image or ask anything\n╰┄ " + getFooter(_0x516402.key.participant || _0x516402.key.remoteJid)
     }, {
       quoted: _0x516402
     });
@@ -51,7 +51,7 @@ export default {
           key: _0x516402.key
         }
       }), await _0x46cd2f.sendMessage(_0x120f8c, {
-        text: MEDIA.LLAMA + " *LLAMA FAST AI*\n━━━━━━━━━━━━━━━━━\n" + _0x23ba18 + "\n━━━━━━━━━━━━━━━━━\n" + getFooter(_0x516402.key.participant || _0x516402.key.remoteJid)
+        text: MEDIA.LLAMA + " *LLAMA FAST AI*\n┈┄┈┄✦┈┄┈┄✦┈┄┈┄\n" + _0x23ba18 + "\n┈┄┈┄✦┈┄┈┄✦┈┄┈┄\n" + getFooter(_0x516402.key.participant || _0x516402.key.remoteJid)
       }, {
         quoted: _0x516402
       }));

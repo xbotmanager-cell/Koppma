@@ -11,7 +11,7 @@ export default {
     const _0x567571 = _0x2d2062.key.remoteJid;
     let _0x281894 = _0x1a5bcd.length > 0 ? _0x1a5bcd.join('\x20') : _0x2d2062.quoted?.text || '';
     if (!_0x281894) return _0x2ebeb8.sendMessage(_0x567571, {
-      text: '╭─⌈\x20' + UI.CHAT + '\x20*OPENCHAT\x20AI*\x20⌋\x0a├─⊷\x20*' + _0x2eeeaf + "openchat <question>*\n│  └⊷ OpenChat AI model\n╰⊷ " + getFooter(_0x2d2062.key.participant || _0x2d2062.key.remoteJid)
+      text: '╭┄〔 \x20' + UI.CHAT + '\x20*OPENCHAT\x20AI*\x20 〕┄╮\x0a┆ ✦ *' + _0x2eeeaf + "openchat <question>*\n┆   └─ OpenChat AI model\n╰┄ " + getFooter(_0x2d2062.key.participant || _0x2d2062.key.remoteJid)
     }, {
       quoted: _0x2d2062
     });
@@ -30,7 +30,7 @@ export default {
           key: _0x2d2062.key
         }
       }), await _0x2ebeb8.sendMessage(_0x567571, {
-        text: UI.CHAT + " *OPENCHAT AI*\n━━━━━━━━━━━━━━━━━\n" + _0x2173de + "\n━━━━━━━━━━━━━━━━━\n" + getFooter(_0x2d2062.key.participant || _0x2d2062.key.remoteJid)
+        text: UI.CHAT + " *OPENCHAT AI*\n┈┄┈┄✦┈┄┈┄✦┈┄┈┄\n" + _0x2173de + "\n┈┄┈┄✦┈┄┈┄✦┈┄┈┄\n" + getFooter(_0x2d2062.key.participant || _0x2d2062.key.remoteJid)
       }, {
         quoted: _0x2d2062
       }));

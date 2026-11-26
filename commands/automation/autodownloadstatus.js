@@ -263,10 +263,10 @@ export async function handleAutoDownloadStatus(_0x410736, _0x36c8a2, _0x3ad9f1) 
         return;
       }
       if (!_0x2bc9af || _0x2bc9af.length === 0) return;
-      let _0x593c22 = "╭─⌈ " + AUTOMATION.U1F4F2 + " *STATUS DOWNLOADED* ⌋\n";
-      _0x593c22 += '│\x20' + AUTOMATION.U1F464 + " *From:* " + _0x43becb + '\x0a';
-      if (_0x2b4247.caption) _0x593c22 += '│\x20' + AUTOMATION.U1F4AC + " *Caption:* " + _0x2b4247.caption + '\x0a';
-      (_0x593c22 += '│\x20' + AUTOMATION.U1F4C1 + '\x20*Type:*\x20' + _0x3ae824 + '\x0a', _0x593c22 += "│ ⏰ *Time:* " + _0x5c87cf + '\x0a', _0x593c22 += "╰⊷ " + getFooter(global.OWNER_CLEAN_JID || ''));
+      let _0x593c22 = "╭┄〔 " + AUTOMATION.U1F4F2 + " *STATUS DOWNLOADED* 〕┄╮\n";
+      _0x593c22 += '┆ ' + AUTOMATION.U1F464 + " *From:* " + _0x43becb + '\x0a';
+      if (_0x2b4247.caption) _0x593c22 += '┆ ' + AUTOMATION.U1F4AC + " *Caption:* " + _0x2b4247.caption + '\x0a';
+      (_0x593c22 += '┆ ' + AUTOMATION.U1F4C1 + '\x20*Type:*\x20' + _0x3ae824 + '\x0a', _0x593c22 += "┆ ⏰ *Time:* " + _0x5c87cf + '\x0a', _0x593c22 += "╰┄ " + getFooter(global.OWNER_CLEAN_JID || ''));
       const _0x1bbcc8 = {};
       if (_0x3ae824 === "sticker") _0x1bbcc8.sticker = _0x2bc9af; else {
         if (_0x3ae824 === "document") (_0x1bbcc8.document = _0x2bc9af, _0x1bbcc8.fileName = _0x2b4247.media.fileName || "status_" + _0x235b72 + ".bin", _0x1bbcc8.mimetype = _0x2b4247.media.mimetype || "application/octet-stream", _0x1bbcc8.caption = _0x593c22); else {
@@ -279,8 +279,8 @@ export async function handleAutoDownloadStatus(_0x410736, _0x36c8a2, _0x3ad9f1) 
       }));
     } else {
       if (_0x2700a1) {
-        let _0x4df3ad = "╭─⌈ " + AUTOMATION.U1F4F2 + " *STATUS DOWNLOADED* ⌋\n";
-        (_0x4df3ad += '│\x20' + AUTOMATION.U1F464 + '\x20*From:*\x20' + _0x43becb + '\x0a', _0x4df3ad += '│\x20' + AUTOMATION.U1F4DD + " *Text:* " + _0x2700a1.text + '\x0a', _0x4df3ad += "│ ⏰ *Time:* " + _0x5c87cf + '\x0a', _0x4df3ad += "╰⊷ " + getFooter(global.OWNER_CLEAN_JID || ''), await _0x410736.sendMessage(_0x750fbd, {
+        let _0x4df3ad = "╭┄〔 " + AUTOMATION.U1F4F2 + " *STATUS DOWNLOADED* 〕┄╮\n";
+        (_0x4df3ad += '┆ ' + AUTOMATION.U1F464 + '\x20*From:*\x20' + _0x43becb + '\x0a', _0x4df3ad += '┆ ' + AUTOMATION.U1F4DD + " *Text:* " + _0x2700a1.text + '\x0a', _0x4df3ad += "┆ ⏰ *Time:* " + _0x5c87cf + '\x0a', _0x4df3ad += "╰┄ " + getFooter(global.OWNER_CLEAN_JID || ''), await _0x410736.sendMessage(_0x750fbd, {
           text: _0x4df3ad
         }));
       }
@@ -345,7 +345,7 @@ export default {
     if (!manager.config.ownerJid) manager.setOwnerJid(_0x89f9eb);
     if (!_0x4957fe) {
       const _0x1ec414 = manager.getStats();
-      return _0x3655c3("╭─⌈ " + AUTOMATION.U1F4F2 + " *AUTO-DOWNLOAD STATUS* ⌋\n│\n" + ('│\x20Status\x20:\x20' + (_0x1ec414.enabled ? "${AUTOMATION.U2705} ON" : "${AUTOMATION.U274C} OFF") + '\x0a') + ("│ Mode   : " + (_0x1ec414.mode === "private" ? "${AUTOMATION.U1F512} Private (DM)" : AUTOMATION.U1F310 + " Public (" + _0x1ec414.publicJid + ')') + '\x0a') + ("│ Types  : " + _0x1ec414.types + '\x0a') + ("│ Total  : " + _0x1ec414.total + '\x20downloaded\x0a') + ("│ Skip own status: " + (_0x1ec414.skipOwn ? '${AUTOMATION.U2705}' : '${AUTOMATION.U274C}') + '\x0a') + '│\x0a' + ('├─⊷\x20*' + _0x394745 + 'ads\x20on\x20/\x20off*\x0a') + ('├─⊷\x20*' + _0x394745 + "ads private*  → save to your DM\n") + ("├─⊷ *" + _0x394745 + "ads public <groupJid>*  → save to a chat\n") + ("├─⊷ *" + _0x394745 + 'ads\x20types*\x20\x20→\x20show/set\x20media\x20types\x0a') + ("├─⊷ *" + _0x394745 + "ads exclude <number>*\n") + ("├─⊷ *" + _0x394745 + "ads include <number>*\n") + ('├─⊷\x20*' + _0x394745 + "ads skipown on/off*\n") + ("├─⊷ *" + _0x394745 + 'ads\x20stats*\x0a') + ("╰⊷ " + getFooter(_0x32910a.key.participant || _0x32910a.key.remoteJid)));
+      return _0x3655c3("╭┄〔 " + AUTOMATION.U1F4F2 + " *AUTO-DOWNLOAD STATUS* 〕┄╮\n┆\n" + ('┆ Status\x20:\x20' + (_0x1ec414.enabled ? "${AUTOMATION.U2705} ON" : "${AUTOMATION.U274C} OFF") + '\x0a') + ("┆ Mode   : " + (_0x1ec414.mode === "private" ? "${AUTOMATION.U1F512} Private (DM)" : AUTOMATION.U1F310 + " Public (" + _0x1ec414.publicJid + ')') + '\x0a') + ("┆ Types  : " + _0x1ec414.types + '\x0a') + ("┆ Total  : " + _0x1ec414.total + '\x20downloaded\x0a') + ("┆ Skip own status: " + (_0x1ec414.skipOwn ? '${AUTOMATION.U2705}' : '${AUTOMATION.U274C}') + '\x0a') + '┆\x0a' + ('┆ ✦ *' + _0x394745 + 'ads\x20on\x20/\x20off*\x0a') + ('┆ ✦ *' + _0x394745 + "ads private*  → save to your DM\n") + ("┆ ✦ *" + _0x394745 + "ads public <groupJid>*  → save to a chat\n") + ("┆ ✦ *" + _0x394745 + 'ads\x20types*\x20\x20→\x20show/set\x20media\x20types\x0a') + ("┆ ✦ *" + _0x394745 + "ads exclude <number>*\n") + ("┆ ✦ *" + _0x394745 + "ads include <number>*\n") + ('┆ ✦ *' + _0x394745 + "ads skipown on/off*\n") + ("┆ ✦ *" + _0x394745 + 'ads\x20stats*\x0a') + ("╰┄ " + getFooter(_0x32910a.key.participant || _0x32910a.key.remoteJid)));
     }
     if (['on', "enable"].includes(_0x4957fe)) {
       (manager.config.enabled = true, manager.saveImmediate());

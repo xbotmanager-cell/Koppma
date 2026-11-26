@@ -129,13 +129,13 @@ export default {
         });
         await _0xca3a57.sendMessage(_0x49a6a0, {
           image: Buffer.from(_0xed2c47.data),
-          caption: UI.DOCUMENT + " *YouTube Transcript*\n" + "━━━━━━━━━━━━━━━━━━━━━\n" + (UI.ID + " *Video:* " + _0x11d752 + '\x0a') + (SOCIAL.GLOBE + " *Lang:* " + _0xada579 + '\x0a') + (UI.CHART + " *Words:* " + _0x3b1afc + "  •  *Segments:* " + _0x547512 + '\x0a') + "━━━━━━━━━━━━━━━━━━━━━\n\n" + (_0x3f5b5f + '\x0a\x0a') + (BRAND.WOLF + '\x20_' + getOwnerName().toUpperCase() + " TECH_")
+          caption: UI.DOCUMENT + " *YouTube Transcript*\n" + "┈┄┈┄✦┈┄┈┄✦┈┄┈┄\n" + (UI.ID + " *Video:* " + _0x11d752 + '\x0a') + (SOCIAL.GLOBE + " *Lang:* " + _0xada579 + '\x0a') + (UI.CHART + " *Words:* " + _0x3b1afc + "  •  *Segments:* " + _0x547512 + '\x0a') + "┈┄┈┄✦┈┄┈┄✦┈┄┈┄\n\n" + (_0x3f5b5f + '\x0a\x0a') + (BRAND.WOLF + '\x20_' + getOwnerName().toUpperCase() + " TECH_")
         }, {
           quoted: _0x2b2cee
         });
       } catch {
-        await _0x2a071d(UI.DOCUMENT + " *YouTube Transcript*\n" + "━━━━━━━━━━━━━━━━━━━━━\n" + (UI.ID + '\x20*Video:*\x20' + _0x11d752 + '\x0a') + (SOCIAL.GLOBE + " *Lang:* " + _0xada579 + '\x0a') + (UI.CHART + " *Words:* " + _0x3b1afc + '\x20\x20•\x20\x20*Segments:*\x20' + _0x547512 + '\x0a') + "━━━━━━━━━━━━━━━━━━━━━\n\n" + (_0x3f5b5f + '\x0a\x0a') + (BRAND.WOLF + '\x20_' + getOwnerName().toUpperCase() + " TECH_"));
-      } else await _0x2a071d(UI.DOCUMENT + " *YouTube Transcript*\n" + "━━━━━━━━━━━━━━━━━━━━━\n" + (UI.ID + " *Video:* " + _0x11d752 + '\x0a') + (SOCIAL.GLOBE + " *Lang:* " + _0xada579 + '\x0a') + (UI.CHART + '\x20*Words:*\x20' + _0x3b1afc + "  •  *Segments:* " + _0x547512 + '\x0a') + "━━━━━━━━━━━━━━━━━━━━━\n\n" + (_0x3f5b5f + '\x0a\x0a') + (BRAND.WOLF + '\x20_' + getOwnerName().toUpperCase() + " TECH_"));
+        await _0x2a071d(UI.DOCUMENT + " *YouTube Transcript*\n" + "┈┄┈┄✦┈┄┈┄✦┈┄┈┄\n" + (UI.ID + '\x20*Video:*\x20' + _0x11d752 + '\x0a') + (SOCIAL.GLOBE + " *Lang:* " + _0xada579 + '\x0a') + (UI.CHART + " *Words:* " + _0x3b1afc + '\x20\x20•\x20\x20*Segments:*\x20' + _0x547512 + '\x0a') + "┈┄┈┄✦┈┄┈┄✦┈┄┈┄\n\n" + (_0x3f5b5f + '\x0a\x0a') + (BRAND.WOLF + '\x20_' + getOwnerName().toUpperCase() + " TECH_"));
+      } else await _0x2a071d(UI.DOCUMENT + " *YouTube Transcript*\n" + "┈┄┈┄✦┈┄┈┄✦┈┄┈┄\n" + (UI.ID + " *Video:* " + _0x11d752 + '\x0a') + (SOCIAL.GLOBE + " *Lang:* " + _0xada579 + '\x0a') + (UI.CHART + '\x20*Words:*\x20' + _0x3b1afc + "  •  *Segments:* " + _0x547512 + '\x0a') + "┈┄┈┄✦┈┄┈┄✦┈┄┈┄\n\n" + (_0x3f5b5f + '\x0a\x0a') + (BRAND.WOLF + '\x20_' + getOwnerName().toUpperCase() + " TECH_"));
       await _0xca3a57.sendMessage(_0x49a6a0, {
         react: {
           text: '' + STATUS.SUCCESS,
@@ -144,7 +144,7 @@ export default {
       });
       return;
     }
-    if (!_0x4e5675) return _0x2a071d('╭─⌈\x20*TRANSCRIBE*\x20⌋\x0a' + '│\x0a' + "├─⊷ *Audio → Text:*\n" + "│  Reply to a voice note / audio\n" + ("│  " + _0x4119e1 + 'totext\x0a') + '│\x0a' + "├─⊷ *YouTube Transcript:*\n" + ('│\x20\x20' + _0x4119e1 + "totext <YouTube URL>\n") + ("│  " + _0x4119e1 + "totext <video ID>\n") + ('│\x20\x20' + _0x4119e1 + 'totext\x20<URL>\x20fr\x20\x20←\x20with\x20language\x0a') + '│\x0a' + ("╰⊷ " + getFooter(_0x2b2cee.key.participant || _0x2b2cee.key.remoteJid)));
+    if (!_0x4e5675) return _0x2a071d('╭┄〔 \x20*TRANSCRIBE*\x20 〕┄╮\x0a' + '┆\x0a' + "┆ ✦ *Audio → Text:*\n" + "┆  Reply to a voice note / audio\n" + ("┆  " + _0x4119e1 + 'totext\x0a') + '┆\x0a' + "┆ ✦ *YouTube Transcript:*\n" + ('┆ \x20' + _0x4119e1 + "totext <YouTube URL>\n") + ("┆  " + _0x4119e1 + "totext <video ID>\n") + ('┆ \x20' + _0x4119e1 + 'totext\x20<URL>\x20fr\x20\x20←\x20with\x20language\x0a') + '┆\x0a' + ("╰┄ " + getFooter(_0x2b2cee.key.participant || _0x2b2cee.key.remoteJid)));
     if (!_0x4e5675.audioMessage && !_0x4e5675.videoMessage) return _0x2a071d(STATUS.ERROR + " Please reply to an audio message or voice note.");
     try {
       await _0xca3a57.sendMessage(_0x49a6a0, {
@@ -189,9 +189,9 @@ export default {
           text: '' + STATUS.ERROR,
           key: _0x2b2cee.key
         }
-      }), _0x2a071d("╭⌈ " + STATUS.ERROR + " *TRANSCRIPTION FAILED* ⌋\n" + '├⊷\x20No\x20working\x20transcription\x20service\x20available.\x0a' + '│\x0a' + ("├⊷ " + UI.KEY + '\x20*Fix:*\x20Add\x20a\x20free\x20Groq\x20API\x20key:\x0a') + "│   1. Go to console.groq.com\n" + '│\x20\x20\x202.\x20Create\x20a\x20free\x20account\x0a' + '│\x20\x20\x203.\x20Generate\x20an\x20API\x20key\x0a' + '│\x20\x20\x204.\x20Add\x20it\x20as\x20*GROQ_API_KEY*\x20in\x20Secrets\x0a' + '│\x0a' + ('╰⊷\x20' + getFooter(_0x2b2cee.key.participant || _0x2b2cee.key.remoteJid))));
+      }), _0x2a071d("╭⌈ " + STATUS.ERROR + " *TRANSCRIPTION FAILED* 〕┄╮\n" + '┆ ✦ \x20No\x20working\x20transcription\x20service\x20available.\x0a' + '┆\x0a' + ("┆ ✦ " + UI.KEY + '\x20*Fix:*\x20Add\x20a\x20free\x20Groq\x20API\x20key:\x0a') + "┆   1. Go to console.groq.com\n" + '┆ \x20\x202.\x20Create\x20a\x20free\x20account\x0a' + '┆ \x20\x203.\x20Generate\x20an\x20API\x20key\x0a' + '┆ \x20\x204.\x20Add\x20it\x20as\x20*GROQ_API_KEY*\x20in\x20Secrets\x0a' + '┆\x0a' + ('╰┄ \x20' + getFooter(_0x2b2cee.key.participant || _0x2b2cee.key.remoteJid))));
       const _0x5ac0c4 = _0x3f54cf.split(/\s+/).filter(_0x22e8bc => _0x22e8bc.length > 0).length, _0x5944cf = _0x2b26a0 ? UI.TIMER + '\x20' + Math.round(_0x2b26a0) + "s  •  " : '';
-      (await _0x2a071d("╭⌈ " + MEDIA.MIC + '\x20*TRANSCRIPTION*\x20⌋\x0a' + (_0x48d765 ? "├⊷ Language : *" + _0x48d765 + '*\x0a' : '') + ("├⊷ " + _0x5944cf + UI.CHART + '\x20' + _0x5ac0c4 + '\x20words\x0a') + '│\x0a' + (_0x3f54cf + '\x0a') + '│\x0a' + ("╰⊷ " + getFooter(_0x2b2cee.key.participant || _0x2b2cee.key.remoteJid))), await _0xca3a57.sendMessage(_0x49a6a0, {
+      (await _0x2a071d("╭⌈ " + MEDIA.MIC + '\x20*TRANSCRIPTION*\x20 〕┄╮\x0a' + (_0x48d765 ? "┆ ✦ Language : *" + _0x48d765 + '*\x0a' : '') + ("┆ ✦ " + _0x5944cf + UI.CHART + '\x20' + _0x5ac0c4 + '\x20words\x0a') + '┆\x0a' + (_0x3f54cf + '\x0a') + '┆\x0a' + ("╰┄ " + getFooter(_0x2b2cee.key.participant || _0x2b2cee.key.remoteJid))), await _0xca3a57.sendMessage(_0x49a6a0, {
         react: {
           text: '' + STATUS.SUCCESS,
           key: _0x2b2cee.key

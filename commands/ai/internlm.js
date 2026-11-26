@@ -11,7 +11,7 @@ export default {
     const _0x5f5516 = _0xf6f6d3.key.remoteJid;
     let _0x2b738a = _0x488d91.length > 0 ? _0x488d91.join('\x20') : _0xf6f6d3.quoted?.text || '';
     if (!_0x2b738a) return _0x5b7c24.sendMessage(_0x5f5516, {
-      text: "╭─⌈ " + UI.MICROSCOPE + " *INTERNLM AI* ⌋\n├─⊷ *" + _0x113735 + "internlm <question>*\n│  └⊷ InternLM Shanghai AI\n╰⊷ " + getFooter(_0xf6f6d3.key.participant || _0xf6f6d3.key.remoteJid)
+      text: "╭┄〔 " + UI.MICROSCOPE + " *INTERNLM AI* 〕┄╮\n┆ ✦ *" + _0x113735 + "internlm <question>*\n┆   └─ InternLM Shanghai AI\n╰┄ " + getFooter(_0xf6f6d3.key.participant || _0xf6f6d3.key.remoteJid)
     }, {
       quoted: _0xf6f6d3
     });
@@ -30,7 +30,7 @@ export default {
           key: _0xf6f6d3.key
         }
       }), await _0x5b7c24.sendMessage(_0x5f5516, {
-        text: UI.MICROSCOPE + '\x20*INTERNLM\x20AI*\x0a━━━━━━━━━━━━━━━━━\x0a' + _0x55ad6f + "\n━━━━━━━━━━━━━━━━━\n" + getFooter(_0xf6f6d3.key.participant || _0xf6f6d3.key.remoteJid)
+        text: UI.MICROSCOPE + '\x20*INTERNLM\x20AI*\x0a┈┄┈┄✦┈┄┈┄✦┈┄┈┄\x0a' + _0x55ad6f + "\n┈┄┈┄✦┈┄┈┄✦┈┄┈┄\n" + getFooter(_0xf6f6d3.key.participant || _0xf6f6d3.key.remoteJid)
       }, {
         quoted: _0xf6f6d3
       }));

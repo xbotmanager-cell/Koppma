@@ -1,7 +1,7 @@
 import {AUTOMATION} from '../../lib/emojis.js';
 import _0x1c5953 from '../../lib/database.js';
 import {getOwnerName} from '../../lib/menuHelper.js';
-const CONFIG_DB_KEY = "autoreply_config", DEFAULT_MESSAGE = 'Hello,\x20WOLFBOT\x20is\x20online', COOLDOWN_MS = 60000, DEFAULT_SETTINGS = {
+const CONFIG_DB_KEY = "autoreply_config", DEFAULT_MESSAGE = 'Hello,\x20VIPBOT\x20is\x20online', COOLDOWN_MS = 60000, DEFAULT_SETTINGS = {
   enabled: false,
   message: DEFAULT_MESSAGE
 }, replyCache = new Map();
@@ -72,7 +72,7 @@ export default {
     if (!_0xea7fa6 || _0xea7fa6 === "status") {
       const _0x22725b = _0x224622.enabled ? AUTOMATION.U1F7E2 + " ON" : AUTOMATION.U1F534 + " OFF", _0x295856 = _0x224622.message.length > 60 ? _0x224622.message.substring(0, 60) + '…' : _0x224622.message;
       return _0x108d6f.sendMessage(_0x462232, {
-        text: "╭─⌈ " + AUTOMATION.U1F4AC + " *AUTOREPLY STATUS* ⌋\n│\n│ ◎ *Status:* " + _0x22725b + '\x0a│\x20◎\x20*Message:*\x0a│\x20\x20\x20' + _0x295856 + "\n│\n╰─⊷ *Usage:*\n   • `" + _0x56feb1 + 'autoreply\x20on`\x0a\x20\x20\x20•\x20`' + _0x56feb1 + "autoreply off`\n   • `" + _0x56feb1 + "autoreply message <text>`\n   • `" + _0x56feb1 + "autoreply reset`"
+        text: "╭┄〔 " + AUTOMATION.U1F4AC + " *AUTOREPLY STATUS* 〕┄╮\n┆\n┆ ◎ *Status:* " + _0x22725b + '\x0a┆ ◎\x20*Message:*\x0a┆ \x20\x20' + _0x295856 + "\n┆\n╰┄ *Usage:*\n   • `" + _0x56feb1 + 'autoreply\x20on`\x0a\x20\x20\x20•\x20`' + _0x56feb1 + "autoreply off`\n   • `" + _0x56feb1 + "autoreply message <text>`\n   • `" + _0x56feb1 + "autoreply reset`"
       }, {
         quoted: _0x259b7b
       });
@@ -106,7 +106,7 @@ export default {
       quoted: _0x259b7b
     }));
     return _0x108d6f.sendMessage(_0x462232, {
-      text: "╭─⌈ " + AUTOMATION.U1F4AC + " *AUTOREPLY HELP* ⌋\n│\n│ • `" + _0x56feb1 + "autoreply on` — Enable autoreply\n│ • `" + _0x56feb1 + 'autoreply\x20off`\x20—\x20Disable\x20autoreply\x0a│\x20•\x20`' + _0x56feb1 + 'autoreply\x20message\x20<text>`\x20—\x20Set\x20custom\x20message\x0a│\x20•\x20`' + _0x56feb1 + "autoreply reset` — Reset to default message\n│ • `" + _0x56feb1 + "autoreply status` — View current status\n│\n╰─⊷ *Default reply:* " + DEFAULT_MESSAGE
+      text: "╭┄〔 " + AUTOMATION.U1F4AC + " *AUTOREPLY HELP* 〕┄╮\n┆\n┆  • `" + _0x56feb1 + "autoreply on` — Enable autoreply\n┆  • `" + _0x56feb1 + 'autoreply\x20off`\x20—\x20Disable\x20autoreply\x0a┆ •\x20`' + _0x56feb1 + 'autoreply\x20message\x20<text>`\x20—\x20Set\x20custom\x20message\x0a┆ •\x20`' + _0x56feb1 + "autoreply reset` — Reset to default message\n┆  • `" + _0x56feb1 + "autoreply status` — View current status\n┆\n╰┄ *Default reply:* " + DEFAULT_MESSAGE
     }, {
       quoted: _0x259b7b
     });

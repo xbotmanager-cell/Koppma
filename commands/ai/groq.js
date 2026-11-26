@@ -11,7 +11,7 @@ export default {
     const _0x55f367 = _0x5a442c.key.remoteJid;
     let _0x4ec948 = _0x3570c6.length > 0 ? _0x3570c6.join('\x20') : _0x5a442c.quoted?.text || '';
     if (!_0x4ec948) return _0x1d2e32.sendMessage(_0x55f367, {
-      text: '╭─⌈\x20⚡\x20*GROQ\x20AI*\x20⌋\x0a├─⊷\x20*' + _0x20925d + "groq <question>*\n│  └⊷ Groq ultra-fast AI\n╰⊷ " + getFooter(_0x5a442c.key.participant || _0x5a442c.key.remoteJid)
+      text: '╭┄〔 \x20⚡\x20*GROQ\x20AI*\x20 〕┄╮\x0a┆ ✦ *' + _0x20925d + "groq <question>*\n┆   └─ Groq ultra-fast AI\n╰┄ " + getFooter(_0x5a442c.key.participant || _0x5a442c.key.remoteJid)
     }, {
       quoted: _0x5a442c
     });
@@ -30,7 +30,7 @@ export default {
           key: _0x5a442c.key
         }
       }), await _0x1d2e32.sendMessage(_0x55f367, {
-        text: "⚡ *GROQ AI*\n━━━━━━━━━━━━━━━━━\n" + _0x3afe14 + '\x0a━━━━━━━━━━━━━━━━━\x0a' + getFooter(_0x5a442c.key.participant || _0x5a442c.key.remoteJid)
+        text: "⚡ *GROQ AI*\n┈┄┈┄✦┈┄┈┄✦┈┄┈┄\n" + _0x3afe14 + '\x0a┈┄┈┄✦┈┄┈┄✦┈┄┈┄\x0a' + getFooter(_0x5a442c.key.participant || _0x5a442c.key.remoteJid)
       }, {
         quoted: _0x5a442c
       }));

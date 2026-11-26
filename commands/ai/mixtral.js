@@ -11,7 +11,7 @@ export default {
     const _0xca03ff = _0x31dc78.key.remoteJid;
     let _0x1695a3 = _0x2f8ef1.length > 0 ? _0x2f8ef1.join('\x20') : _0x31dc78.quoted?.text || '';
     if (!_0x1695a3) return _0x34ecac.sendMessage(_0xca03ff, {
-      text: '╭─⌈\x20' + UI.MIX + " *MIXTRAL AI* ⌋\n├─⊷ *" + _0x4dadcf + "mixtral <question>*\n│  └⊷ Mixtral Mixture of Experts\n╰⊷ " + getFooter(_0x31dc78.key.participant || _0x31dc78.key.remoteJid)
+      text: '╭┄〔 \x20' + UI.MIX + " *MIXTRAL AI* 〕┄╮\n┆ ✦ *" + _0x4dadcf + "mixtral <question>*\n┆   └─ Mixtral Mixture of Experts\n╰┄ " + getFooter(_0x31dc78.key.participant || _0x31dc78.key.remoteJid)
     }, {
       quoted: _0x31dc78
     });
@@ -30,7 +30,7 @@ export default {
           key: _0x31dc78.key
         }
       }), await _0x34ecac.sendMessage(_0xca03ff, {
-        text: UI.MIX + " *MIXTRAL AI*\n━━━━━━━━━━━━━━━━━\n" + _0xb8b61a + '\x0a━━━━━━━━━━━━━━━━━\x0a' + getFooter(_0x31dc78.key.participant || _0x31dc78.key.remoteJid)
+        text: UI.MIX + " *MIXTRAL AI*\n┈┄┈┄✦┈┄┈┄✦┈┄┈┄\n" + _0xb8b61a + '\x0a┈┄┈┄✦┈┄┈┄✦┈┄┈┄\x0a' + getFooter(_0x31dc78.key.participant || _0x31dc78.key.remoteJid)
       }, {
         quoted: _0x31dc78
       }));

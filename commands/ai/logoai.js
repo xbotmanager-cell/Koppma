@@ -13,13 +13,13 @@ export default {
     try {
       const _0x85a180 = _0x45949d.join('\x20');
       if (!_0x85a180 || _0x85a180.includes("--help")) return _0x19b6f8.sendMessage(_0x51375a.key.remoteJid, {
-        text: "╭─⌈ " + MEDIA.DESIGN + " *AI LOGO GENERATOR* ⌋\n├─⊷ *.logoai <company name>*\n│  └⊷ Generate AI logo\n├─⊷ *.logoai <name> --style=<style>*\n│  └⊷ modern/minimal/vintage/playful\n├─⊷ *.logoai <name> --color=<color>*\n│  └⊷ blue/red/green/purple\n╰⊷ " + getFooter(_0x51375a.key.participant || _0x51375a.key.remoteJid)
+        text: "╭┄〔 " + MEDIA.DESIGN + " *AI LOGO GENERATOR* 〕┄╮\n┆ ✦ *.logoai <company name>*\n┆   └─ Generate AI logo\n┆ ✦ *.logoai <name> --style=<style>*\n┆   └─ modern/minimal/vintage/playful\n┆ ✦ *.logoai <name> --color=<color>*\n┆   └─ blue/red/green/purple\n╰┄ " + getFooter(_0x51375a.key.participant || _0x51375a.key.remoteJid)
       }, {
         quoted: _0x51375a
       });
       const _0x28df7f = process.env.LOGO_DEV_API_KEY;
       if (!_0x28df7f || _0x28df7f === "sk_QV2nWNWwSdu5IgWfLBfcZA") return _0x19b6f8.sendMessage(_0x51375a.key.remoteJid, {
-        text: UI.KEY + " *Logo.dev API Key Required*\n━━━━━━━━━━━━━━━━━\n1. Get key from: https://logo.dev\n2. Set as LOGO_DEV_API_KEY in panel\n3. Restart bot"
+        text: UI.KEY + " *Logo.dev API Key Required*\n┈┄┈┄✦┈┄┈┄✦┈┄┈┄\n1. Get key from: https://logo.dev\n2. Set as LOGO_DEV_API_KEY in panel\n3. Restart bot"
       }, {
         quoted: _0x51375a
       });
@@ -34,7 +34,7 @@ export default {
         headers: {
           'Content-Type': "application/json",
           Authorization: "Bearer " + _0x28df7f,
-          'User-Agent': 'WolfBot/1.0'
+          'User-Agent': 'VIPBOT/1.0'
         },
         body: JSON.stringify({
           company_name: _0x4f84dc,
@@ -48,7 +48,7 @@ export default {
       if (!_0x5e91b5.ok) {
         const _0x22df33 = await _0x5e91b5.text();
         if (_0x5e91b5.status === 402) return _0x19b6f8.sendMessage(_0x51375a.key.remoteJid, {
-          text: UI.CREDIT_CARD + " *Logo.dev Credits Exhausted*\n━━━━━━━━━━━━━━━━━\nYou've used all API credits.\n\n*Pricing:*\n• 10 credits = $9/month\n• 50 credits = $39/month\n• Get more: https://logo.dev/pricing"
+          text: UI.CREDIT_CARD + " *Logo.dev Credits Exhausted*\n┈┄┈┄✦┈┄┈┄✦┈┄┈┄\nYou've used all API credits.\n\n*Pricing:*\n• 10 credits = $9/month\n• 50 credits = $39/month\n• Get more: https://logo.dev/pricing"
         }, {
           quoted: _0x51375a
         });
@@ -68,13 +68,13 @@ export default {
       const _0x5e574a = _0x35a12a.logos[0].url, _0x5432cc = await _0x4ae213(_0x5e574a), _0x18e02a = await _0x5432cc.buffer();
       await _0x19b6f8.sendMessage(_0x51375a.key.remoteJid, {
         image: _0x18e02a,
-        caption: MEDIA.DESIGN + " *Generated Logo for " + _0x4f84dc + "*\n━━━━━━━━━━━━━━━━━\n*Style:* " + (_0x2ec5b4.style || "modern") + '\x0a*Color:*\x20' + (_0x2ec5b4.color || "blue") + '\x0a*Variants:*\x20' + _0x35a12a.logos.length + " generated\n\n*Commands:*\n.logoai " + _0x4f84dc + " --style=minimal\n.logoai " + _0x4f84dc + " --color=red"
+        caption: MEDIA.DESIGN + " *Generated Logo for " + _0x4f84dc + "*\n┈┄┈┄✦┈┄┈┄✦┈┄┈┄\n*Style:* " + (_0x2ec5b4.style || "modern") + '\x0a*Color:*\x20' + (_0x2ec5b4.color || "blue") + '\x0a*Variants:*\x20' + _0x35a12a.logos.length + " generated\n\n*Commands:*\n.logoai " + _0x4f84dc + " --style=minimal\n.logoai " + _0x4f84dc + " --color=red"
       }, {
         quoted: _0x51375a
       });
     } catch (_0x28fcf3) {
       (console.error("LogoAI Error:", _0x28fcf3), await _0x19b6f8.sendMessage(_0x51375a.key.remoteJid, {
-        text: STATUS.ERROR + " *Logo Generation Failed*\n━━━━━━━━━━━━━━━━━\n" + _0x28fcf3.message + "\n\n*Alternative:* Use .brandlogo to fetch existing logos"
+        text: STATUS.ERROR + " *Logo Generation Failed*\n┈┄┈┄✦┈┄┈┄✦┈┄┈┄\n" + _0x28fcf3.message + "\n\n*Alternative:* Use .brandlogo to fetch existing logos"
       }, {
         quoted: _0x51375a
       }));

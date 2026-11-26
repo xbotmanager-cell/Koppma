@@ -142,7 +142,7 @@ export default {
           single: AUTOMATION.U1F3AF + " Single chat: " + (autoRecordingConfig.targetJid || "none")
         };
         return _0x32fa7a.sendMessage(_0x50cfd5, {
-          text: "╭─⌈ " + AUTOMATION.U1F3A4 + " *AUTO-RECORDING* ⌋\n│\n│ Mode: " + (_0x423819[autoRecordingConfig.mode] || autoRecordingConfig.mode) + "\n│ Duration: " + autoRecordingConfig.duration + "s\n│ Active: " + autoRecordingConfig.activeRecorders.size + '\x0a│\x0a├─⊷\x20*' + _0x4beba7 + "autorecording <number>*\n│  └⊷ Record only in that person's DM\n│  └⊷ e.g. " + _0x4beba7 + "autorecording 254703397679\n├─⊷ *" + _0x4beba7 + 'autorecording\x20dm*\x0a│\x20\x20└⊷\x20All\x20DMs\x0a├─⊷\x20*' + _0x4beba7 + "autorecording groups*\n│  └⊷ All groups\n├─⊷ *" + _0x4beba7 + "autorecording both*\n│  └⊷ DMs + Groups\n├─⊷ *" + _0x4beba7 + "autorecording off*\n│  └⊷ Disable\n├─⊷ *" + _0x4beba7 + "autorecording <1-120>*\n│  └⊷ Set duration\n╰⊷ " + getFooter(_0x5ac28f.key.participant || _0x5ac28f.key.remoteJid)
+          text: "╭┄〔 " + AUTOMATION.U1F3A4 + " *AUTO-RECORDING* 〕┄╮\n┆\n┆ Mode: " + (_0x423819[autoRecordingConfig.mode] || autoRecordingConfig.mode) + "\n┆ Duration: " + autoRecordingConfig.duration + "s\n┆ Active: " + autoRecordingConfig.activeRecorders.size + '\x0a┆\x0a┆ ✦ *' + _0x4beba7 + "autorecording <number>*\n┆   └─ Record only in that person's DM\n┆   └─ e.g. " + _0x4beba7 + "autorecording 255780470905\n┆ ✦ *" + _0x4beba7 + 'autorecording\x20dm*\x0a┆ \x20╰┄ \x20All\x20DMs\x0a┆ ✦ *' + _0x4beba7 + "autorecording groups*\n┆   └─ All groups\n┆ ✦ *" + _0x4beba7 + "autorecording both*\n┆   └─ DMs + Groups\n┆ ✦ *" + _0x4beba7 + "autorecording off*\n┆   └─ Disable\n┆ ✦ *" + _0x4beba7 + "autorecording <1-120>*\n┆   └─ Set duration\n╰┄ " + getFooter(_0x5ac28f.key.participant || _0x5ac28f.key.remoteJid)
         }, {
           quoted: _0x5ac28f
         });
@@ -184,7 +184,7 @@ export default {
         });
       }
       return _0x32fa7a.sendMessage(_0x50cfd5, {
-        text: "╭─⌈ " + AUTOMATION.U1F3A4 + " *AUTO-RECORDING* ⌋\n│\n├─⊷ *" + _0x4beba7 + 'autorecording\x20<number>*\x0a│\x20\x20└⊷\x20Target\x20one\x20specific\x20chat\x0a│\x20\x20└⊷\x20e.g.\x20' + _0x4beba7 + 'autorecording\x20254703397679\x0a├─⊷\x20*' + _0x4beba7 + "autorecording dm*\n│  └⊷ All DMs\n├─⊷ *" + _0x4beba7 + "autorecording groups*\n│  └⊷ All groups\n├─⊷ *" + _0x4beba7 + "autorecording both*\n│  └⊷ DMs + Groups\n├─⊷ *" + _0x4beba7 + "autorecording off*\n│  └⊷ Disable\n├─⊷ *" + _0x4beba7 + "autorecording <1-120>*\n│  └⊷ Set duration\n╰⊷ " + getFooter(_0x5ac28f.key.participant || _0x5ac28f.key.remoteJid)
+        text: "╭┄〔 " + AUTOMATION.U1F3A4 + " *AUTO-RECORDING* 〕┄╮\n┆\n┆ ✦ *" + _0x4beba7 + 'autorecording\x20<number>*\x0a┆ \x20╰┄ \x20Target\x20one\x20specific\x20chat\x0a┆ \x20╰┄ \x20e.g.\x20' + _0x4beba7 + 'autorecording\x20255780470905\x0a┆ ✦ *' + _0x4beba7 + "autorecording dm*\n┆   └─ All DMs\n┆ ✦ *" + _0x4beba7 + "autorecording groups*\n┆   └─ All groups\n┆ ✦ *" + _0x4beba7 + "autorecording both*\n┆   └─ DMs + Groups\n┆ ✦ *" + _0x4beba7 + "autorecording off*\n┆   └─ Disable\n┆ ✦ *" + _0x4beba7 + "autorecording <1-120>*\n┆   └─ Set duration\n╰┄ " + getFooter(_0x5ac28f.key.participant || _0x5ac28f.key.remoteJid)
       }, {
         quoted: _0x5ac28f
       });

@@ -48,7 +48,7 @@ export default {
     }, {
       quoted: _0x33687f
     }), _0x1d3e23 = getImageMessage(_0x33687f);
-    if (!_0x1d3e23) return _0x4a19c7("╭─⌈ *ENLARGER* ⌋\n" + '│\x0a' + "├─⊷ *Usage:* Reply to an image with\n" + ("│  " + _0x25aacb + "enlarger\n") + '│\x0a' + "├─⊷ AI upscales & enhances the image\n" + "│  resolution using xcasper AI\n" + '│\x0a' + ("╰⊷ " + getFooter(_0x33687f.key.participant || _0x33687f.key.remoteJid)));
+    if (!_0x1d3e23) return _0x4a19c7("╭┄〔 *ENLARGER* 〕┄╮\n" + '┆\x0a' + "┆ ✦ *Usage:* Reply to an image with\n" + ("┆  " + _0x25aacb + "enlarger\n") + '┆\x0a' + "┆ ✦ AI upscales & enhances the image\n" + "┆  resolution using xcasper AI\n" + '┆\x0a' + ("╰┄ " + getFooter(_0x33687f.key.participant || _0x33687f.key.remoteJid)));
     await _0x3f59fa.sendMessage(_0x1aad52, {
       react: {
         text: '' + STATUS.LOADING,

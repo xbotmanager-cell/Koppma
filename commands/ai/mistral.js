@@ -11,7 +11,7 @@ export default {
     const _0xb4208e = _0x572164.key.remoteJid;
     let _0x349a27 = _0x415d67.length > 0 ? _0x415d67.join('\x20') : _0x572164.quoted?.text || '';
     if (!_0x349a27) return _0x2bd685.sendMessage(_0xb4208e, {
-      text: '╭─⌈\x20' + UI.SWIRL + " *MISTRAL AI* ⌋\n├─⊷ *" + _0xc84f77 + "mistral <question>*\n│  └⊷ Mistral AI open-source model\n╰⊷ " + getFooter(_0x572164.key.participant || _0x572164.key.remoteJid)
+      text: '╭┄〔 \x20' + UI.SWIRL + " *MISTRAL AI* 〕┄╮\n┆ ✦ *" + _0xc84f77 + "mistral <question>*\n┆   └─ Mistral AI open-source model\n╰┄ " + getFooter(_0x572164.key.participant || _0x572164.key.remoteJid)
     }, {
       quoted: _0x572164
     });
@@ -30,7 +30,7 @@ export default {
           key: _0x572164.key
         }
       }), await _0x2bd685.sendMessage(_0xb4208e, {
-        text: UI.SWIRL + " *MISTRAL AI*\n━━━━━━━━━━━━━━━━━\n" + _0x50e376 + "\n━━━━━━━━━━━━━━━━━\n" + getFooter(_0x572164.key.participant || _0x572164.key.remoteJid)
+        text: UI.SWIRL + " *MISTRAL AI*\n┈┄┈┄✦┈┄┈┄✦┈┄┈┄\n" + _0x50e376 + "\n┈┄┈┄✦┈┄┈┄✦┈┄┈┄\n" + getFooter(_0x572164.key.participant || _0x572164.key.remoteJid)
       }, {
         quoted: _0x572164
       }));

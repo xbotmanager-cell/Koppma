@@ -10,7 +10,7 @@ export default {
   async execute(_0xc7fa46, _0x350a28, _0x2c48c4, _0x45a7c3, _0x36377e) {
     const _0xe5201c = _0x350a28.key.remoteJid, _0x263adb = _0x350a28.key.participant || _0xe5201c;
     if (_0x2c48c4.length === 0 || _0x2c48c4[0].toLowerCase() === "help") {
-      const _0x249e9b = "╭─⌈ " + SOCIAL.BOT + " *META AI* ⌋\n├─⊷ *" + _0x45a7c3 + "metai <question>*\n│  └⊷ Ask Meta AI anything\n├─⊷ *" + _0x45a7c3 + "meta <question>*\n│  └⊷ Alias for metai\n├─⊷ *" + _0x45a7c3 + "metaai <question>*\n│  └⊷ Alias for metai\n╰⊷ " + getFooter(_0x350a28.key.participant || _0x350a28.key.remoteJid);
+      const _0x249e9b = "╭┄〔 " + SOCIAL.BOT + " *META AI* 〕┄╮\n┆ ✦ *" + _0x45a7c3 + "metai <question>*\n┆   └─ Ask Meta AI anything\n┆ ✦ *" + _0x45a7c3 + "meta <question>*\n┆   └─ Alias for metai\n┆ ✦ *" + _0x45a7c3 + "metaai <question>*\n┆   └─ Alias for metai\n╰┄ " + getFooter(_0x350a28.key.participant || _0x350a28.key.remoteJid);
       return _0xc7fa46.sendMessage(_0xe5201c, {
         text: _0x249e9b
       }, {
@@ -71,9 +71,9 @@ export default {
         },
         timeout: 30000,
         headers: {
-          'User-Agent': "WolfBot-MetaAI/1.0",
+          'User-Agent': "VIPBOT-MetaAI/1.0",
           Accept: "application/json",
-          'X-Requested-With': "WolfBot",
+          'X-Requested-With': "VIPBOT",
           Referer: "https://apiskeith.vercel.app/"
         },
         validateStatus: function (_0x101623) {

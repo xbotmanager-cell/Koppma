@@ -11,7 +11,7 @@ export default {
     const _0x199a9d = _0x1df624.key.remoteJid;
     let _0x502b8 = _0x20bf8d.length > 0 ? _0x20bf8d.join('\x20') : _0x1df624.quoted?.text || '';
     if (!_0x502b8) return _0x341165.sendMessage(_0x199a9d, {
-      text: "╭─⌈ " + UI.MOUSE + " *TINYLLAMA AI* ⌋\n├─⊷ *" + _0x2568cf + "tinyllama <question>*\n│  └⊷ TinyLlama compact model\n╰⊷ " + getFooter(_0x1df624.key.participant || _0x1df624.key.remoteJid)
+      text: "╭┄〔 " + UI.MOUSE + " *TINYLLAMA AI* 〕┄╮\n┆ ✦ *" + _0x2568cf + "tinyllama <question>*\n┆   └─ TinyLlama compact model\n╰┄ " + getFooter(_0x1df624.key.participant || _0x1df624.key.remoteJid)
     }, {
       quoted: _0x1df624
     });
@@ -30,7 +30,7 @@ export default {
           key: _0x1df624.key
         }
       }), await _0x341165.sendMessage(_0x199a9d, {
-        text: UI.MOUSE + '\x20*TINYLLAMA\x20AI*\x0a━━━━━━━━━━━━━━━━━\x0a' + _0x34a933 + "\n━━━━━━━━━━━━━━━━━\n" + getFooter(_0x1df624.key.participant || _0x1df624.key.remoteJid)
+        text: UI.MOUSE + '\x20*TINYLLAMA\x20AI*\x0a┈┄┈┄✦┈┄┈┄✦┈┄┈┄\x0a' + _0x34a933 + "\n┈┄┈┄✦┈┄┈┄✦┈┄┈┄\n" + getFooter(_0x1df624.key.participant || _0x1df624.key.remoteJid)
       }, {
         quoted: _0x1df624
       }));

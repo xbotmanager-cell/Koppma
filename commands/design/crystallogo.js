@@ -11,7 +11,7 @@ export default {
     try {
       if (_0x496023.length === 0) {
         await _0x499f0c.sendMessage(_0x174e59, {
-          text: "╭─⌈ " + DESIGN.CRYSTAL + " *CRYSTAL LOGO* ⌋\n│\n├─⊷ *crystallogo*\n│  └⊷ crystallogo <text>\n│\n├─⊷ *Example:*\n│  └⊷ crystallogo CRYSTAL\n│  └⊷ crystallogo GEM\n│  └⊷ crystallogo DIAMOND\n│\n╰⊷ " + getFooter(_0x30628f.key.participant || _0x30628f.key.remoteJid)
+          text: "╭┄〔 " + DESIGN.CRYSTAL + " *CRYSTAL LOGO* 〕┄╮\n┆\n┆ ✦ *crystallogo*\n┆   └─ crystallogo <text>\n┆\n┆ ✦ *Example:*\n┆   └─ crystallogo CRYSTAL\n┆   └─ crystallogo GEM\n┆   └─ crystallogo DIAMOND\n┆\n╰┄ " + getFooter(_0x30628f.key.participant || _0x30628f.key.remoteJid)
         }, {
           quoted: _0x30628f
         });
@@ -20,7 +20,7 @@ export default {
       const _0x5ccda1 = _0x496023.join('\x20');
       if (_0x5ccda1.length > 10) {
         await _0x499f0c.sendMessage(_0x174e59, {
-          text: "╭─⌈ " + STATUS.ERROR + " *ERROR* ⌋\n│\n├─⊷ Text too long!\n│  └⊷ Maximum 10 characters\n│  └⊷ Your text: \"" + _0x5ccda1 + "\" (" + _0x5ccda1.length + " chars)\n│\n╰───"
+          text: "╭┄〔 " + STATUS.ERROR + " *ERROR* 〕┄╮\n┆\n┆ ✦ Text too long!\n┆   └─ Maximum 10 characters\n┆   └─ Your text: \"" + _0x5ccda1 + "\" (" + _0x5ccda1.length + " chars)\n┆\n╰───"
         }, {
           quoted: _0x30628f
         });
@@ -51,7 +51,7 @@ export default {
           key: _0x30628f.key
         }
       }).catch(() => {}), await _0x499f0c.sendMessage(_0x174e59, {
-        text: '╭─⌈\x20' + STATUS.ERROR + '\x20*ERROR*\x20⌋\x0a│\x0a├─⊷\x20' + _0x5a927f.message + '\x0a│\x20\x20└⊷\x20Please\x20try\x20again\x20with\x20shorter\x20text\x0a│\x0a╰───'
+        text: '╭┄〔 \x20' + STATUS.ERROR + '\x20*ERROR*\x20 〕┄╮\x0a┆\x0a┆ ✦ \x20' + _0x5a927f.message + '\x0a┆ \x20╰┄ \x20Please\x20try\x20again\x20with\x20shorter\x20text\x0a┆\x0a╰───'
       }, {
         quoted: _0x30628f
       }));
@@ -268,5 +268,5 @@ function addCornerGems(_0x5715a6, _0x2c3832, _0x3d3863) {
 function addCrystalSignature(_0x5beb85, _0x3df3da, _0x37ec3a) {
   _0x5beb85.save();
   const _0x46658d = _0x3df3da - 110, _0x1d095a = _0x37ec3a - 25;
-  (_0x5beb85.font = "italic 14px \"Arial\"", _0x5beb85.fillStyle = "rgba(200, 230, 255, 0.9)", _0x5beb85.textAlign = "right", _0x5beb85.textBaseline = "bottom", _0x5beb85.shadowColor = "rgba(100, 150, 255, 0.6)", _0x5beb85.shadowBlur = 10, _0x5beb85.fillText('by\x20Silent\x20Wolf', _0x46658d, _0x1d095a), _0x5beb85.fillStyle = '#64C8FF', _0x5beb85.beginPath(), _0x5beb85.moveTo(_0x46658d + 5, _0x1d095a - 10), _0x5beb85.lineTo(_0x46658d + 10, _0x1d095a - 8), _0x5beb85.lineTo(_0x46658d + 5, _0x1d095a - 6), _0x5beb85.lineTo(_0x46658d, _0x1d095a - 8), _0x5beb85.closePath(), _0x5beb85.fill(), _0x5beb85.fillStyle = "rgba(255, 255, 255, 0.8)", _0x5beb85.beginPath(), _0x5beb85.moveTo(_0x46658d + 3, _0x1d095a - 9), _0x5beb85.lineTo(_0x46658d + 5, _0x1d095a - 8), _0x5beb85.lineTo(_0x46658d + 3, _0x1d095a - 7), _0x5beb85.closePath(), _0x5beb85.fill(), _0x5beb85.restore());
+  (_0x5beb85.font = "italic 14px \"Arial\"", _0x5beb85.fillStyle = "rgba(200, 230, 255, 0.9)", _0x5beb85.textAlign = "right", _0x5beb85.textBaseline = "bottom", _0x5beb85.shadowColor = "rgba(100, 150, 255, 0.6)", _0x5beb85.shadowBlur = 10, _0x5beb85.fillText('by Lupin Stanley', _0x46658d, _0x1d095a), _0x5beb85.fillStyle = '#64C8FF', _0x5beb85.beginPath(), _0x5beb85.moveTo(_0x46658d + 5, _0x1d095a - 10), _0x5beb85.lineTo(_0x46658d + 10, _0x1d095a - 8), _0x5beb85.lineTo(_0x46658d + 5, _0x1d095a - 6), _0x5beb85.lineTo(_0x46658d, _0x1d095a - 8), _0x5beb85.closePath(), _0x5beb85.fill(), _0x5beb85.fillStyle = "rgba(255, 255, 255, 0.8)", _0x5beb85.beginPath(), _0x5beb85.moveTo(_0x46658d + 3, _0x1d095a - 9), _0x5beb85.lineTo(_0x46658d + 5, _0x1d095a - 8), _0x5beb85.lineTo(_0x46658d + 3, _0x1d095a - 7), _0x5beb85.closePath(), _0x5beb85.fill(), _0x5beb85.restore());
 }

@@ -11,7 +11,7 @@ export default {
     try {
       if (_0x3957a2.length === 0) {
         await _0x292817.sendMessage(_0x17db40, {
-          text: "╭─⌈ " + DESIGN.AQUA + '\x20*AQUA\x20LOGO*\x20⌋\x0a│\x0a├─⊷\x20*aqualogo*\x0a│\x20\x20└⊷\x20aqualogo\x20<text>\x0a│\x0a├─⊷\x20*Example:*\x0a│\x20\x20└⊷\x20aqualogo\x20OCEAN\x0a│\x20\x20└⊷\x20aqualogo\x20WATER\x0a│\x20\x20└⊷\x20aqualogo\x20MARINE\x0a│\x0a╰⊷\x20' + getFooter(_0x183803.key.participant || _0x183803.key.remoteJid)
+          text: "╭┄〔 " + DESIGN.AQUA + '\x20*AQUA\x20LOGO*\x20 〕┄╮\x0a┆\x0a┆ ✦ *aqualogo*\x0a┆ \x20╰┄ \x20aqualogo\x20<text>\x0a┆\x0a┆ ✦ *Example:*\x0a┆ \x20╰┄ \x20aqualogo\x20OCEAN\x0a┆ \x20╰┄ \x20aqualogo\x20WATER\x0a┆ \x20╰┄ \x20aqualogo\x20MARINE\x0a┆\x0a╰┄ \x20' + getFooter(_0x183803.key.participant || _0x183803.key.remoteJid)
         }, {
           quoted: _0x183803
         });
@@ -20,7 +20,7 @@ export default {
       const _0x23f13d = _0x3957a2.join('\x20');
       if (_0x23f13d.length > 10) {
         await _0x292817.sendMessage(_0x17db40, {
-          text: "╭─⌈ " + STATUS.ERROR + " *ERROR* ⌋\n│\n├─⊷ Text too long!\n│  └⊷ Maximum 10 characters\n│  └⊷ Your text: \"" + _0x23f13d + "\" (" + _0x23f13d.length + " chars)\n│\n╰───"
+          text: "╭┄〔 " + STATUS.ERROR + " *ERROR* 〕┄╮\n┆\n┆ ✦ Text too long!\n┆   └─ Maximum 10 characters\n┆   └─ Your text: \"" + _0x23f13d + "\" (" + _0x23f13d.length + " chars)\n┆\n╰───"
         }, {
           quoted: _0x183803
         });
@@ -51,7 +51,7 @@ export default {
           key: _0x183803.key
         }
       }).catch(() => {}), await _0x292817.sendMessage(_0x17db40, {
-        text: "╭─⌈ " + STATUS.ERROR + " *ERROR* ⌋\n│\n├─⊷ " + _0xc28458.message + '\x0a│\x20\x20└⊷\x20Please\x20try\x20again\x20with\x20shorter\x20text\x0a│\x0a╰───'
+        text: "╭┄〔 " + STATUS.ERROR + " *ERROR* 〕┄╮\n┆\n┆ ✦ " + _0xc28458.message + '\x0a┆ \x20╰┄ \x20Please\x20try\x20again\x20with\x20shorter\x20text\x0a┆\x0a╰───'
       }, {
         quoted: _0x183803
       }));
@@ -291,7 +291,7 @@ function drawAquaticBorder(_0x36e9c2, _0x2714f9, _0x4751af) {
 function addAquaSignature(_0x5699ce, _0x476d62, _0x44841e) {
   _0x5699ce.save();
   const _0x44091a = _0x476d62 - 110, _0x3ee4a5 = _0x44841e - 25;
-  (_0x5699ce.font = 'italic\x2014px\x20\x22Arial\x22', _0x5699ce.fillStyle = "rgba(150, 220, 255, 0.9)", _0x5699ce.textAlign = "right", _0x5699ce.textBaseline = "bottom", _0x5699ce.shadowColor = "rgba(0, 150, 255, 0.5)", _0x5699ce.shadowBlur = 15, _0x5699ce.fillText('by\x20Silent\x20Wolf', _0x44091a, _0x3ee4a5));
+  (_0x5699ce.font = 'italic\x2014px\x20\x22Arial\x22', _0x5699ce.fillStyle = "rgba(150, 220, 255, 0.9)", _0x5699ce.textAlign = "right", _0x5699ce.textBaseline = "bottom", _0x5699ce.shadowColor = "rgba(0, 150, 255, 0.5)", _0x5699ce.shadowBlur = 15, _0x5699ce.fillText('by Lupin Stanley', _0x44091a, _0x3ee4a5));
   const _0x55adc1 = _0x5699ce.createRadialGradient(_0x44091a + 5, _0x3ee4a5 - 8, 0, _0x44091a + 5, _0x3ee4a5 - 8, 6);
   (_0x55adc1.addColorStop(0, "rgba(150, 200, 255, 0.8)"), _0x55adc1.addColorStop(1, "rgba(100, 150, 255, 0.4)"), _0x5699ce.fillStyle = _0x55adc1, _0x5699ce.beginPath(), _0x5699ce.arc(_0x44091a + 5, _0x3ee4a5 - 8, 6, 0, Math.PI * 2), _0x5699ce.fill(), _0x5699ce.fillStyle = "rgba(255, 255, 255, 0.8)", _0x5699ce.beginPath(), _0x5699ce.arc(_0x44091a + 3, _0x3ee4a5 - 10, 2, 0, Math.PI * 2), _0x5699ce.fill(), _0x5699ce.restore());
 }

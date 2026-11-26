@@ -12,7 +12,7 @@ export default {
   async execute(_0x2d3353, _0x34e85c, _0x3ec93f, _0x545973) {
     const _0x83a0fd = _0x34e85c.key.remoteJid, _0x542bc2 = getOwnerName().toUpperCase(), _0x5ae991 = _0x34e85c.message?.extendedTextMessage?.contextInfo?.quotedMessage, _0x109977 = _0x5ae991?.imageMessage, _0x58b6a4 = (_0x3ec93f.join('\x20').match(/\bhttps?:\/\/\S+/i) || [])[0], _0x454110 = _0x3ec93f.join('\x20').replace(_0x58b6a4 || '', '').trim() || "Analyze this image and describe what you see in great detail";
     if (!_0x109977 && !_0x58b6a4) return _0x2d3353.sendMessage(_0x83a0fd, {
-      text: "╭─⌈ " + UI.MICROSCOPE + " *VISION PRO AI* ⌋\n├─⊷ *" + _0x545973 + "visionpro <question>*\n│  └⊷ Reply to an image or add a URL\n╰⊷ " + getFooter(_0x34e85c.key.participant || _0x34e85c.key.remoteJid)
+      text: "╭┄〔 " + UI.MICROSCOPE + " *VISION PRO AI* 〕┄╮\n┆ ✦ *" + _0x545973 + "visionpro <question>*\n┆   └─ Reply to an image or add a URL\n╰┄ " + getFooter(_0x34e85c.key.participant || _0x34e85c.key.remoteJid)
     }, {
       quoted: _0x34e85c
     });
@@ -46,7 +46,7 @@ export default {
           key: _0x34e85c.key
         }
       }), await _0x2d3353.sendMessage(_0x83a0fd, {
-        text: UI.MICROSCOPE + " *VISION PRO AI*\n━━━━━━━━━━━━━━━━━\n" + _0x5217d4 + '\x0a━━━━━━━━━━━━━━━━━\x0a' + SOCIAL.BOT + '\x20_' + MODEL + '_\x0a' + getFooter(_0x34e85c.key.participant || _0x34e85c.key.remoteJid)
+        text: UI.MICROSCOPE + " *VISION PRO AI*\n┈┄┈┄✦┈┄┈┄✦┈┄┈┄\n" + _0x5217d4 + '\x0a┈┄┈┄✦┈┄┈┄✦┈┄┈┄\x0a' + SOCIAL.BOT + '\x20_' + MODEL + '_\x0a' + getFooter(_0x34e85c.key.participant || _0x34e85c.key.remoteJid)
       }, {
         quoted: _0x34e85c
       }));

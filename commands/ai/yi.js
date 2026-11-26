@@ -11,7 +11,7 @@ export default {
     const _0xa9f759 = _0x2d3bc9.key.remoteJid;
     let _0x416aed = _0x1ced9b.length > 0 ? _0x1ced9b.join('\x20') : _0x2d3bc9.quoted?.text || '';
     if (!_0x416aed) return _0x30165a.sendMessage(_0xa9f759, {
-      text: "╭─⌈ " + SOCIAL.EARTH + " *YI AI* ⌋\n├─⊷ *" + _0x5ba545 + 'yi\x20<question>*\x0a│\x20\x20└⊷\x20Yi\x20bilingual\x20AI\x20model\x0a╰⊷\x20' + getFooter(_0x2d3bc9.key.participant || _0x2d3bc9.key.remoteJid)
+      text: "╭┄〔 " + SOCIAL.EARTH + " *YI AI* 〕┄╮\n┆ ✦ *" + _0x5ba545 + 'yi\x20<question>*\x0a┆ \x20╰┄ \x20Yi\x20bilingual\x20AI\x20model\x0a╰┄ \x20' + getFooter(_0x2d3bc9.key.participant || _0x2d3bc9.key.remoteJid)
     }, {
       quoted: _0x2d3bc9
     });
@@ -30,7 +30,7 @@ export default {
           key: _0x2d3bc9.key
         }
       }), await _0x30165a.sendMessage(_0xa9f759, {
-        text: SOCIAL.EARTH + " *YI AI*\n━━━━━━━━━━━━━━━━━\n" + _0x57caed + '\x0a━━━━━━━━━━━━━━━━━\x0a' + getFooter(_0x2d3bc9.key.participant || _0x2d3bc9.key.remoteJid)
+        text: SOCIAL.EARTH + " *YI AI*\n┈┄┈┄✦┈┄┈┄✦┈┄┈┄\n" + _0x57caed + '\x0a┈┄┈┄✦┈┄┈┄✦┈┄┈┄\x0a' + getFooter(_0x2d3bc9.key.participant || _0x2d3bc9.key.remoteJid)
       }, {
         quoted: _0x2d3bc9
       }));

@@ -109,16 +109,16 @@ const pendingActions = new Map(), PENDING_TIMEOUT = 120000, MEDIA_REACTIONS = {
     command: "play"
   },
   playVideo: {
-    vaguePatterns: [/^(?:can you |could you |wolf,?\s+)?(?:play|download|get|find|show)\s+(?:a\s+)?(?:video|vid|clip)\s*\??$/i, /^(?:i want to (?:watch|see)|let me (?:watch|see)|show me)\s+(?:a\s+)?(?:video|something)\s*\??$/i],
-    specificPatterns: [/^(?:play|download|get|find|show)\s+(?:the\s+)?(?:video|vid|clip|movie)\s+(?:of|about|for)?\s*.{3,}/i, /^(?:play|download|get|find|show)\s+(?:me\s+)?(?:the\s+)?video\s+.{3,}/i, /^(?:can you |please |wolf,?\s+)?(?:play|download|get|show)\s+(?:the\s+)?(?:video|vid)\s+.{3,}/i, /^(?:i want to (?:watch|see)|let me (?:watch|see)|show me)\s+.{3,}/i, /^(?:play|download)\s+.{3,}\s+video$/i],
+    vaguePatterns: [/^(?:can you |could you |(?:vipbot|vip|wolf),?\s+)?(?:play|download|get|find|show)\s+(?:a\s+)?(?:video|vid|clip)\s*\??$/i, /^(?:i want to (?:watch|see)|let me (?:watch|see)|show me)\s+(?:a\s+)?(?:video|something)\s*\??$/i],
+    specificPatterns: [/^(?:play|download|get|find|show)\s+(?:the\s+)?(?:video|vid|clip|movie)\s+(?:of|about|for)?\s*.{3,}/i, /^(?:play|download|get|find|show)\s+(?:me\s+)?(?:the\s+)?video\s+.{3,}/i, /^(?:can you |please |(?:vipbot|vip|wolf),?\s+)?(?:play|download|get|show)\s+(?:the\s+)?(?:video|vid)\s+.{3,}/i, /^(?:i want to (?:watch|see)|let me (?:watch|see)|show me)\s+.{3,}/i, /^(?:play|download)\s+.{3,}\s+video$/i],
     extractQuery: _0x3e21f7 => {
       let _0x258143 = _0x3e21f7;
-      return (_0x258143 = _0x258143.replace(/^(?:can you |could you |please |wolf,?\s+)?(?:play|download|get|find|show)\s+(?:me\s+)?(?:the\s+)?(?:video|vid|clip|movie)\s*(?:of|about|for)?\s*/i, ''), _0x258143 = _0x258143.replace(/^(?:i want to (?:watch|see)|let me (?:watch|see)|show me)\s+/i, ''), _0x258143 = _0x258143.replace(/\s+(?:video|vid|clip)$/i, ''), _0x258143 = _0x258143.replace(/\s+(?:on youtube|from youtube|for me|please)$/i, ''), _0x258143.trim());
+      return (_0x258143 = _0x258143.replace(/^(?:can you |could you |please |(?:vipbot|vip|wolf),?\s+)?(?:play|download|get|find|show)\s+(?:me\s+)?(?:the\s+)?(?:video|vid|clip|movie)\s*(?:of|about|for)?\s*/i, ''), _0x258143 = _0x258143.replace(/^(?:i want to (?:watch|see)|let me (?:watch|see)|show me)\s+/i, ''), _0x258143 = _0x258143.replace(/\s+(?:video|vid|clip)$/i, ''), _0x258143 = _0x258143.replace(/\s+(?:on youtube|from youtube|for me|please)$/i, ''), _0x258143.trim());
     },
     command: 'video'
   },
   song: {
-    vaguePatterns: [/^(?:can you |could you |wolf,?\s+)?(?:download|get|send|give)\s+(?:me\s+)?(?:a\s+)?(?:song|music|audio)\s*\??$/i],
+    vaguePatterns: [/^(?:can you |could you |(?:vipbot|vip|wolf),?\s+)?(?:download|get|send|give)\s+(?:me\s+)?(?:a\s+)?(?:song|music|audio)\s*\??$/i],
     specificPatterns: [/^(?:download|get)\s+(?:the\s+)?(?:song|music|audio|mp3)\s+.{3,}/i, /^(?:send|give)\s+(?:me\s+)?(?:the\s+)?(?:song|music|audio)\s+.{3,}/i],
     extractQuery: _0x46b844 => {
       let _0x85045e = _0x46b844;
@@ -290,7 +290,7 @@ function clearConversation(_0x368cc8) {
     bot_id: _0x2848b9
   }).catch(() => {});
 }
-function buildContextPrompt(_0xd6f48d, _0x2518d7, _0x316996 = "W.O.L.F", _0x31e081 = null, _0x31716f = "WOLF TECH") {
+function buildContextPrompt(_0xd6f48d, _0x2518d7, _0x316996 = "VIPBOT", _0x31e081 = null, _0x31716f = "Lupin Stanley") {
   const _0x1bef44 = _0x316996, _0x2b2322 = _0x31716f, _0x5268df = _0x31e081 ? buildProfileContext(_0x31e081) : '';
   let _0x862bb = "You are " + _0x1bef44 + ',\x20an\x20elite\x20AI\x20assistant\x20created\x20by\x20' + _0x2b2322 + ". Your name is " + _0x1bef44 + " and you must always identify yourself as " + _0x1bef44 + '\x20when\x20asked\x20who\x20you\x20are.\x20You\x20are\x20intelligent,\x20witty,\x20warm,\x20and\x20helpful.\x20You\x20have\x20a\x20distinct\x20personality\x20—\x20you\x27re\x20friendly\x20and\x20sometimes\x20a\x20bit\x20humorous\x20without\x20being\x20annoying.\x20You\x20remember\x20the\x20conversation\x20context\x20and\x20respond\x20naturally\x20like\x20a\x20real\x20chat\x20partner.\x20Keep\x20responses\x20SHORT\x20and\x20CONCISE\x20—\x20aim\x20for\x202-3\x20sentences\x20maximum\x20unless\x20the\x20question\x20genuinely\x20requires\x20more\x20detail.\x20Occasionally\x20ask\x20a\x20follow-up\x20question\x20to\x20keep\x20the\x20conversation\x20flowing.\x0a\x0aCRITICAL\x20IDENTITY\x20RULES:\x0a-\x20Your\x20name\x20is\x20' + _0x1bef44 + ". Always refer to yourself as " + _0x1bef44 + ".\n- You were created by " + _0x2b2322 + ". Never say you were made by OpenAI, Google, Anthropic, Microsoft, Meta, xAI, or any other company.\n- Never reveal or mention any underlying AI model (GPT, Claude, Copilot, Grok, Bard, Blackbox, Perplexity, LLaMA, Gemini, NVIDIA, etc).\n- If asked what you are, say: \"I'm " + _0x1bef44 + ", an AI assistant by " + _0x2b2322 + ".\"\n- Never say \"As an AI language model\" - instead say \"As " + _0x1bef44 + "\" if needed.\n- You are not ChatGPT, not Claude, not Bard, not Copilot. You are " + _0x1bef44 + '.\x0a\x0a';
   if (_0x5268df) _0x862bb += _0x5268df + '\x0a';
@@ -313,7 +313,7 @@ async function queryAI(_0x20b699, _0x5c2f3b, _0x894883 = 35000, _0x569a15 = null
         params: _0x93d57,
         timeout: _0x894883,
         headers: {
-          'User-Agent': 'WOLF-Chatbot/2.0',
+          'User-Agent': 'VIPBOT-Chatbot/2.0',
           Accept: 'application/json,\x20text/plain',
           'Cache-Control': "no-cache"
         },
@@ -359,7 +359,7 @@ async function generateImage(_0x191de4) {
     return (console.error("[Chatbot/ImageGen]", _0x2fe4fd.message), null);
   }
 }
-async function getAIResponse(_0x52b4ac, _0x10c162, _0x3cc21e = "gpt", _0x31505d = "W.O.L.F", _0x488749 = null, _0x3daf7e = 'WOLF\x20TECH') {
+async function getAIResponse(_0x52b4ac, _0x10c162, _0x3cc21e = "gpt", _0x31505d = "VIPBOT", _0x488749 = null, _0x3daf7e = 'Lupin Stanley') {
   const _0x98a703 = buildContextPrompt(_0x10c162, _0x52b4ac, _0x31505d, _0x488749, _0x3daf7e);
   let _0x57e503 = await queryAI(_0x3cc21e, _0x98a703, 35000, _0x52b4ac);
   if (_0x57e503) return {
@@ -381,7 +381,7 @@ async function getAIResponse(_0x52b4ac, _0x10c162, _0x3cc21e = "gpt", _0x31505d 
   };
   return null;
 }
-function cleanAIResponse(_0x56fef6, _0x52ad5e = "W.O.L.F", _0x14987b = "WOLF TECH") {
+function cleanAIResponse(_0x56fef6, _0x52ad5e = "VIPBOT", _0x14987b = "Lupin Stanley") {
   if (!_0x56fef6) return '';
   const _0x55cc7f = _0x52ad5e, _0x10447e = _0x55cc7f.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
   (_0x56fef6 = _0x56fef6.replace(/\[\d+\]/g, ''), _0x56fef6 = _0x56fef6.replace(/Human:.*$/gm, ''), _0x56fef6 = _0x56fef6.replace(new RegExp('^' + _0x10447e + ":\\s*", "gim"), ''), _0x56fef6 = _0x56fef6.replace(/^(Assistant|AI|Bot|Claude|GPT|Grok|Copilot|Bard):\s*/gim, ''), _0x56fef6 = _0x56fef6.replace(/\b(ChatGPT|GPT-?[34o5]?|GPT|OpenAI)\b/gi, _0x55cc7f), _0x56fef6 = _0x56fef6.replace(/\b(Claude|Anthropic)\b/gi, _0x55cc7f), _0x56fef6 = _0x56fef6.replace(/\b(Copilot|Microsoft Copilot)\b/gi, _0x55cc7f), _0x56fef6 = _0x56fef6.replace(/\b(Google Bard|Bard|Gemini)\b/gi, _0x55cc7f), _0x56fef6 = _0x56fef6.replace(/\b(Grok|xAI)\b/gi, _0x55cc7f), _0x56fef6 = _0x56fef6.replace(/\b(Blackbox|Blackbox AI)\b/gi, _0x55cc7f), _0x56fef6 = _0x56fef6.replace(/\b(Perplexity|Perplexity AI)\b/gi, _0x55cc7f), _0x56fef6 = _0x56fef6.replace(/\b(LLaMA|Meta AI|Mistral)\b/gi, _0x55cc7f), _0x56fef6 = _0x56fef6.replace(/\bI'?m an AI (language )?model\b/gi, "I'm " + _0x55cc7f), _0x56fef6 = _0x56fef6.replace(/\bAs an AI (language )?model\b/gi, 'As\x20' + _0x55cc7f));
@@ -485,7 +485,7 @@ async function executeMediaCommand(_0x4272b5, _0x119a2b, _0x232234, _0x2b4005, _
       }
     }), true);
   } catch (_0x39a62f) {
-    return (console.error("[W.O.L.F] Media command error (" + _0x232234 + '):', _0x39a62f.message), await _0x4272b5.sendMessage(_0x119a2b.key.remoteJid, {
+    return (console.error("[VIPBOT] Media command error (" + _0x232234 + '):', _0x39a62f.message), await _0x4272b5.sendMessage(_0x119a2b.key.remoteJid, {
       react: {
         text: STATUS.ERROR,
         key: _0x119a2b.key
@@ -508,7 +508,7 @@ export async function handleChatbotMessage(_0x1b402a, _0x29922a, _0x16d126) {
   }
   const _0x2ff39a = normalizeMessageContent(_0x29922a.message), _0x491978 = _0x2ff39a?.conversation || _0x2ff39a?.extendedTextMessage?.text || _0x2ff39a?.imageMessage?.caption || _0x2ff39a?.videoMessage?.caption || '', _0x1969f7 = !!(_0x29922a.message?.imageMessage || _0x29922a.message?.viewOnceMessageV2?.message?.imageMessage);
   if (_0x1969f7) {
-    const _0x232f3f = loadConfig(), _0x431a3b = _0x232f3f.chatbotName || "W.O.L.F", _0x2071ea = _0x232f3f.techName || "WOLF TECH", _0x3c5cfd = _0x491978.trim() || "What is in this image? Describe it in detail.", _0x3bba0b = getBotId();
+    const _0x232f3f = loadConfig(), _0x431a3b = _0x232f3f.chatbotName || "VIPBOT", _0x2071ea = _0x232f3f.techName || "Lupin Stanley", _0x3c5cfd = _0x491978.trim() || "What is in this image? Describe it in detail.", _0x3bba0b = getBotId();
     let _0x15ae0f = loadProfile(_0x3bba0b, _0x590c16);
     try {
       (await _0x1b402a.sendPresenceUpdate("composing", _0x23b260), await _0x1b402a.sendMessage(_0x23b260, {
@@ -577,7 +577,7 @@ export async function handleChatbotMessage(_0x1b402a, _0x29922a, _0x16d126) {
       }), saveConversation(_0x590c16, _0x338e9b), true);
     }
   }
-  const _0x52308f = loadConfig(), _0x42b660 = _0x52308f.chatbotName || "W.O.L.F", _0x572c28 = _0x52308f.techName || "WOLF TECH", _0x42188c = loadConversation(_0x590c16), _0x34d8d8 = getBotId();
+  const _0x52308f = loadConfig(), _0x42b660 = _0x52308f.chatbotName || "VIPBOT", _0x572c28 = _0x52308f.techName || "Lupin Stanley", _0x42188c = loadConversation(_0x590c16), _0x34d8d8 = getBotId();
   let _0x174607 = loadProfile(_0x34d8d8, _0x590c16);
   const _0x2e4db1 = [/^(?:generate|create|make|draw|paint|design|render)\s+(?:me\s+)?(?:an?\s+)?(?:ai\s+)?(?:image|picture|photo|art|artwork|illustration|painting|wallpaper)\s+(?:of|showing|with|about)\s+(.+)/i, /^(?:generate|create|make|draw|paint)\s+(?:me\s+)?(?:an?\s+)?(?:image|picture|photo|art|painting)\s+(.+)/i, /^imagine\s+(.+)/i, /^flux\s+(.+)/i, /^(?:nvidia\s+)?(?:flux|image)\s+(.+)/i, /^(?:generate|create)\s+(?:ai\s+)?(?:image|art)\s+(.+)/i];
   let _0xdf0b99 = null;
@@ -692,13 +692,13 @@ async function sendChatbotHelp(_0x19688f, _0x53e9a8, _0x491e47, _0x4a4298, _0x31
     groups: SOCIAL.PEOPLE,
     dms: UI.CHAT,
     both: SOCIAL.GLOBE
-  }, _0xd70763 = AI_MODELS[_0x4a4298.preferredModel] || AI_MODELS.gpt, _0x371be9 = _0x4a4298.chatbotName || "W.O.L.F", _0x4d52d6 = _0x4a4298.techName || 'WOLF\x20TECH';
+  }, _0xd70763 = AI_MODELS[_0x4a4298.preferredModel] || AI_MODELS.gpt, _0x371be9 = _0x4a4298.chatbotName || "VIPBOT", _0x4d52d6 = _0x4a4298.techName || 'VIPBOT';
   let _0x2cea01, _0xeedc4d;
-  _0x31fe98 ? (_0x2cea01 = '╭─⌈\x20' + BRAND.WOLF + '\x20*' + _0x371be9 + " CHATBOT CUSTOMIZATION* ⌋\n" + ('│\x20' + (_0x65bb68[_0x4a4298.mode] || STATUS.OFFLINE) + " Status: " + _0x4a4298.mode.toUpperCase() + '\x0a') + ("├─⊷ *" + _0x2f24e4 + " name <name>*\n│  └⊷ Set chatbot name\n") + ("├─⊷ *" + _0x2f24e4 + " techname <name>*\n│  └⊷ Set creator/tech name\n") + ("├─⊷ *" + _0x2f24e4 + " model*\n│  └⊷ Switch AI model\n") + ("├─⊷ *" + _0x2f24e4 + " stats* / *settings*\n│  └⊷ View usage statistics or configuration\n") + ('├─⊷\x20*' + _0x2f24e4 + " clear*\n│  └⊷ Reset conversation history\n") + ('├─⌈\x20' + UI.CLIPBOARD + " *GROUP CONTROL* ⌋\n") + ("├─⊷ *" + _0x2f24e4 + '\x20addgroup*\x20/\x20*removegroup\x20[jid]*\x0a│\x20\x20└⊷\x20Enable\x20or\x20exclude\x20a\x20group\x0a') + ("├─⊷ *" + _0x2f24e4 + " listgroups* / *cleargroups*\n│  └⊷ View groups or clear exclusions\n") + ("├─⌈ " + SOCIAL.PERSON + '\x20*USER\x20FILTER\x20(per\x20group)*\x20⌋\x0a') + ("├─⊷ *" + _0x2f24e4 + " allowonly @user*\n│  └⊷ Reply only to selected users\n") + ("├─⊷ *" + _0x2f24e4 + '\x20blockuser\x20@user*\x20/\x20*allowuser\x20@user*\x0a│\x20\x20└⊷\x20Block\x20or\x20allow\x20users\x0a') + ("├─⊷ *" + _0x2f24e4 + " removeuser @user*\n│  └⊷ Remove a user from the filter\n") + ("├─⊷ *" + _0x2f24e4 + '\x20listusers*\x20/\x20*clearusers*\x0a│\x20\x20└⊷\x20View\x20or\x20clear\x20the\x20group\x20user\x20filter\x0a') + ("├─⌈ " + UI.CHAT + '\x20*DM\x20CONTROL*\x20⌋\x0a') + ("├─⊷ *" + _0x2f24e4 + '\x20adddm\x20<number>*\x20/\x20*removedm\x20<number>*\x0a│\x20\x20└⊷\x20Add\x20or\x20remove\x20an\x20allowed\x20DM\x0a') + ('├─⊷\x20*' + _0x2f24e4 + " listdms* / *cleardms*\n│  └⊷ View or clear allowed DMs\n") + ("╰⊷ " + getFooter(_0x53e9a8.key.participant || _0x4573fe)), _0xeedc4d = {
-    display_text: 'Basic\x20Commands',
+  _0x31fe98 ? (_0x2cea01 = "╭┄〔 " + BRAND.VIP + ' *' + _0x371be9 + " CHATBOT CUSTOMIZATION* 〕┄╮\n" + ('┆ ' + (_0x65bb68[_0x4a4298.mode] || STATUS.OFFLINE) + " Status: " + _0x4a4298.mode.toUpperCase() + '\n') + ("┆ ✦ *" + _0x2f24e4 + " name <name>*\n┆   └─ Set chatbot name\n") + ("┆ ✦ *" + _0x2f24e4 + " techname <name>*\n┆   └─ Set creator/tech name\n") + ("┆ ✦ *" + _0x2f24e4 + " model*\n┆   └─ Switch AI model\n") + ("┆ ✦ *" + _0x2f24e4 + " stats* / *settings*\n┆   └─ View usage statistics or configuration\n") + ('┆ ✦ *' + _0x2f24e4 + " clear*\n┆   └─ Reset conversation history\n") + ('┆┄〔 ' + UI.CLIPBOARD + " *GROUP CONTROL* 〕┄┆\n") + ("┆ ✦ *" + _0x2f24e4 + ' addgroup* / *removegroup [jid]*\n┆   └─ Enable or exclude a group\n') + ("┆ ✦ *" + _0x2f24e4 + " listgroups* / *cleargroups*\n┆   └─ View groups or clear exclusions\n") + ("┆┄〔 " + SOCIAL.PERSON + ' *USER FILTER (per group)* 〕┄┆\n') + ("┆ ✦ *" + _0x2f24e4 + " allowonly @user*\n┆   └─ Reply only to selected users\n") + ("┆ ✦ *" + _0x2f24e4 + ' blockuser @user* / *allowuser @user*\n┆   └─ Block or allow users\n') + ("┆ ✦ *" + _0x2f24e4 + " removeuser @user*\n┆   └─ Remove a user from the filter\n") + ("┆ ✦ *" + _0x2f24e4 + ' listusers* / *clearusers*\n┆   └─ View or clear the group user filter\n') + ("┆┄〔 " + UI.CHAT + ' *DM CONTROL* 〕┄┆\n') + ("┆ ✦ *" + _0x2f24e4 + ' adddm <number>* / *removedm <number>*\n┆   └─ Add or remove an allowed DM\n') + ('┆ ✦ *' + _0x2f24e4 + " listdms* / *cleardms*\n┆   └─ View or clear allowed DMs\n") + ("╰┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄╯\n" + BRAND.LIGHTNING + " " + getFooter(_0x53e9a8.key.participant || _0x4573fe)), _0xeedc4d = {
+    display_text: 'Basic Commands',
     id: _0x2f24e4 + " basic"
-  }) : (_0x2cea01 = "╭─⌈ " + BRAND.WOLF + '\x20*' + _0x371be9 + '\x20CHATBOT*\x20⌋\x0a' + ('│\x20' + (_0x65bb68[_0x4a4298.mode] || STATUS.OFFLINE) + " Current mode: " + _0x4a4298.mode.toUpperCase() + "\n│\n") + ("├─⊷ *" + _0x2f24e4 + " on*\n│  └⊷ Enable in all chats\n") + ('├─⊷\x20*' + _0x2f24e4 + " off*\n│  └⊷ Disable chatbot\n") + ('├─⊷\x20*' + _0x2f24e4 + " groups*\n│  └⊷ Enable in groups only\n") + ('├─⊷\x20*' + _0x2f24e4 + '\x20dms*\x0a│\x20\x20└⊷\x20Enable\x20in\x20direct\x20messages\x20only\x0a') + ("├─⊷ *" + _0x2f24e4 + " both*\n│  └⊷ Enable in groups and DMs\n│\n") + ("╰⊷ " + getFooter(_0x53e9a8.key.participant || _0x4573fe)), _0xeedc4d = {
-    display_text: 'More\x20Customization',
+  }) : (_0x2cea01 = "╭┄〔 " + BRAND.VIP + ' *' + _0x371be9 + ' CHATBOT* 〕┄╮\n' + ('┆ ' + (_0x65bb68[_0x4a4298.mode] || STATUS.OFFLINE) + " Current mode: " + _0x4a4298.mode.toUpperCase() + "\n┆\n") + ("┆ ✦ *" + _0x2f24e4 + " on*\n┆   └─ Enable in all chats\n") + ('┆ ✦ *' + _0x2f24e4 + " off*\n┆   └─ Disable chatbot\n") + ('┆ ✦ *' + _0x2f24e4 + " groups*\n┆   └─ Enable in groups only\n") + ('┆ ✦ *' + _0x2f24e4 + ' dms*\n┆   └─ Enable in direct messages only\n') + ("┆ ✦ *" + _0x2f24e4 + " both*\n┆   └─ Enable in groups and DMs\n┆\n") + ("╰┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄╯\n" + BRAND.LIGHTNING + " " + getFooter(_0x53e9a8.key.participant || _0x4573fe)), _0xeedc4d = {
+    display_text: 'More Customization',
     id: _0x2f24e4 + " customize"
   });
   try {
@@ -722,9 +722,9 @@ async function sendChatbotHelp(_0x19688f, _0x53e9a8, _0x491e47, _0x4a4298, _0x31
 }
 export default {
   name: "chatbot",
-  description: "W.O.L.F - Wise Operational Learning Framework | AI Chatbot System",
+  description: "VIPBOT - Elite AI Chatbot System",
   category: 'ai',
-  aliases: ['wolf', "wolfchat", 'aichat', "wolfbot"],
+  aliases: ['vip', "vipchat", 'aichat', "wolf", "wolfchat", "wolfbot"],
   usage: "chatbot <on|off|groups|dms|both|model>",
   ownerOnly: true,
   async execute(_0x2e456, _0x3780d3, _0x17a5ad, _0x4a93e1) {
@@ -736,12 +736,12 @@ export default {
       }, {
         quoted: _0x3780d3
       });
-      const _0x599696 = "╭─⌈ " + SOCIAL.PEOPLE + '\x20*GROUP\x20DETAIL*\x20⌋\x0a' + ('├─⊷\x20*' + _0x11ec5d.name + '*\x0a') + ("╰─⊷ 🆔 `" + _0x11ec5d.gid + '`');
+      const _0x599696 = "╭┄〔 " + SOCIAL.PEOPLE + ' *GROUP DETAIL* 〕┄╮\n' + ('┆ ✦ *' + _0x11ec5d.name + '*\n') + ("╰┄ 🆔 `" + _0x11ec5d.gid + '`');
       try {
         const {createRequire: _0x835eb} = await import("module"), _0x5ceed0 = _0x835eb(import.meta.url), {sendInteractiveMessage: _0x32507c} = await import("wolfbtns");
         return await _0x32507c(_0x2e456, _0x27c1ed, {
           text: _0x599696,
-          footer: _0x1f5abb.chatbotName || 'W.O.L.F',
+          footer: _0x1f5abb.chatbotName || 'VIPBOT',
           interactiveButtons: [{
             name: "cta_copy",
             buttonParamsJson: JSON.stringify({
@@ -818,7 +818,7 @@ export default {
         modelsUsed: {},
         mediaActions: {}
       });
-      let _0x431b8f = BRAND.WOLF + " *W.O.L.F Stats*\n━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n" + (UI.CHART + " *Total Queries:* " + _0x1e383a.totalQueries + '\x0a') + (SOCIAL.BOT + " *Model:* " + (AI_MODELS[_0x1f5abb.preferredModel] || AI_MODELS.gpt).name + '\x0a') + (MEDIA.SIGNAL + '\x20*Mode:*\x20' + _0x1f5abb.mode.toUpperCase() + '\x0a\x0a');
+      let _0x431b8f = BRAND.VIP + " *VIPBOT Stats*\n┈┄┈┄✦┈┄┈┄✦┈┄┈┄\n\n" + (UI.CHART + " *Total Queries:* " + _0x1e383a.totalQueries + '\x0a') + (SOCIAL.BOT + " *Model:* " + (AI_MODELS[_0x1f5abb.preferredModel] || AI_MODELS.gpt).name + '\x0a') + (MEDIA.SIGNAL + '\x20*Mode:*\x20' + _0x1f5abb.mode.toUpperCase() + '\x0a\x0a');
       if (Object.keys(_0x1e383a.modelsUsed || ({})).length > 0) {
         _0x431b8f += UI.REFRESH + '\x20*AI\x20Usage:*\x0a';
         const _0x26da15 = Object.entries(_0x1e383a.modelsUsed).sort((_0x418d78, _0x26524a) => _0x26524a[1] - _0x418d78[1]);
@@ -873,7 +873,7 @@ export default {
         if (_0x93a761.length > 0) _0x339b0 += '\x20\x20' + STATUS.BLOCKED + '\x20' + _0x93a761.length + '\x20group(s)\x20excluded\x0a';
         if (_0x1033da.length > 0) _0x339b0 += '\x20\x20' + UI.CHAT + '\x20' + _0x1033da.length + " DM(s) whitelisted\n";
       }
-      const _0x29f47a = _0x1f5abb.chatbotName || "W.O.L.F", _0xb18524 = _0x1f5abb.techName || "WOLF TECH", _0xd4bfd3 = BRAND.WOLF + '\x20*' + _0x29f47a + '\x20Settings*\x0a━━━━━━━━━━━━━━━━━━━━━━━━━━━\x0a\x0a' + (UI.LABEL + '\x20*Name:*\x20' + _0x29f47a + '\x0a') + (UI.OFFICE + " *Tech:* " + _0xb18524 + '\x0a') + ((_0x55dc93[_0x1f5abb.mode] || "${STATUS.OFFLINE}") + '\x20*Mode:*\x20' + _0x1f5abb.mode.toUpperCase() + '\x0a') + (_0x379b91.icon + " *Model:* " + _0x379b91.name + '\x0a') + (UI.REFRESH + " *Auto-Fallback:* Enabled\n") + (UI.SAVE + '\x20*Memory:*\x2020\x20msgs\x20(1hr\x20timeout)\x0a') + (UI.TARGET + " *Interactive:* Images, Music, Videos\n") + (UI.CHART + " *Queries:* " + (_0x1f5abb.stats?.totalQueries || 0) + '\x0a') + _0x339b0 + '\x0a' + (SOCIAL.BOT + '\x20*Models\x20(' + Object.keys(AI_MODELS).length + "):*\n") + Object.entries(AI_MODELS).map(([_0x51cf12, _0x2c0c6a]) => '\x20\x20' + _0x2c0c6a.icon + '\x20' + _0x2c0c6a.name + " (`" + _0x51cf12 + '`)').join('\x0a') + ('\x0a\x0a' + BRAND.LIGHTNING + '\x20' + getFooter(_0x3780d3.key.participant || _0x3780d3.key.remoteJid));
+      const _0x29f47a = _0x1f5abb.chatbotName || "VIPBOT", _0xb18524 = _0x1f5abb.techName || "Lupin Stanley", _0xd4bfd3 = BRAND.VIP + '\x20*' + _0x29f47a + '\x20Settings*\x0a┈┄┈┄✦┈┄┈┄✦┈┄┈┄\x0a\x0a' + (UI.LABEL + '\x20*Name:*\x20' + _0x29f47a + '\x0a') + (UI.OFFICE + " *Creator:* " + _0xb18524 + '\x0a') + ((_0x55dc93[_0x1f5abb.mode] || "${STATUS.OFFLINE}") + '\x20*Mode:*\x20' + _0x1f5abb.mode.toUpperCase() + '\x0a') + (_0x379b91.icon + " *Model:* " + _0x379b91.name + '\x0a') + (UI.REFRESH + " *Auto-Fallback:* Enabled\n") + (UI.SAVE + '\x20*Memory:*\x2020\x20msgs\x20(1hr\x20timeout)\x0a') + (UI.TARGET + " *Interactive:* Images, Music, Videos\n") + (UI.CHART + " *Queries:* " + (_0x1f5abb.stats?.totalQueries || 0) + '\x0a') + _0x339b0 + '\x0a' + (SOCIAL.BOT + '\x20*Models\x20(' + Object.keys(AI_MODELS).length + "):*\n") + Object.entries(AI_MODELS).map(([_0x51cf12, _0x2c0c6a]) => '\x20\x20' + _0x2c0c6a.icon + '\x20' + _0x2c0c6a.name + " (`" + _0x51cf12 + '`)').join('\x0a') + ('\x0a\x0a' + BRAND.LIGHTNING + '\x20' + getFooter(_0x3780d3.key.participant || _0x3780d3.key.remoteJid));
       return _0x2e456.sendMessage(_0x27c1ed, {
         text: _0xd4bfd3
       }, {
@@ -986,7 +986,7 @@ export default {
     if (_0x250945 === "adddm") {
       const _0x4077ae = (_0x17a5ad[1] || '').replace(/[^0-9]/g, '');
       if (!_0x4077ae || _0x4077ae.length < 7) return _0x2e456.sendMessage(_0x27c1ed, {
-        text: STATUS.ERROR + " Provide a valid number.\nUsage: `" + _0x4a93e1 + "chatbot adddm 2547xxxxxxxx`"
+        text: STATUS.ERROR + " Provide a valid number.\nUsage: `" + _0x4a93e1 + "chatbot adddm 255780470905`"
       }, {
         quoted: _0x3780d3
       });
@@ -1014,7 +1014,7 @@ export default {
     if (_0x250945 === "removedm") {
       const _0x5ef62f = (_0x17a5ad[1] || '').replace(/[^0-9]/g, '');
       if (!_0x5ef62f || _0x5ef62f.length < 7) return _0x2e456.sendMessage(_0x27c1ed, {
-        text: STATUS.ERROR + '\x20Provide\x20a\x20valid\x20number.\x0aUsage:\x20`' + _0x4a93e1 + "chatbot removedm 2547xxxxxxxx`"
+        text: STATUS.ERROR + '\x20Provide\x20a\x20valid\x20number.\x0aUsage:\x20`' + _0x4a93e1 + "chatbot removedm 255780470905`"
       }, {
         quoted: _0x3780d3
       });
@@ -1060,7 +1060,7 @@ export default {
     if (_0x250945 === "name") {
       const _0x9a1b62 = _0x17a5ad.slice(1).join('\x20').trim();
       if (!_0x9a1b62) {
-        const _0x34dc5c = _0x1f5abb.chatbotName || "W.O.L.F";
+        const _0x34dc5c = _0x1f5abb.chatbotName || "VIPBOT";
         return _0x2e456.sendMessage(_0x27c1ed, {
           text: "Name: *" + _0x34dc5c + "*\nChange: `" + _0x4a93e1 + 'chatbot\x20name\x20<new\x20name>`'
         }, {
@@ -1081,7 +1081,7 @@ export default {
     if (_0x250945 === 'techname') {
       const _0x8916cf = _0x17a5ad.slice(1).join('\x20').trim();
       if (!_0x8916cf) {
-        const _0x18e468 = _0x1f5abb.techName || "WOLF TECH";
+        const _0x18e468 = _0x1f5abb.techName || "Lupin Stanley";
         return _0x2e456.sendMessage(_0x27c1ed, {
           text: "Tech name: *" + _0x18e468 + "*\nChange: `" + _0x4a93e1 + 'chatbot\x20techname\x20<new\x20name>`'
         }, {
@@ -1114,11 +1114,11 @@ export default {
           quoted: _0x3780d3
         });
         const _0x2beeb0 = _0x359026.mode === 'allow' ? STATUS.SUCCESS + " *ALLOW ONLY* — replies only to listed users" : STATUS.BLOCKED + " *BLOCK LIST* — replies to everyone except listed users";
-        let _0x181f08 = "╭─⌈ " + SOCIAL.PERSON + " *USER FILTER* ⌋\n│\n│ " + _0x2beeb0 + "\n│\n";
+        let _0x181f08 = "╭┄〔 " + SOCIAL.PERSON + " *USER FILTER* 〕┄╮\n┆\n┆ " + _0x2beeb0 + "\n┆\n";
         return (_0x359026.users.forEach((_0x28a5dc, _0x540f54) => {
           const _0xbf9c2d = _0x28a5dc.split('@')[0].split(':')[0];
-          _0x181f08 += '│\x20' + (_0x540f54 + 1) + ". +" + _0xbf9c2d + '\x0a';
-        }), _0x181f08 += "│\n╰⊷ " + getFooter(_0x3780d3.key.participant || _0x27c1ed), _0x2e456.sendMessage(_0x27c1ed, {
+          _0x181f08 += '┆ ' + (_0x540f54 + 1) + ". +" + _0xbf9c2d + '\x0a';
+        }), _0x181f08 += "┆\n╰┄ " + getFooter(_0x3780d3.key.participant || _0x27c1ed), _0x2e456.sendMessage(_0x27c1ed, {
           text: _0x181f08
         }, {
           quoted: _0x3780d3

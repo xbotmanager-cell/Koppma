@@ -11,7 +11,7 @@ export default {
     try {
       if (_0x36a4fc.length === 0) {
         await _0x1a115c.sendMessage(_0x248abd, {
-          text: '╭─⌈\x20' + DESIGN.BRONZE + " *BRONZE LOGO* ⌋\n│\n├─⊷ *bronzelogo*\n│  └⊷ bronzelogo <text>\n│\n├─⊷ *Example:*\n│  └⊷ bronzelogo WOLF\n│  └⊷ bronzelogo BRONZE\n│  └⊷ bronzelogo ANCIENT\n│\n╰⊷ " + getFooter(_0x1ea432.key.participant || _0x1ea432.key.remoteJid)
+          text: '╭┄〔 \x20' + DESIGN.BRONZE + " *BRONZE LOGO* 〕┄╮\n┆\n┆ ✦ *bronzelogo*\n┆   └─ bronzelogo <text>\n┆\n┆ ✦ *Example:*\n┆   └─ bronzelogo WOLF\n┆   └─ bronzelogo BRONZE\n┆   └─ bronzelogo ANCIENT\n┆\n╰┄ " + getFooter(_0x1ea432.key.participant || _0x1ea432.key.remoteJid)
         }, {
           quoted: _0x1ea432
         });
@@ -20,7 +20,7 @@ export default {
       const _0x51ad2a = _0x36a4fc.join('\x20');
       if (_0x51ad2a.length > 15) {
         await _0x1a115c.sendMessage(_0x248abd, {
-          text: "╭─⌈ " + STATUS.ERROR + '\x20*ERROR*\x20⌋\x0a│\x0a├─⊷\x20Text\x20too\x20long!\x0a│\x20\x20└⊷\x20Maximum\x2015\x20characters\x0a│\x20\x20└⊷\x20Your\x20text:\x20\x22' + _0x51ad2a + "\" (" + _0x51ad2a.length + " chars)\n│\n╰───"
+          text: "╭┄〔 " + STATUS.ERROR + '\x20*ERROR*\x20 〕┄╮\x0a┆\x0a┆ ✦ \x20Text\x20too\x20long!\x0a┆ \x20╰┄ \x20Maximum\x2015\x20characters\x0a┆ \x20╰┄ \x20Your\x20text:\x20\x22' + _0x51ad2a + "\" (" + _0x51ad2a.length + " chars)\n┆\n╰───"
         }, {
           quoted: _0x1ea432
         });
@@ -51,7 +51,7 @@ export default {
           key: _0x1ea432.key
         }
       }).catch(() => {}), await _0x1a115c.sendMessage(_0x248abd, {
-        text: "╭─⌈ " + STATUS.ERROR + " *ERROR* ⌋\n│\n├─⊷ " + _0x4fd10c.message + "\n│  └⊷ Please try again with shorter text\n│\n╰───"
+        text: "╭┄〔 " + STATUS.ERROR + " *ERROR* 〕┄╮\n┆\n┆ ✦ " + _0x4fd10c.message + "\n┆   └─ Please try again with shorter text\n┆\n╰───"
       }, {
         quoted: _0x1ea432
       }));

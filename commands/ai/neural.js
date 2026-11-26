@@ -11,7 +11,7 @@ export default {
     const _0x29325c = _0x59d807.key.remoteJid;
     let _0x1d193c = _0x5e9ddc.length > 0 ? _0x5e9ddc.join('\x20') : _0x59d807.quoted?.text || '';
     if (!_0x1d193c) return _0x5c2573.sendMessage(_0x29325c, {
-      text: "╭─⌈ " + UI.NEURAL + " *NEURAL AI* ⌋\n├─⊷ *" + _0x5b2fd8 + "neural <question>*\n│  └⊷ Neural network AI model\n╰⊷ " + getFooter(_0x59d807.key.participant || _0x59d807.key.remoteJid)
+      text: "╭┄〔 " + UI.NEURAL + " *NEURAL AI* 〕┄╮\n┆ ✦ *" + _0x5b2fd8 + "neural <question>*\n┆   └─ Neural network AI model\n╰┄ " + getFooter(_0x59d807.key.participant || _0x59d807.key.remoteJid)
     }, {
       quoted: _0x59d807
     });
@@ -30,7 +30,7 @@ export default {
           key: _0x59d807.key
         }
       }), await _0x5c2573.sendMessage(_0x29325c, {
-        text: UI.NEURAL + '\x20*NEURAL\x20AI*\x0a━━━━━━━━━━━━━━━━━\x0a' + _0x583cb7 + "\n━━━━━━━━━━━━━━━━━\n" + getFooter(_0x59d807.key.participant || _0x59d807.key.remoteJid)
+        text: UI.NEURAL + '\x20*NEURAL\x20AI*\x0a┈┄┈┄✦┈┄┈┄✦┈┄┈┄\x0a' + _0x583cb7 + "\n┈┄┈┄✦┈┄┈┄✦┈┄┈┄\n" + getFooter(_0x59d807.key.participant || _0x59d807.key.remoteJid)
       }, {
         quoted: _0x59d807
       }));

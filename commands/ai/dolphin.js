@@ -11,7 +11,7 @@ export default {
     const _0x7d2dcb = _0x4ac695.key.remoteJid;
     let _0x7f3d49 = _0x482f3b.length > 0 ? _0x482f3b.join('\x20') : _0x4ac695.quoted?.text || '';
     if (!_0x7f3d49) return _0x3ed4eb.sendMessage(_0x7d2dcb, {
-      text: "╭─⌈ " + MEDIA.DOLPHIN + " *DOLPHIN AI* ⌋\n├─⊷ *" + _0x4e915a + "dolphin <question>*\n│  └⊷ Dolphin uncensored AI\n╰⊷ " + getFooter(_0x4ac695.key.participant || _0x4ac695.key.remoteJid)
+      text: "╭┄〔 " + MEDIA.DOLPHIN + " *DOLPHIN AI* 〕┄╮\n┆ ✦ *" + _0x4e915a + "dolphin <question>*\n┆   └─ Dolphin uncensored AI\n╰┄ " + getFooter(_0x4ac695.key.participant || _0x4ac695.key.remoteJid)
     }, {
       quoted: _0x4ac695
     });
@@ -30,7 +30,7 @@ export default {
           key: _0x4ac695.key
         }
       }), await _0x3ed4eb.sendMessage(_0x7d2dcb, {
-        text: MEDIA.DOLPHIN + " *DOLPHIN AI*\n━━━━━━━━━━━━━━━━━\n" + _0x5457c8 + "\n━━━━━━━━━━━━━━━━━\n" + getFooter(_0x4ac695.key.participant || _0x4ac695.key.remoteJid)
+        text: MEDIA.DOLPHIN + " *DOLPHIN AI*\n┈┄┈┄✦┈┄┈┄✦┈┄┈┄\n" + _0x5457c8 + "\n┈┄┈┄✦┈┄┈┄✦┈┄┈┄\n" + getFooter(_0x4ac695.key.participant || _0x4ac695.key.remoteJid)
       }, {
         quoted: _0x4ac695
       }));

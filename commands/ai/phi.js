@@ -11,7 +11,7 @@ export default {
     const _0x31d53f = _0x3dd5fe.key.remoteJid;
     let _0x3161f9 = _0x4471f8.length > 0 ? _0x4471f8.join('\x20') : _0x3dd5fe.quoted?.text || '';
     if (!_0x3161f9) return _0x40a400.sendMessage(_0x31d53f, {
-      text: '╭─⌈\x20' + UI.BLUE_CIRCLE + " *PHI AI* ⌋\n├─⊷ *" + _0x57328e + "phi <question>*\n│  └⊷ Microsoft Phi small model\n╰⊷ " + getFooter(_0x3dd5fe.key.participant || _0x3dd5fe.key.remoteJid)
+      text: '╭┄〔 \x20' + UI.BLUE_CIRCLE + " *PHI AI* 〕┄╮\n┆ ✦ *" + _0x57328e + "phi <question>*\n┆   └─ Microsoft Phi small model\n╰┄ " + getFooter(_0x3dd5fe.key.participant || _0x3dd5fe.key.remoteJid)
     }, {
       quoted: _0x3dd5fe
     });
@@ -30,7 +30,7 @@ export default {
           key: _0x3dd5fe.key
         }
       }), await _0x40a400.sendMessage(_0x31d53f, {
-        text: UI.BLUE_CIRCLE + " *PHI AI*\n━━━━━━━━━━━━━━━━━\n" + _0x2cc41a + "\n━━━━━━━━━━━━━━━━━\n" + getFooter(_0x3dd5fe.key.participant || _0x3dd5fe.key.remoteJid)
+        text: UI.BLUE_CIRCLE + " *PHI AI*\n┈┄┈┄✦┈┄┈┄✦┈┄┈┄\n" + _0x2cc41a + "\n┈┄┈┄✦┈┄┈┄✦┈┄┈┄\n" + getFooter(_0x3dd5fe.key.participant || _0x3dd5fe.key.remoteJid)
       }, {
         quoted: _0x3dd5fe
       }));

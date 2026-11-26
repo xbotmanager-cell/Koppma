@@ -11,7 +11,7 @@ export default {
     const _0x4dbd5b = _0x2ed94b.key.remoteJid;
     let _0x350954 = _0x2dabd7.length > 0 ? _0x2dabd7.join('\x20') : _0x2ed94b.quoted?.text || '';
     if (!_0x350954) return _0x44e4c4.sendMessage(_0x4dbd5b, {
-      text: '╭─⌈\x20' + MEDIA.WHALE + '\x20*ORCA\x20AI*\x20⌋\x0a├─⊷\x20*' + _0x59d17e + "orca <question>*\n│  └⊷ Microsoft Orca AI\n╰⊷ " + getFooter(_0x2ed94b.key.participant || _0x2ed94b.key.remoteJid)
+      text: '╭┄〔 \x20' + MEDIA.WHALE + '\x20*ORCA\x20AI*\x20 〕┄╮\x0a┆ ✦ *' + _0x59d17e + "orca <question>*\n┆   └─ Microsoft Orca AI\n╰┄ " + getFooter(_0x2ed94b.key.participant || _0x2ed94b.key.remoteJid)
     }, {
       quoted: _0x2ed94b
     });
@@ -30,7 +30,7 @@ export default {
           key: _0x2ed94b.key
         }
       }), await _0x44e4c4.sendMessage(_0x4dbd5b, {
-        text: MEDIA.WHALE + '\x20*ORCA\x20AI*\x0a━━━━━━━━━━━━━━━━━\x0a' + _0x456775 + "\n━━━━━━━━━━━━━━━━━\n" + getFooter(_0x2ed94b.key.participant || _0x2ed94b.key.remoteJid)
+        text: MEDIA.WHALE + '\x20*ORCA\x20AI*\x0a┈┄┈┄✦┈┄┈┄✦┈┄┈┄\x0a' + _0x456775 + "\n┈┄┈┄✦┈┄┈┄✦┈┄┈┄\n" + getFooter(_0x2ed94b.key.participant || _0x2ed94b.key.remoteJid)
       }, {
         quoted: _0x2ed94b
       }));

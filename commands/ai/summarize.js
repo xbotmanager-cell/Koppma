@@ -11,7 +11,7 @@ export default {
   async execute(_0x2337f6, _0x4b8c41, _0xb81fb6, _0x5ac20c, _0x5395f7) {
     const _0x18664d = _0x4b8c41.key.remoteJid, _0x3618bc = _0x4b8c41.key.participant || _0x18664d;
     if (_0xb81fb6.length === 0 || _0xb81fb6[0].toLowerCase() === "help") {
-      const _0x509fa9 = '╭─⌈\x20' + UI.NOTE + " *SUMMARIZER* ⌋\n├─⊷ *" + _0x5ac20c + "summarize <text>*\n│  └⊷ Summarize long text\n├─⊷ *" + _0x5ac20c + "summary <text>*\n│  └⊷ Alias for summarize\n├─⊷ *" + _0x5ac20c + 'summarize\x20brief:\x20<text>*\x0a│\x20\x20└⊷\x20Brief\x201-2\x20sentence\x20summary\x0a├─⊷\x20*' + _0x5ac20c + 'summarize\x20bullets:\x20<text>*\x0a│\x20\x20└⊷\x20Summary\x20in\x20bullet\x20points\x0a╰⊷\x20' + getFooter(_0x4b8c41.key.participant || _0x4b8c41.key.remoteJid);
+      const _0x509fa9 = '╭┄〔 \x20' + UI.NOTE + " *SUMMARIZER* 〕┄╮\n┆ ✦ *" + _0x5ac20c + "summarize <text>*\n┆   └─ Summarize long text\n┆ ✦ *" + _0x5ac20c + "summary <text>*\n┆   └─ Alias for summarize\n┆ ✦ *" + _0x5ac20c + 'summarize\x20brief:\x20<text>*\x0a┆ \x20╰┄ \x20Brief\x201-2\x20sentence\x20summary\x0a┆ ✦ *' + _0x5ac20c + 'summarize\x20bullets:\x20<text>*\x0a┆ \x20╰┄ \x20Summary\x20in\x20bullet\x20points\x0a╰┄ \x20' + getFooter(_0x4b8c41.key.participant || _0x4b8c41.key.remoteJid);
       return _0x2337f6.sendMessage(_0x18664d, {
         text: _0x509fa9
       }, {
@@ -24,7 +24,7 @@ export default {
       _0x2b7e12.trim().length > 0 && (_0xf46fbf = _0x2b7e12 + (_0xf46fbf ? "\n\nAdditional: " + _0xf46fbf : ''));
     }
     if (_0xf46fbf.length < 20) return _0x2337f6.sendMessage(_0x18664d, {
-      text: "╭─⌈ " + STATUS.ERROR + " *TEXT TOO SHORT* ⌋\n├─⊷ *" + _0x5ac20c + 'summarize\x20<text>*\x0a│\x20\x20└⊷\x20Provide\x20at\x20least\x2020\x20characters\x0a╰⊷\x20' + getFooter(_0x4b8c41.key.participant || _0x4b8c41.key.remoteJid)
+      text: "╭┄〔 " + STATUS.ERROR + " *TEXT TOO SHORT* 〕┄╮\n┆ ✦ *" + _0x5ac20c + 'summarize\x20<text>*\x0a┆ \x20╰┄ \x20Provide\x20at\x20least\x2020\x20characters\x0a╰┄ \x20' + getFooter(_0x4b8c41.key.participant || _0x4b8c41.key.remoteJid)
     }, {
       quoted: _0x4b8c41
     });
@@ -73,7 +73,7 @@ export default {
         },
         timeout: 30000,
         headers: {
-          'User-Agent': "WolfBot-Summarizer/1.0",
+          'User-Agent': "VIPBOT-Summarizer/1.0",
           Accept: "application/json"
         },
         validateStatus: function (_0x5d1efd) {

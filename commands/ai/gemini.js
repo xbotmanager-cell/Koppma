@@ -11,7 +11,7 @@ export default {
     const _0x59606b = _0x289e0c.key.remoteJid;
     let _0xcb1d1e = _0x11bce9.length > 0 ? _0x11bce9.join('\x20') : _0x289e0c.quoted?.text || '';
     if (!_0xcb1d1e) return _0x4e862c.sendMessage(_0x59606b, {
-      text: "╭─⌈ " + STATUS.SPARKLE + " *GEMINI AI* ⌋\n├─⊷ *" + _0x56b5e6 + "gemini <question>*\n│  └⊷ Google Gemini AI\n╰⊷ " + getFooter(_0x289e0c.key.participant || _0x289e0c.key.remoteJid)
+      text: "╭┄〔 " + STATUS.SPARKLE + " *GEMINI AI* 〕┄╮\n┆ ✦ *" + _0x56b5e6 + "gemini <question>*\n┆   └─ Google Gemini AI\n╰┄ " + getFooter(_0x289e0c.key.participant || _0x289e0c.key.remoteJid)
     }, {
       quoted: _0x289e0c
     });
@@ -30,7 +30,7 @@ export default {
           key: _0x289e0c.key
         }
       }), await _0x4e862c.sendMessage(_0x59606b, {
-        text: STATUS.SPARKLE + " *GEMINI AI*\n━━━━━━━━━━━━━━━━━\n" + _0x21bce5 + '\x0a━━━━━━━━━━━━━━━━━\x0a' + getFooter(_0x289e0c.key.participant || _0x289e0c.key.remoteJid)
+        text: STATUS.SPARKLE + " *GEMINI AI*\n┈┄┈┄✦┈┄┈┄✦┈┄┈┄\n" + _0x21bce5 + '\x0a┈┄┈┄✦┈┄┈┄✦┈┄┈┄\x0a' + getFooter(_0x289e0c.key.participant || _0x289e0c.key.remoteJid)
       }, {
         quoted: _0x289e0c
       }));

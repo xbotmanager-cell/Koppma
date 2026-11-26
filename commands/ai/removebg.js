@@ -15,7 +15,7 @@ export default {
     try {
       const _0x20b142 = _0x1e0712.message?.extendedTextMessage?.contextInfo?.quotedMessage;
       if (!_0x20b142?.imageMessage) return _0x18c237.sendMessage(_0x2cf632, {
-        text: "╭─⌈ 🎨 *REMOVE BG* ⌋\n├─⊷ Reply to image with *" + _0x32c4b0 + 'removebg*\x0a│\x20\x20└⊷\x20Remove\x20image\x20background\x0a├─⊷\x20*' + _0x32c4b0 + "rmbg*\n│  └⊷ Alias for removebg\n╰⊷ " + getFooter(_0x1e0712.key.participant || _0x1e0712.key.remoteJid)
+        text: "╭┄〔 🎨 *REMOVE BG* 〕┄╮\n┆ ✦ Reply to image with *" + _0x32c4b0 + 'removebg*\x0a┆ \x20╰┄ \x20Remove\x20image\x20background\x0a┆ ✦ *' + _0x32c4b0 + "rmbg*\n┆   └─ Alias for removebg\n╰┄ " + getFooter(_0x1e0712.key.participant || _0x1e0712.key.remoteJid)
       }, {
         quoted: _0x1e0712
       });

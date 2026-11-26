@@ -113,7 +113,7 @@ export default {
     });
   },
   async sendResult(_0x1621f4, _0x1c1d17, _0x4bfeab) {
-    const _0x9f34ef = MEDIA.MUSIC + " *SUNO AI SONG GENERATED!*\n\n" + (UI.TARGET + " *Style:* " + _0x4bfeab.style.replace('_', '\x20').toUpperCase() + '\x0a') + (STATUS.SUCCESS + " *Success Rate:* " + _0x4bfeab.successRate + '\x0a') + (UI.NOTE + '\x20*Theme:*\x20' + _0x4bfeab.theme + '\x0a\x0a') + (STATUS.INFO + '\x20*Prompt\x20Used:*\x0a' + _0x4bfeab.prompt.substring(0, 150) + "...\n\n") + (UI.CHART + " *Simulated Result:*\n") + (UI.FOLDER + " ID: " + _0x4bfeab.result.id + '\x0a') + (UI.TIMER + '\x20Duration:\x20' + _0x4bfeab.result.duration + '\x0a') + (UI.CHART + '\x20Status:\x20' + _0x4bfeab.result.status + '\x0a\x0a') + "━━━━━━━━━━━━━━━━━━━━\n" + '*How\x20to\x20get\x20real\x20Suno\x20API:*\x0a' + '1.\x20Visit:\x20suno.ai\x0a' + "2. Join their Discord\n" + "3. Apply for API access\n" + "4. Or use RapidAPI Suno API\n\n" + "*Quick Commands:*\n" + '.suno\x20generate\x20pop_hit\x0a' + ".suno quick viral\n" + '.suno\x20templates';
+    const _0x9f34ef = MEDIA.MUSIC + " *SUNO AI SONG GENERATED!*\n\n" + (UI.TARGET + " *Style:* " + _0x4bfeab.style.replace('_', '\x20').toUpperCase() + '\x0a') + (STATUS.SUCCESS + " *Success Rate:* " + _0x4bfeab.successRate + '\x0a') + (UI.NOTE + '\x20*Theme:*\x20' + _0x4bfeab.theme + '\x0a\x0a') + (STATUS.INFO + '\x20*Prompt\x20Used:*\x0a' + _0x4bfeab.prompt.substring(0, 150) + "...\n\n") + (UI.CHART + " *Simulated Result:*\n") + (UI.FOLDER + " ID: " + _0x4bfeab.result.id + '\x0a') + (UI.TIMER + '\x20Duration:\x20' + _0x4bfeab.result.duration + '\x0a') + (UI.CHART + '\x20Status:\x20' + _0x4bfeab.result.status + '\x0a\x0a') + "┈┄┈┄✦┈┄┈┄✦┈┄┈┄\n" + '*How\x20to\x20get\x20real\x20Suno\x20API:*\x0a' + '1.\x20Visit:\x20suno.ai\x0a' + "2. Join their Discord\n" + "3. Apply for API access\n" + "4. Or use RapidAPI Suno API\n\n" + "*Quick Commands:*\n" + '.suno\x20generate\x20pop_hit\x0a' + ".suno quick viral\n" + '.suno\x20templates';
     await _0x1621f4.sendMessage(_0x1c1d17.key.remoteJid, {
       text: _0x9f34ef
     }, {
@@ -125,7 +125,7 @@ export default {
     for (const [_0x4760fb, _0x52e883] of Object.entries(this.surebetTemplates)) {
       _0x4b20ca += MEDIA.MUSIC + '\x20*' + _0x4760fb.replace('_', '\x20').toUpperCase() + '*\x0a' + (STATUS.SUCCESS + '\x20' + _0x52e883.successRate + " success\n") + (STATUS.INFO + '\x20Style:\x20' + _0x52e883.style + '\x0a\x0a');
     }
-    (_0x4b20ca += '━━━━━━━━━━━━━━━━━━━━\x0a' + "*Usage Examples:*\n" + '.suno\x20generate\x20pop_hit\x0a' + ".suno generate emotional_ballad theme:\"lost love\"\n" + '.suno\x20generate\x20style:edm_banger\x0a\x0a' + '*Note:*\x20Currently\x20in\x20simulation\x20mode.\x20Replace\x20simulateSunoAPI()\x20with\x20real\x20API\x20call.', await _0x4c85f0.sendMessage(_0x1440a9.key.remoteJid, {
+    (_0x4b20ca += '┈┄┈┄✦┈┄┈┄✦┈┄┈┄\x0a' + "*Usage Examples:*\n" + '.suno\x20generate\x20pop_hit\x0a' + ".suno generate emotional_ballad theme:\"lost love\"\n" + '.suno\x20generate\x20style:edm_banger\x0a\x0a' + '*Note:*\x20Currently\x20in\x20simulation\x20mode.\x20Replace\x20simulateSunoAPI()\x20with\x20real\x20API\x20call.', await _0x4c85f0.sendMessage(_0x1440a9.key.remoteJid, {
       text: _0x4b20ca
     }, {
       quoted: _0x1440a9
@@ -135,14 +135,14 @@ export default {
     let _0x5bce52 = STATUS.INFO + " *SUNO SURBET THEMES*\n" + 'High-success\x20themes\x20for\x20better\x20results:\x0a\x0a';
     (this.surebetThemes.forEach((_0x4bf003, _0xef226e) => {
       _0x5bce52 += _0xef226e + 1 + '.\x20' + _0x4bf003 + '\x0a';
-    }), _0x5bce52 += "\n━━━━━━━━━━━━━━━━━━━━\n" + "*Example Commands:*\n" + '.suno\x20generate\x20pop_hit\x20theme:\x22overcoming\x20challenges\x22\x0a' + ".suno generate emotional_ballad theme:\"summer nights and memories\"\n\n" + "*Tip:* Use these themes for highest quality results", await _0x1fc629.sendMessage(_0x222891.key.remoteJid, {
+    }), _0x5bce52 += "\n┈┄┈┄✦┈┄┈┄✦┈┄┈┄\n" + "*Example Commands:*\n" + '.suno\x20generate\x20pop_hit\x20theme:\x22overcoming\x20challenges\x22\x0a' + ".suno generate emotional_ballad theme:\"summer nights and memories\"\n\n" + "*Tip:* Use these themes for highest quality results", await _0x1fc629.sendMessage(_0x222891.key.remoteJid, {
       text: _0x5bce52
     }, {
       quoted: _0x222891
     }));
   },
   async showHelp(_0x3c1c5f, _0x3003a5) {
-    const _0x1bfa9e = "╭─⌈ " + MEDIA.MUSIC + " *SUNO AI MUSIC* ⌋\n├─⊷ *.suno generate <style>*\n│  └⊷ Generate song with style\n├─⊷ *.suno quick <viral|lofi|workout>*\n│  └⊷ Quick song generation\n├─⊷ *.suno templates*\n│  └⊷ View available templates\n├─⊷ *.suno themes*\n│  └⊷ View suggested themes\n├─⊷ *.suno help*\n│  └⊷ Show this help\n╰⊷ " + getFooter(_0x3003a5.key.participant || _0x3003a5.key.remoteJid);
+    const _0x1bfa9e = "╭┄〔 " + MEDIA.MUSIC + " *SUNO AI MUSIC* 〕┄╮\n┆ ✦ *.suno generate <style>*\n┆   └─ Generate song with style\n┆ ✦ *.suno quick <viral|lofi|workout>*\n┆   └─ Quick song generation\n┆ ✦ *.suno templates*\n┆   └─ View available templates\n┆ ✦ *.suno themes*\n┆   └─ View suggested themes\n┆ ✦ *.suno help*\n┆   └─ Show this help\n╰┄ " + getFooter(_0x3003a5.key.participant || _0x3003a5.key.remoteJid);
     await _0x3c1c5f.sendMessage(_0x3003a5.key.remoteJid, {
       text: _0x1bfa9e
     }, {

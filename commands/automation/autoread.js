@@ -103,8 +103,8 @@ export default {
     const _0x406714 = _0x7dfc95.key.remoteJid, _0x4e28c1 = loadSettings(), _0x51ded6 = _0x4b62e9[0]?.toLowerCase(), _0xd6e8a = _0x4b62e9[1]?.toLowerCase();
     !autoreadActive && setupAutoread(_0x22ca87);
     if (!_0x51ded6 || _0x51ded6 === "status") {
-      let _0x1c147c = "╭─⌈ " + AUTOMATION.U1F4D6 + " *AUTO-READ* ⌋\n│\n";
-      (_0x1c147c += '├─⊷\x20*.autoread\x20groups*\x0a│\x20\x20└⊷\x20Groups\x20only\x0a', _0x1c147c += '├─⊷\x20*.autoread\x20dms*\x0a│\x20\x20└⊷\x20DMs\x20only\x0a', _0x1c147c += '├─⊷\x20*.autoread\x20both*\x0a│\x20\x20└⊷\x20Read\x20all\x20messages\x0a', _0x1c147c += "├─⊷ *.autoread off*\n│  └⊷ Disable auto-read\n", _0x1c147c += "╰───", await _0x22ca87.sendMessage(_0x406714, {
+      let _0x1c147c = "╭┄〔 " + AUTOMATION.U1F4D6 + " *AUTO-READ* 〕┄╮\n┆\n";
+      (_0x1c147c += '┆ ✦ *.autoread\x20groups*\x0a┆ \x20╰┄ \x20Groups\x20only\x0a', _0x1c147c += '┆ ✦ *.autoread\x20dms*\x0a┆ \x20╰┄ \x20DMs\x20only\x0a', _0x1c147c += '┆ ✦ *.autoread\x20both*\x0a┆ \x20╰┄ \x20Read\x20all\x20messages\x0a', _0x1c147c += "┆ ✦ *.autoread off*\n┆   └─ Disable auto-read\n", _0x1c147c += "╰───", await _0x22ca87.sendMessage(_0x406714, {
         text: _0x1c147c
       }, {
         quoted: _0x7dfc95
@@ -299,7 +299,7 @@ export default {
                           quoted: _0x7dfc95
                         }));
                       } else {
-                        const _0x1c23e6 = "╭─⌈ " + AUTOMATION.U1F4D6 + " *AUTO-READ* ⌋\n│\n├─⊷ *.autoread groups*\n│  └⊷ Groups only\n├─⊷ *.autoread dms*\n│  └⊷ DMs only\n├─⊷ *.autoread both*\n│  └⊷ Read all messages\n├─⊷ *.autoread off*\n│  └⊷ Disable auto-read\n╰⊷ " + getFooter(_0x7dfc95.key.participant || _0x7dfc95.key.remoteJid);
+                        const _0x1c23e6 = "╭┄〔 " + AUTOMATION.U1F4D6 + " *AUTO-READ* 〕┄╮\n┆\n┆ ✦ *.autoread groups*\n┆   └─ Groups only\n┆ ✦ *.autoread dms*\n┆   └─ DMs only\n┆ ✦ *.autoread both*\n┆   └─ Read all messages\n┆ ✦ *.autoread off*\n┆   └─ Disable auto-read\n╰┄ " + getFooter(_0x7dfc95.key.participant || _0x7dfc95.key.remoteJid);
                         await _0x22ca87.sendMessage(_0x406714, {
                           text: _0x1c23e6
                         }, {

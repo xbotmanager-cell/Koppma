@@ -11,7 +11,7 @@ export default {
     const _0x4f2950 = _0x264d06.key.remoteJid;
     let _0x3bf0b7 = _0x173395.length > 0 ? _0x173395.join('\x20') : _0x264d06.quoted?.text || '';
     if (!_0x3bf0b7) return _0x18a1f7.sendMessage(_0x4f2950, {
-      text: "╭─⌈ " + UI.BRAIN + " *CLAUDEAI AI* ⌋\n├─⊷ *" + _0x1d9be1 + "claudeai <question>*\n│  └⊷ Anthropic Claude AI\n╰⊷ " + getFooter(_0x264d06.key.participant || _0x264d06.key.remoteJid)
+      text: "╭┄〔 " + UI.BRAIN + " *CLAUDEAI AI* 〕┄╮\n┆ ✦ *" + _0x1d9be1 + "claudeai <question>*\n┆   └─ Anthropic Claude AI\n╰┄ " + getFooter(_0x264d06.key.participant || _0x264d06.key.remoteJid)
     }, {
       quoted: _0x264d06
     });
@@ -30,7 +30,7 @@ export default {
           key: _0x264d06.key
         }
       }), await _0x18a1f7.sendMessage(_0x4f2950, {
-        text: UI.BRAIN + " *CLAUDEAI AI*\n━━━━━━━━━━━━━━━━━\n" + _0x733c5f + "\n━━━━━━━━━━━━━━━━━\n" + getFooter(_0x264d06.key.participant || _0x264d06.key.remoteJid)
+        text: UI.BRAIN + " *CLAUDEAI AI*\n┈┄┈┄✦┈┄┈┄✦┈┄┈┄\n" + _0x733c5f + "\n┈┄┈┄✦┈┄┈┄✦┈┄┈┄\n" + getFooter(_0x264d06.key.participant || _0x264d06.key.remoteJid)
       }, {
         quoted: _0x264d06
       }));

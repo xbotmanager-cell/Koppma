@@ -11,7 +11,7 @@ export default {
     const _0x3cc0d7 = _0x4546b7.key.remoteJid;
     let _0x3e56dc = _0xec8af9.length > 0 ? _0xec8af9.join('\x20') : _0x4546b7.quoted?.text || '';
     if (!_0x3e56dc) return _0x50962c.sendMessage(_0x3cc0d7, {
-      text: "╭─⌈ " + UI.WIND + " *ZEPHYR AI* ⌋\n├─⊷ *" + _0x13ea96 + "zephyr <question>*\n│  └⊷ Zephyr fine-tuned Mistral\n╰⊷ " + getFooter(_0x4546b7.key.participant || _0x4546b7.key.remoteJid)
+      text: "╭┄〔 " + UI.WIND + " *ZEPHYR AI* 〕┄╮\n┆ ✦ *" + _0x13ea96 + "zephyr <question>*\n┆   └─ Zephyr fine-tuned Mistral\n╰┄ " + getFooter(_0x4546b7.key.participant || _0x4546b7.key.remoteJid)
     }, {
       quoted: _0x4546b7
     });
@@ -30,7 +30,7 @@ export default {
           key: _0x4546b7.key
         }
       }), await _0x50962c.sendMessage(_0x3cc0d7, {
-        text: UI.WIND + " *ZEPHYR AI*\n━━━━━━━━━━━━━━━━━\n" + _0x4f2f74 + '\x0a━━━━━━━━━━━━━━━━━\x0a' + getFooter(_0x4546b7.key.participant || _0x4546b7.key.remoteJid)
+        text: UI.WIND + " *ZEPHYR AI*\n┈┄┈┄✦┈┄┈┄✦┈┄┈┄\n" + _0x4f2f74 + '\x0a┈┄┈┄✦┈┄┈┄✦┈┄┈┄\x0a' + getFooter(_0x4546b7.key.participant || _0x4546b7.key.remoteJid)
       }, {
         quoted: _0x4546b7
       }));

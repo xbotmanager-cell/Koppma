@@ -11,7 +11,7 @@ export default {
     const _0x216856 = _0x27acb7.key.remoteJid;
     let _0x241ed8 = _0x343600.length > 0 ? _0x343600.join('\x20') : _0x27acb7.quoted?.text || '';
     if (!_0x241ed8) return _0xb67c49.sendMessage(_0x216856, {
-      text: "╭─⌈ " + MEDIA.COMPUTER + " *CODELLAMA AI* ⌋\n├─⊷ *" + _0x1a4fbd + "codellama <question>*\n│  └⊷ Code Llama code generation\n╰⊷ " + getFooter(_0x27acb7.key.participant || _0x27acb7.key.remoteJid)
+      text: "╭┄〔 " + MEDIA.COMPUTER + " *CODELLAMA AI* 〕┄╮\n┆ ✦ *" + _0x1a4fbd + "codellama <question>*\n┆   └─ Code Llama code generation\n╰┄ " + getFooter(_0x27acb7.key.participant || _0x27acb7.key.remoteJid)
     }, {
       quoted: _0x27acb7
     });
@@ -30,7 +30,7 @@ export default {
           key: _0x27acb7.key
         }
       }), await _0xb67c49.sendMessage(_0x216856, {
-        text: MEDIA.COMPUTER + " *CODELLAMA AI*\n━━━━━━━━━━━━━━━━━\n" + _0x20034a + '\x0a━━━━━━━━━━━━━━━━━\x0a' + getFooter(_0x27acb7.key.participant || _0x27acb7.key.remoteJid)
+        text: MEDIA.COMPUTER + " *CODELLAMA AI*\n┈┄┈┄✦┈┄┈┄✦┈┄┈┄\n" + _0x20034a + '\x0a┈┄┈┄✦┈┄┈┄✦┈┄┈┄\x0a' + getFooter(_0x27acb7.key.participant || _0x27acb7.key.remoteJid)
       }, {
         quoted: _0x27acb7
       }));

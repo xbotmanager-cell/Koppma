@@ -11,7 +11,7 @@ export default {
     try {
       if (_0x1390a4.length === 0) {
         await _0xc32013.sendMessage(_0x5e3f78, {
-          text: "╭─⌈ " + DESIGN.COPPER + '\x20*COPPER\x20LOGO*\x20⌋\x0a│\x0a├─⊷\x20*copperlogo*\x0a│\x20\x20└⊷\x20copperlogo\x20<text>\x0a│\x0a├─⊷\x20*Example:*\x0a│\x20\x20└⊷\x20copperlogo\x20WOLF\x0a│\x20\x20└⊷\x20copperlogo\x20COPPER\x0a│\x20\x20└⊷\x20copperlogo\x20WARM\x0a│\x0a╰⊷\x20' + getFooter(_0x4b7af1.key.participant || _0x4b7af1.key.remoteJid)
+          text: "╭┄〔 " + DESIGN.COPPER + '\x20*COPPER\x20LOGO*\x20 〕┄╮\x0a┆\x0a┆ ✦ *copperlogo*\x0a┆ \x20╰┄ \x20copperlogo\x20<text>\x0a┆\x0a┆ ✦ *Example:*\x0a┆ \x20╰┄ \x20copperlogo\x20WOLF\x0a┆ \x20╰┄ \x20copperlogo\x20COPPER\x0a┆ \x20╰┄ \x20copperlogo\x20WARM\x0a┆\x0a╰┄ \x20' + getFooter(_0x4b7af1.key.participant || _0x4b7af1.key.remoteJid)
         }, {
           quoted: _0x4b7af1
         });
@@ -20,7 +20,7 @@ export default {
       const _0x56c0c9 = _0x1390a4.join('\x20');
       if (_0x56c0c9.length > 15) {
         await _0xc32013.sendMessage(_0x5e3f78, {
-          text: "╭─⌈ " + STATUS.ERROR + " *ERROR* ⌋\n│\n├─⊷ Text too long!\n│  └⊷ Maximum 15 characters\n│  └⊷ Your text: \"" + _0x56c0c9 + "\" (" + _0x56c0c9.length + '\x20chars)\x0a│\x0a╰───'
+          text: "╭┄〔 " + STATUS.ERROR + " *ERROR* 〕┄╮\n┆\n┆ ✦ Text too long!\n┆   └─ Maximum 15 characters\n┆   └─ Your text: \"" + _0x56c0c9 + "\" (" + _0x56c0c9.length + '\x20chars)\x0a┆\x0a╰───'
         }, {
           quoted: _0x4b7af1
         });
@@ -51,7 +51,7 @@ export default {
           key: _0x4b7af1.key
         }
       }).catch(() => {}), await _0xc32013.sendMessage(_0x5e3f78, {
-        text: "╭─⌈ " + STATUS.ERROR + '\x20*ERROR*\x20⌋\x0a│\x0a├─⊷\x20' + _0x4ff3f9.message + "\n│  └⊷ Please try again with shorter text\n│\n╰───"
+        text: "╭┄〔 " + STATUS.ERROR + '\x20*ERROR*\x20 〕┄╮\x0a┆\x0a┆ ✦ \x20' + _0x4ff3f9.message + "\n┆   └─ Please try again with shorter text\n┆\n╰───"
       }, {
         quoted: _0x4b7af1
       }));
@@ -212,13 +212,13 @@ function addHammeredTexture(_0xbc504a, _0x51b881, _0x2cf26e) {
 function addSignature(_0x4eef3f, _0x56df7c, _0x2294b2) {
   _0x4eef3f.save();
   const _0x104aa7 = _0x56df7c - 120, _0x5249c3 = _0x2294b2 - 20;
-  (_0x4eef3f.font = "italic 12px \"Arial\"", _0x4eef3f.fillStyle = 'rgba(184,\x20115,\x2051,\x200.7)', _0x4eef3f.textAlign = "right", _0x4eef3f.textBaseline = "bottom", _0x4eef3f.fillText('by\x20Silent\x20Wolf', _0x104aa7, _0x5249c3), _0x4eef3f.strokeStyle = 'rgba(184,\x20115,\x2051,\x200.4)', _0x4eef3f.lineWidth = 0.5);
-  const _0x428bb9 = _0x4eef3f.measureText("by Silent Wolf").width;
+  (_0x4eef3f.font = "italic 12px \"Arial\"", _0x4eef3f.fillStyle = 'rgba(184,\x20115,\x2051,\x200.7)', _0x4eef3f.textAlign = "right", _0x4eef3f.textBaseline = "bottom", _0x4eef3f.fillText('by Lupin Stanley', _0x104aa7, _0x5249c3), _0x4eef3f.strokeStyle = 'rgba(184,\x20115,\x2051,\x200.4)', _0x4eef3f.lineWidth = 0.5);
+  const _0x428bb9 = _0x4eef3f.measureText("by Lupin Stanley").width;
   (_0x4eef3f.beginPath(), _0x4eef3f.moveTo(_0x104aa7 - _0x428bb9, _0x5249c3 + 2), _0x4eef3f.lineTo(_0x104aa7, _0x5249c3 + 2), _0x4eef3f.stroke(), _0x4eef3f.restore());
 }
 async function generateSimpleCopperLogo(_0x623b16) {
   const _0x147be4 = 600, _0x4cf97f = 300, _0x1c0086 = createCanvas(_0x147be4, _0x4cf97f), _0x535139 = _0x1c0086.getContext('2d');
   (_0x535139.fillStyle = "#2a1a0a", _0x535139.fillRect(0, 0, _0x147be4, _0x4cf97f));
   const _0x2ed699 = _0x535139.createLinearGradient(0, 50, 0, 250);
-  return (_0x2ed699.addColorStop(0, "#FFD700"), _0x2ed699.addColorStop(0.4, "#E6B800"), _0x2ed699.addColorStop(0.7, "#B87333"), _0x2ed699.addColorStop(1, '#8B4513'), _0x535139.font = 'bold\x2070px\x20Arial', _0x535139.fillStyle = _0x2ed699, _0x535139.textAlign = 'center', _0x535139.textBaseline = 'middle', _0x535139.shadowColor = "rgba(184, 115, 51, 0.5)", _0x535139.shadowBlur = 15, _0x535139.shadowOffsetX = 4, _0x535139.shadowOffsetY = 4, _0x535139.fillText(_0x623b16.toUpperCase(), _0x147be4 / 2, _0x4cf97f / 2), _0x535139.strokeStyle = "#B87333", _0x535139.lineWidth = 5, _0x535139.strokeRect(15, 15, _0x147be4 - 30, _0x4cf97f - 30), _0x535139.font = "italic 10px \"Arial\"", _0x535139.fillStyle = 'rgba(184,\x20115,\x2051,\x200.7)', _0x535139.textAlign = "right", _0x535139.textBaseline = "bottom", _0x535139.fillText("by Silent Wolf", _0x147be4 - 20, _0x4cf97f - 15), _0x1c0086.toBuffer("image/png"));
+  return (_0x2ed699.addColorStop(0, "#FFD700"), _0x2ed699.addColorStop(0.4, "#E6B800"), _0x2ed699.addColorStop(0.7, "#B87333"), _0x2ed699.addColorStop(1, '#8B4513'), _0x535139.font = 'bold\x2070px\x20Arial', _0x535139.fillStyle = _0x2ed699, _0x535139.textAlign = 'center', _0x535139.textBaseline = 'middle', _0x535139.shadowColor = "rgba(184, 115, 51, 0.5)", _0x535139.shadowBlur = 15, _0x535139.shadowOffsetX = 4, _0x535139.shadowOffsetY = 4, _0x535139.fillText(_0x623b16.toUpperCase(), _0x147be4 / 2, _0x4cf97f / 2), _0x535139.strokeStyle = "#B87333", _0x535139.lineWidth = 5, _0x535139.strokeRect(15, 15, _0x147be4 - 30, _0x4cf97f - 30), _0x535139.font = "italic 10px \"Arial\"", _0x535139.fillStyle = 'rgba(184,\x20115,\x2051,\x200.7)', _0x535139.textAlign = "right", _0x535139.textBaseline = "bottom", _0x535139.fillText("by Lupin Stanley", _0x147be4 - 20, _0x4cf97f - 15), _0x1c0086.toBuffer("image/png"));
 }

@@ -11,7 +11,7 @@ export default {
     const _0x2ed481 = _0xbcf7ed.key.remoteJid;
     let _0x5c36ce = _0x466c4a.length > 0 ? _0x466c4a.join('\x20') : _0xbcf7ed.quoted?.text || '';
     if (!_0x5c36ce) return _0x33cb5a.sendMessage(_0x2ed481, {
-      text: "╭─⌈ " + UI.BRAIN + " *DEEPSEEK AI* ⌋\n├─⊷ *" + _0x38e87f + "deepseek <question>*\n│  └⊷ DeepSeek reasoning AI\n╰⊷ " + getFooter(_0xbcf7ed.key.participant || _0xbcf7ed.key.remoteJid)
+      text: "╭┄〔 " + UI.BRAIN + " *DEEPSEEK AI* 〕┄╮\n┆ ✦ *" + _0x38e87f + "deepseek <question>*\n┆   └─ DeepSeek reasoning AI\n╰┄ " + getFooter(_0xbcf7ed.key.participant || _0xbcf7ed.key.remoteJid)
     }, {
       quoted: _0xbcf7ed
     });
@@ -30,7 +30,7 @@ export default {
           key: _0xbcf7ed.key
         }
       }), await _0x33cb5a.sendMessage(_0x2ed481, {
-        text: UI.BRAIN + " *DEEPSEEK AI*\n━━━━━━━━━━━━━━━━━\n" + _0x76431 + '\x0a━━━━━━━━━━━━━━━━━\x0a' + getFooter(_0xbcf7ed.key.participant || _0xbcf7ed.key.remoteJid)
+        text: UI.BRAIN + " *DEEPSEEK AI*\n┈┄┈┄✦┈┄┈┄✦┈┄┈┄\n" + _0x76431 + '\x0a┈┄┈┄✦┈┄┈┄✦┈┄┈┄\x0a' + getFooter(_0xbcf7ed.key.participant || _0xbcf7ed.key.remoteJid)
       }, {
         quoted: _0xbcf7ed
       }));

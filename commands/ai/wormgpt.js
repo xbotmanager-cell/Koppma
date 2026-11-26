@@ -11,7 +11,7 @@ export default {
   async execute(_0x2841b3, _0x17205a, _0x57bd6a, _0x11f290) {
     const _0x353d3a = _0x17205a.key.remoteJid, _0x11a2a7 = _0x57bd6a.length > 0 ? _0x57bd6a.join('\x20') : _0x17205a.quoted?.text || '';
     if (!_0x11a2a7) return _0x2841b3.sendMessage(_0x353d3a, {
-      text: "╭─⌈ " + STATUS.SKULL + " *WORMGPT AI* ⌋\n├─⊷ *" + _0x11f290 + 'wormgpt\x20<question>*\x0a│\x20\x20└⊷\x20Uncensored,\x20unfiltered\x20AI\x0a╰⊷\x20' + getFooter(_0x17205a.key.participant || _0x17205a.key.remoteJid)
+      text: "╭┄〔 " + STATUS.SKULL + " *WORMGPT AI* 〕┄╮\n┆ ✦ *" + _0x11f290 + 'wormgpt\x20<question>*\x0a┆ \x20╰┄ \x20Uncensored,\x20unfiltered\x20AI\x0a╰┄ \x20' + getFooter(_0x17205a.key.participant || _0x17205a.key.remoteJid)
     }, {
       quoted: _0x17205a
     });
@@ -31,7 +31,7 @@ export default {
           key: _0x17205a.key
         }
       }), await _0x2841b3.sendMessage(_0x353d3a, {
-        text: STATUS.SKULL + " *WORMGPT AI*\n━━━━━━━━━━━━━━━━━\n" + _0x41af2c + "\n━━━━━━━━━━━━━━━━━\n" + getFooter(_0x17205a.key.participant || _0x17205a.key.remoteJid)
+        text: STATUS.SKULL + " *WORMGPT AI*\n┈┄┈┄✦┈┄┈┄✦┈┄┈┄\n" + _0x41af2c + "\n┈┄┈┄✦┈┄┈┄✦┈┄┈┄\n" + getFooter(_0x17205a.key.participant || _0x17205a.key.remoteJid)
       }, {
         quoted: _0x17205a
       }));

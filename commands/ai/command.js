@@ -11,7 +11,7 @@ export default {
     const _0x36079c = _0xcfc69a.key.remoteJid;
     let _0x4fba99 = _0x5b55af.length > 0 ? _0x5b55af.join('\x20') : _0xcfc69a.quoted?.text || '';
     if (!_0x4fba99) return _0x27a632.sendMessage(_0x36079c, {
-      text: "╭─⌈ " + UI.TARGET + " *COMMAND AI* ⌋\n├─⊷ *" + _0x39a51c + "command <question>*\n│  └⊷ Cohere Command model\n╰⊷ " + getFooter(_0xcfc69a.key.participant || _0xcfc69a.key.remoteJid)
+      text: "╭┄〔 " + UI.TARGET + " *COMMAND AI* 〕┄╮\n┆ ✦ *" + _0x39a51c + "command <question>*\n┆   └─ Cohere Command model\n╰┄ " + getFooter(_0xcfc69a.key.participant || _0xcfc69a.key.remoteJid)
     }, {
       quoted: _0xcfc69a
     });
@@ -30,7 +30,7 @@ export default {
           key: _0xcfc69a.key
         }
       }), await _0x27a632.sendMessage(_0x36079c, {
-        text: UI.TARGET + " *COMMAND AI*\n━━━━━━━━━━━━━━━━━\n" + _0x1404d4 + '\x0a━━━━━━━━━━━━━━━━━\x0a' + getFooter(_0xcfc69a.key.participant || _0xcfc69a.key.remoteJid)
+        text: UI.TARGET + " *COMMAND AI*\n┈┄┈┄✦┈┄┈┄✦┈┄┈┄\n" + _0x1404d4 + '\x0a┈┄┈┄✦┈┄┈┄✦┈┄┈┄\x0a' + getFooter(_0xcfc69a.key.participant || _0xcfc69a.key.remoteJid)
       }, {
         quoted: _0xcfc69a
       }));

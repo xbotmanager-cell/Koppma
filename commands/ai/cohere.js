@@ -11,7 +11,7 @@ export default {
     const _0x3f11b1 = _0x4cdb4c.key.remoteJid;
     let _0x438338 = _0x102ea2.length > 0 ? _0x102ea2.join('\x20') : _0x4cdb4c.quoted?.text || '';
     if (!_0x438338) return _0x3ca0b9.sendMessage(_0x3f11b1, {
-      text: "╭─⌈ " + UI.TARGET + " *COHERE AI* ⌋\n├─⊷ *" + _0x107919 + "cohere <question>*\n│  └⊷ Cohere AI language model\n╰⊷ " + getFooter(_0x4cdb4c.key.participant || _0x4cdb4c.key.remoteJid)
+      text: "╭┄〔 " + UI.TARGET + " *COHERE AI* 〕┄╮\n┆ ✦ *" + _0x107919 + "cohere <question>*\n┆   └─ Cohere AI language model\n╰┄ " + getFooter(_0x4cdb4c.key.participant || _0x4cdb4c.key.remoteJid)
     }, {
       quoted: _0x4cdb4c
     });
@@ -30,7 +30,7 @@ export default {
           key: _0x4cdb4c.key
         }
       }), await _0x3ca0b9.sendMessage(_0x3f11b1, {
-        text: UI.TARGET + " *COHERE AI*\n━━━━━━━━━━━━━━━━━\n" + _0x5f1524 + "\n━━━━━━━━━━━━━━━━━\n" + getFooter(_0x4cdb4c.key.participant || _0x4cdb4c.key.remoteJid)
+        text: UI.TARGET + " *COHERE AI*\n┈┄┈┄✦┈┄┈┄✦┈┄┈┄\n" + _0x5f1524 + "\n┈┄┈┄✦┈┄┈┄✦┈┄┈┄\n" + getFooter(_0x4cdb4c.key.participant || _0x4cdb4c.key.remoteJid)
       }, {
         quoted: _0x4cdb4c
       }));

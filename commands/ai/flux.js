@@ -48,7 +48,7 @@ export default {
   async execute(_0x52735d, _0x52eebc, _0x4a1439, _0x35519a) {
     const _0x27af90 = _0x52eebc.key.remoteJid;
     if (!_0x4a1439.length) return _0x52735d.sendMessage(_0x27af90, {
-      text: "╭─⌈ " + MEDIA.DESIGN + " *FLUX AI IMAGE GEN* ⌋\n" + ("├─⊷ *" + _0x35519a + "flux <prompt>*\n") + "│  └⊷ NVIDIA FLUX.1-dev (with auto-fallback)\n" + ("├─⊷ *" + _0x35519a + "flux magic <prompt>*\n") + '│\x20\x20└⊷\x20Magic\x20Studio\x20(Bing)\x20engine\x0a' + ("╰⊷ " + getFooter(_0x52eebc.key.participant || _0x52eebc.key.remoteJid))
+      text: "╭┄〔 " + MEDIA.DESIGN + " *FLUX AI IMAGE GEN* 〕┄╮\n" + ("┆ ✦ *" + _0x35519a + "flux <prompt>*\n") + "┆   └─ NVIDIA FLUX.1-dev (with auto-fallback)\n" + ("┆ ✦ *" + _0x35519a + "flux magic <prompt>*\n") + '┆ \x20╰┄ \x20Magic\x20Studio\x20(Bing)\x20engine\x0a' + ("╰┄ " + getFooter(_0x52eebc.key.participant || _0x52eebc.key.remoteJid))
     }, {
       quoted: _0x52eebc
     });

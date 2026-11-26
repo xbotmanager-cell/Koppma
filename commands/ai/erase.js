@@ -58,7 +58,7 @@ export default {
     }, {
       quoted: _0x232a9d
     }), _0x3c39a8 = getImageMessage(_0x232a9d);
-    if (!_0x3c39a8) return _0x115f49("╭─⌈ *OBJECT ERASER* ⌋\n" + '│\x0a' + "├─⊷ *Usage:* Reply to an image with\n" + ("│  " + _0x39e5e2 + "erase [what to remove]\n") + '│\x0a' + "├─⊷ *Examples:*\n" + ("│  • " + _0x39e5e2 + "erase remove the tree\n") + ("│  • " + _0x39e5e2 + "erase remove text\n") + ("│  • " + _0x39e5e2 + "erase (no prompt = auto)\n") + '│\x0a' + "├─⊷ AI detects & erases the object\n" + "│  then fills in the background\n" + '│\x0a' + ("╰⊷ " + getFooter(_0x232a9d.key.participant || _0x232a9d.key.remoteJid)));
+    if (!_0x3c39a8) return _0x115f49("╭┄〔 *OBJECT ERASER* 〕┄╮\n" + '┆\x0a' + "┆ ✦ *Usage:* Reply to an image with\n" + ("┆  " + _0x39e5e2 + "erase [what to remove]\n") + '┆\x0a' + "┆ ✦ *Examples:*\n" + ("┆  • " + _0x39e5e2 + "erase remove the tree\n") + ("┆  • " + _0x39e5e2 + "erase remove text\n") + ("┆  • " + _0x39e5e2 + "erase (no prompt = auto)\n") + '┆\x0a' + "┆ ✦ AI detects & erases the object\n" + "┆  then fills in the background\n" + '┆\x0a' + ("╰┄ " + getFooter(_0x232a9d.key.participant || _0x232a9d.key.remoteJid)));
     const _0x27944a = _0x28b243.join('\x20').trim() || null;
     await _0x1532d4.sendMessage(_0x4ad932, {
       react: {

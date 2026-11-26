@@ -11,7 +11,7 @@ export default {
     const _0x405dc4 = _0x36e12c.key.remoteJid;
     let _0x1c5ce9 = _0x22ea1e.length > 0 ? _0x22ea1e.join('\x20') : _0x36e12c.quoted?.text || '';
     if (!_0x1c5ce9) return _0x3a8063.sendMessage(_0x405dc4, {
-      text: "╭─⌈ " + SOCIAL.EARTH + '\x20*QWENAI\x20AI*\x20⌋\x0a├─⊷\x20*' + _0x25d024 + 'qwenai\x20<question>*\x0a│\x20\x20└⊷\x20Qwen\x20AI\x20by\x20Alibaba\x0a╰⊷\x20' + getFooter(_0x36e12c.key.participant || _0x36e12c.key.remoteJid)
+      text: "╭┄〔 " + SOCIAL.EARTH + '\x20*QWENAI\x20AI*\x20 〕┄╮\x0a┆ ✦ *' + _0x25d024 + 'qwenai\x20<question>*\x0a┆ \x20╰┄ \x20Qwen\x20AI\x20by\x20Alibaba\x0a╰┄ \x20' + getFooter(_0x36e12c.key.participant || _0x36e12c.key.remoteJid)
     }, {
       quoted: _0x36e12c
     });
@@ -30,7 +30,7 @@ export default {
           key: _0x36e12c.key
         }
       }), await _0x3a8063.sendMessage(_0x405dc4, {
-        text: SOCIAL.EARTH + '\x20*QWENAI\x20AI*\x0a━━━━━━━━━━━━━━━━━\x0a' + _0x4e0540 + "\n━━━━━━━━━━━━━━━━━\n" + getFooter(_0x36e12c.key.participant || _0x36e12c.key.remoteJid)
+        text: SOCIAL.EARTH + '\x20*QWENAI\x20AI*\x0a┈┄┈┄✦┈┄┈┄✦┈┄┈┄\x0a' + _0x4e0540 + "\n┈┄┈┄✦┈┄┈┄✦┈┄┈┄\n" + getFooter(_0x36e12c.key.participant || _0x36e12c.key.remoteJid)
       }, {
         quoted: _0x36e12c
       }));

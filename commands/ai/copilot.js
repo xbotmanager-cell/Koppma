@@ -11,7 +11,7 @@ export default {
     const _0x4dd933 = _0x4ffaf6.key.remoteJid;
     try {
       if (_0x57dcca.length === 0) return _0x23d948.sendMessage(_0x4dd933, {
-        text: "╭─⌈ " + SOCIAL.BOT + " *COPILOT AI* ⌋\n├─⊷ *" + _0x4d5016 + "copilot <question>*\n│  └⊷ Ask Copilot anything\n╰⊷ " + getFooter(_0x4ffaf6.key.participant || _0x4ffaf6.key.remoteJid)
+        text: "╭┄〔 " + SOCIAL.BOT + " *COPILOT AI* 〕┄╮\n┆ ✦ *" + _0x4d5016 + "copilot <question>*\n┆   └─ Ask Copilot anything\n╰┄ " + getFooter(_0x4ffaf6.key.participant || _0x4ffaf6.key.remoteJid)
       }, {
         quoted: _0x4ffaf6
       });

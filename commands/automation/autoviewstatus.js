@@ -236,8 +236,8 @@ export default {
         quoted: _0x43a7cf
       });
       if (_0x420bd0.length === 0) {
-        let _0xfbff66 = "╭─⌈ " + AUTOMATION.U1F441_FE0F + '\x20*AUTOVIEWSTATUS*\x20⌋\x0a│\x0a';
-        (_0xfbff66 += "├─⊷ *" + _0xcc346a + "autoviewstatus on/off*\n│  └⊷ Enable / disable\n", _0xfbff66 += "├─⊷ *" + _0xcc346a + 'autoviewstatus\x20exclude\x20<number>*\x0a│\x20\x20└⊷\x20Skip\x20a\x20contact\x0a', _0xfbff66 += '├─⊷\x20*' + _0xcc346a + 'autoviewstatus\x20include\x20<number>*\x0a│\x20\x20└⊷\x20Remove\x20from\x20skip\x20list\x0a', _0xfbff66 += "├─⊷ *" + _0xcc346a + "autoviewstatus excluded*\n│  └⊷ Show skip list\n", _0xfbff66 += "├─⊷ *" + _0xcc346a + 'autoviewstatus\x20stats*\x0a│\x20\x20└⊷\x20Statistics\x0a', _0xfbff66 += '╰⊷\x20*Powered\x20by\x20' + getBotName().toUpperCase() + '*', await _0x315710(_0xfbff66));
+        let _0xfbff66 = "╭┄〔 " + AUTOMATION.U1F441_FE0F + '\x20*AUTOVIEWSTATUS*\x20 〕┄╮\x0a┆\x0a';
+        (_0xfbff66 += "┆ ✦ *" + _0xcc346a + "autoviewstatus on/off*\n┆   └─ Enable / disable\n", _0xfbff66 += "┆ ✦ *" + _0xcc346a + 'autoviewstatus\x20exclude\x20<number>*\x0a┆ \x20╰┄ \x20Skip\x20a\x20contact\x0a', _0xfbff66 += '┆ ✦ *' + _0xcc346a + 'autoviewstatus\x20include\x20<number>*\x0a┆ \x20╰┄ \x20Remove\x20from\x20skip\x20list\x0a', _0xfbff66 += "┆ ✦ *" + _0xcc346a + "autoviewstatus excluded*\n┆   └─ Show skip list\n", _0xfbff66 += "┆ ✦ *" + _0xcc346a + 'autoviewstatus\x20stats*\x0a┆ \x20╰┄ \x20Statistics\x0a', _0xfbff66 += '╰┄ \x20*Powered\x20by\x20' + getBotName().toUpperCase() + '*', await _0x315710(_0xfbff66));
         return;
       }
       const _0x19b514 = _0x420bd0[0].toLowerCase();
@@ -367,7 +367,7 @@ export default {
             break;
           }
         default:
-          await _0x315710("╭─⌈ " + AUTOMATION.U2753 + " *AUTOVIEWSTATUS* ⌋\n│\n├─⊷ *" + _0xcc346a + "autoviewstatus on/off*\n├─⊷ *" + _0xcc346a + 'autoviewstatus\x20exclude\x20<number>*\x0a├─⊷\x20*' + _0xcc346a + "autoviewstatus include <number>*\n├─⊷ *" + _0xcc346a + "autoviewstatus excluded*\n├─⊷ *" + _0xcc346a + "autoviewstatus stats*\n├─⊷ *" + _0xcc346a + "autoviewstatus logs*\n├─⊷ *" + _0xcc346a + "autoviewstatus delay <ms>*\n╰⊷ *Powered by " + getBotName().toUpperCase() + '*');
+          await _0x315710("╭┄〔 " + AUTOMATION.U2753 + " *AUTOVIEWSTATUS* 〕┄╮\n┆\n┆ ✦ *" + _0xcc346a + "autoviewstatus on/off*\n┆ ✦ *" + _0xcc346a + 'autoviewstatus\x20exclude\x20<number>*\x0a┆ ✦ *' + _0xcc346a + "autoviewstatus include <number>*\n┆ ✦ *" + _0xcc346a + "autoviewstatus excluded*\n┆ ✦ *" + _0xcc346a + "autoviewstatus stats*\n┆ ✦ *" + _0xcc346a + "autoviewstatus logs*\n┆ ✦ *" + _0xcc346a + "autoviewstatus delay <ms>*\n╰┄ *Powered by " + getBotName().toUpperCase() + '*');
       }
     } catch (_0x536d95) {
       (console.error("AutoViewStatus error:", _0x536d95), await _0x1a675f.sendMessage(_0x43a7cf.key.remoteJid, {

@@ -11,7 +11,7 @@ export default {
     const _0x4e5f01 = _0x5f091f.key.remoteJid;
     let _0x326c6c = _0x3bfbcd.length > 0 ? _0x3bfbcd.join('\x20') : _0x5f091f.quoted?.text || '';
     if (!_0x326c6c) return _0x29c1e2.sendMessage(_0x4e5f01, {
-      text: '╭─⌈\x20' + UI.MASK + " *VENICE AI* ⌋\n├─⊷ *" + _0x4668c5 + 'venice\x20<question>*\x0a│\x20\x20└⊷\x20Venice\x20creative\x20AI\x20assistant\x0a╰⊷\x20' + getFooter(_0x5f091f.key.participant || _0x5f091f.key.remoteJid)
+      text: '╭┄〔 \x20' + UI.MASK + " *VENICE AI* 〕┄╮\n┆ ✦ *" + _0x4668c5 + 'venice\x20<question>*\x0a┆ \x20╰┄ \x20Venice\x20creative\x20AI\x20assistant\x0a╰┄ \x20' + getFooter(_0x5f091f.key.participant || _0x5f091f.key.remoteJid)
     }, {
       quoted: _0x5f091f
     });
@@ -30,7 +30,7 @@ export default {
           key: _0x5f091f.key
         }
       }), await _0x29c1e2.sendMessage(_0x4e5f01, {
-        text: UI.MASK + " *VENICE AI*\n━━━━━━━━━━━━━━━━━\n" + _0x17403a + "\n━━━━━━━━━━━━━━━━━\n" + getFooter(_0x5f091f.key.participant || _0x5f091f.key.remoteJid)
+        text: UI.MASK + " *VENICE AI*\n┈┄┈┄✦┈┄┈┄✦┈┄┈┄\n" + _0x17403a + "\n┈┄┈┄✦┈┄┈┄✦┈┄┈┄\n" + getFooter(_0x5f091f.key.participant || _0x5f091f.key.remoteJid)
       }, {
         quoted: _0x5f091f
       }));

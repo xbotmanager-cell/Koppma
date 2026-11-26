@@ -11,7 +11,7 @@ export default {
     try {
       if (_0x376c17.length === 0) {
         await _0x5c5811.sendMessage(_0x5454c8, {
-          text: "╭─⌈ " + DESIGN.CHROME + " *CHROME LOGO* ⌋\n│\n├─⊷ *chromelogo*\n│  └⊷ chromelogo <text>\n│\n├─⊷ *Example:*\n│  └⊷ chromelogo WOLF\n│  └⊷ chromelogo CHROME\n│  └⊷ chromelogo SHINE\n│\n╰⊷ " + getFooter(_0xf4aeb.key.participant || _0xf4aeb.key.remoteJid)
+          text: "╭┄〔 " + DESIGN.CHROME + " *CHROME LOGO* 〕┄╮\n┆\n┆ ✦ *chromelogo*\n┆   └─ chromelogo <text>\n┆\n┆ ✦ *Example:*\n┆   └─ chromelogo WOLF\n┆   └─ chromelogo CHROME\n┆   └─ chromelogo SHINE\n┆\n╰┄ " + getFooter(_0xf4aeb.key.participant || _0xf4aeb.key.remoteJid)
         }, {
           quoted: _0xf4aeb
         });
@@ -20,7 +20,7 @@ export default {
       const _0x4a30ed = _0x376c17.join('\x20');
       if (_0x4a30ed.length > 15) {
         await _0x5c5811.sendMessage(_0x5454c8, {
-          text: "╭─⌈ " + STATUS.ERROR + " *ERROR* ⌋\n│\n├─⊷ Text too long!\n│  └⊷ Maximum 15 characters\n│  └⊷ Your text: \"" + _0x4a30ed + '\x22\x20(' + _0x4a30ed.length + " chars)\n│\n╰───"
+          text: "╭┄〔 " + STATUS.ERROR + " *ERROR* 〕┄╮\n┆\n┆ ✦ Text too long!\n┆   └─ Maximum 15 characters\n┆   └─ Your text: \"" + _0x4a30ed + '\x22\x20(' + _0x4a30ed.length + " chars)\n┆\n╰───"
         }, {
           quoted: _0xf4aeb
         });
@@ -51,7 +51,7 @@ export default {
           key: _0xf4aeb.key
         }
       }).catch(() => {}), await _0x5c5811.sendMessage(_0x5454c8, {
-        text: "╭─⌈ " + STATUS.ERROR + " *ERROR* ⌋\n│\n├─⊷ " + _0x4f3376.message + '\x0a│\x20\x20└⊷\x20Please\x20try\x20again\x20with\x20shorter\x20text\x0a│\x0a╰───'
+        text: "╭┄〔 " + STATUS.ERROR + " *ERROR* 〕┄╮\n┆\n┆ ✦ " + _0x4f3376.message + '\x0a┆ \x20╰┄ \x20Please\x20try\x20again\x20with\x20shorter\x20text\x0a┆\x0a╰───'
       }, {
         quoted: _0xf4aeb
       }));

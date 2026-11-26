@@ -11,7 +11,7 @@ export default {
     const _0x4b0563 = _0x43db9c.key.remoteJid, _0x2f1d66 = getOwnerName().toUpperCase();
     let _0x26b8b2 = _0x90f005.length > 0 ? _0x90f005.join('\x20') : _0x43db9c.quoted?.text || '';
     if (!_0x26b8b2) return _0x495e07.sendMessage(_0x4b0563, {
-      text: '╭─⌈\x20' + SOCIAL.BOT + " *GLM 4.7 AI* ⌋\n" + ('├─⊷\x20*' + _0x44a74e + 'glm\x20<question>*\x0a') + '│\x20\x20└⊷\x20Z.ai\x20GLM-4.7\x20—\x20coding,\x20reasoning,\x20tools\x0a' + ('╰⊷\x20' + getFooter(_0x43db9c.key.participant || _0x43db9c.key.remoteJid))
+      text: '╭┄〔 \x20' + SOCIAL.BOT + " *GLM 4.7 AI* 〕┄╮\n" + ('┆ ✦ *' + _0x44a74e + 'glm\x20<question>*\x0a') + '┆ \x20╰┄ \x20Z.ai\x20GLM-4.7\x20—\x20coding,\x20reasoning,\x20tools\x0a' + ('╰┄ \x20' + getFooter(_0x43db9c.key.participant || _0x43db9c.key.remoteJid))
     }, {
       quoted: _0x43db9c
     });
@@ -38,7 +38,7 @@ export default {
           key: _0x43db9c.key
         }
       }), await _0x495e07.sendMessage(_0x4b0563, {
-        text: SOCIAL.BOT + '\x20*GLM\x204.7\x20AI*\x0a' + "━━━━━━━━━━━━━━━━━\n" + (_0x546ebd + '\x0a') + "━━━━━━━━━━━━━━━━━\n" + ('' + getFooter(_0x43db9c.key.participant || _0x43db9c.key.remoteJid))
+        text: SOCIAL.BOT + '\x20*GLM\x204.7\x20AI*\x0a' + "┈┄┈┄✦┈┄┈┄✦┈┄┈┄\n" + (_0x546ebd + '\x0a') + "┈┄┈┄✦┈┄┈┄✦┈┄┈┄\n" + ('' + getFooter(_0x43db9c.key.participant || _0x43db9c.key.remoteJid))
       }, {
         quoted: _0x43db9c
       }));

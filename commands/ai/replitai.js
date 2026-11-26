@@ -11,7 +11,7 @@ export default {
     const _0x566a4d = _0x16f56a.key.remoteJid;
     let _0x39c3e7 = _0x1b6f6e.length > 0 ? _0x1b6f6e.join('\x20') : _0x16f56a.quoted?.text || '';
     if (!_0x39c3e7) return _0x488ddf.sendMessage(_0x566a4d, {
-      text: "╭─⌈ " + MEDIA.COMPUTER + " *REPLITAI AI* ⌋\n├─⊷ *" + _0x4ad6c2 + "replitai <question>*\n│  └⊷ Replit code AI assistant\n╰⊷ " + getFooter(_0x16f56a.key.participant || _0x16f56a.key.remoteJid)
+      text: "╭┄〔 " + MEDIA.COMPUTER + " *REPLITAI AI* 〕┄╮\n┆ ✦ *" + _0x4ad6c2 + "replitai <question>*\n┆   └─ Replit code AI assistant\n╰┄ " + getFooter(_0x16f56a.key.participant || _0x16f56a.key.remoteJid)
     }, {
       quoted: _0x16f56a
     });
@@ -30,7 +30,7 @@ export default {
           key: _0x16f56a.key
         }
       }), await _0x488ddf.sendMessage(_0x566a4d, {
-        text: MEDIA.COMPUTER + " *REPLITAI AI*\n━━━━━━━━━━━━━━━━━\n" + _0x2d1407 + "\n━━━━━━━━━━━━━━━━━\n" + getFooter(_0x16f56a.key.participant || _0x16f56a.key.remoteJid)
+        text: MEDIA.COMPUTER + " *REPLITAI AI*\n┈┄┈┄✦┈┄┈┄✦┈┄┈┄\n" + _0x2d1407 + "\n┈┄┈┄✦┈┄┈┄✦┈┄┈┄\n" + getFooter(_0x16f56a.key.participant || _0x16f56a.key.remoteJid)
       }, {
         quoted: _0x16f56a
       }));

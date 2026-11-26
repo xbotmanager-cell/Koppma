@@ -11,7 +11,7 @@ export default {
     const _0x277d69 = _0x3c0379.key.remoteJid;
     let _0xa2ba79 = _0x1432c6.length > 0 ? _0x1432c6.join('\x20') : _0x3c0379.quoted?.text || '';
     if (!_0xa2ba79) return _0x586f4e.sendMessage(_0x277d69, {
-      text: "╭─⌈ " + UI.BOOKS + " *NOUS AI* ⌋\n├─⊷ *" + _0x3837fb + "nous <question>*\n│  └⊷ Nous Research AI model\n╰⊷ " + getFooter(_0x3c0379.key.participant || _0x3c0379.key.remoteJid)
+      text: "╭┄〔 " + UI.BOOKS + " *NOUS AI* 〕┄╮\n┆ ✦ *" + _0x3837fb + "nous <question>*\n┆   └─ Nous Research AI model\n╰┄ " + getFooter(_0x3c0379.key.participant || _0x3c0379.key.remoteJid)
     }, {
       quoted: _0x3c0379
     });
@@ -30,7 +30,7 @@ export default {
           key: _0x3c0379.key
         }
       }), await _0x586f4e.sendMessage(_0x277d69, {
-        text: UI.BOOKS + '\x20*NOUS\x20AI*\x0a━━━━━━━━━━━━━━━━━\x0a' + _0x694d27 + "\n━━━━━━━━━━━━━━━━━\n" + getFooter(_0x3c0379.key.participant || _0x3c0379.key.remoteJid)
+        text: UI.BOOKS + '\x20*NOUS\x20AI*\x0a┈┄┈┄✦┈┄┈┄✦┈┄┈┄\x0a' + _0x694d27 + "\n┈┄┈┄✦┈┄┈┄✦┈┄┈┄\n" + getFooter(_0x3c0379.key.participant || _0x3c0379.key.remoteJid)
       }, {
         quoted: _0x3c0379
       }));

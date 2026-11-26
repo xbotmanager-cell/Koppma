@@ -11,7 +11,7 @@ export default {
     const _0x312a0f = _0x573df7.key.remoteJid, _0x4e99b9 = getOwnerName().toUpperCase();
     let _0x502332 = _0x18bffa.length > 0 ? _0x18bffa.join('\x20') : _0x573df7.quoted?.text || '';
     if (!_0x502332) return _0x547c77.sendMessage(_0x312a0f, {
-      text: "╭─⌈ " + STATUS.SPARKLE + " *GEMMA 2 (2B)* ⌋\n" + ("├─⊷ *" + _0x8d9c1f + "gemma <question>*\n") + "│  └⊷ Google Gemma 2 — small, fast, sharp\n" + ('╰⊷\x20' + getFooter(_0x573df7.key.participant || _0x573df7.key.remoteJid))
+      text: "╭┄〔 " + STATUS.SPARKLE + " *GEMMA 2 (2B)* 〕┄╮\n" + ("┆ ✦ *" + _0x8d9c1f + "gemma <question>*\n") + "┆   └─ Google Gemma 2 — small, fast, sharp\n" + ('╰┄ \x20' + getFooter(_0x573df7.key.participant || _0x573df7.key.remoteJid))
     }, {
       quoted: _0x573df7
     });
@@ -37,7 +37,7 @@ export default {
           key: _0x573df7.key
         }
       }), await _0x547c77.sendMessage(_0x312a0f, {
-        text: STATUS.SPARKLE + '\x20*GEMMA\x202\x20(2B)*\x0a' + "━━━━━━━━━━━━━━━━━\n" + (_0x3e1587 + '\x0a') + '━━━━━━━━━━━━━━━━━\x0a' + ('' + getFooter(_0x573df7.key.participant || _0x573df7.key.remoteJid))
+        text: STATUS.SPARKLE + '\x20*GEMMA\x202\x20(2B)*\x0a' + "┈┄┈┄✦┈┄┈┄✦┈┄┈┄\n" + (_0x3e1587 + '\x0a') + '┈┄┈┄✦┈┄┈┄✦┈┄┈┄\x0a' + ('' + getFooter(_0x573df7.key.participant || _0x573df7.key.remoteJid))
       }, {
         quoted: _0x573df7
       }));

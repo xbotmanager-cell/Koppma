@@ -58,7 +58,7 @@ export default {
     if (!_0xaf6201[0]) {
       const _0x5b5657 = _0xeec562.enabled ? AUTOMATION.U2705 + " ON" : AUTOMATION.U274C + " OFF", _0x41c8e5 = _0xeec562.emoji || '' + AUTOMATION.U1F43A;
       return await _0x218515.sendMessage(_0x49476e, {
-        text: "╭─⌈ " + AUTOMATION.U1F43A + " *REACT OWNER* ⌋\n│\n│ Status: " + _0x5b5657 + '\x0a│\x20Emoji:\x20' + _0x41c8e5 + "\n│\n├─⊷ *reactowner on*\n│  └⊷ Enable auto-react\n├─⊷ *reactowner off*\n│  └⊷ Disable auto-react\n├─⊷ *reactowner emoji <emoji>*\n│  └⊷ Change emoji\n╰⊷ " + getFooter(_0x4cd50f.key.participant || _0x4cd50f.key.remoteJid)
+        text: "╭┄〔 " + AUTOMATION.U1F43A + " *REACT OWNER* 〕┄╮\n┆\n┆ Status: " + _0x5b5657 + '\x0a┆ Emoji:\x20' + _0x41c8e5 + "\n┆\n┆ ✦ *reactowner on*\n┆   └─ Enable auto-react\n┆ ✦ *reactowner off*\n┆   └─ Disable auto-react\n┆ ✦ *reactowner emoji <emoji>*\n┆   └─ Change emoji\n╰┄ " + getFooter(_0x4cd50f.key.participant || _0x4cd50f.key.remoteJid)
       });
     }
     const _0x1446d5 = _0xaf6201[0].toLowerCase();
@@ -71,14 +71,14 @@ export default {
     if (_0x1446d5 === "emoji" || _0x1446d5 === "set") {
       const _0x157d39 = _0xaf6201.slice(1).join('\x20').trim();
       if (!_0x157d39) return await _0x218515.sendMessage(_0x49476e, {
-        text: "╭─⌈ " + AUTOMATION.U26A0_FE0F + " *REACT OWNER* ⌋\n│\n├─⊷ *reactowner emoji " + AUTOMATION.U1F43A + "*\n│  └⊷ Provide an emoji\n╰⊷ " + getFooter(_0x4cd50f.key.participant || _0x4cd50f.key.remoteJid)
+        text: "╭┄〔 " + AUTOMATION.U26A0_FE0F + " *REACT OWNER* 〕┄╮\n┆\n┆ ✦ *reactowner emoji " + AUTOMATION.U1F43A + "*\n┆   └─ Provide an emoji\n╰┄ " + getFooter(_0x4cd50f.key.participant || _0x4cd50f.key.remoteJid)
       });
       return (_0xeec562.emoji = _0x157d39, saveConfig(_0xeec562), await _0x218515.sendMessage(_0x49476e, {
         text: AUTOMATION.U2705 + " *React Owner emoji updated!*\n\nNew emoji: " + _0x157d39
       }));
     }
     return await _0x218515.sendMessage(_0x49476e, {
-      text: "╭─⌈ " + AUTOMATION.U26A0_FE0F + " *REACT OWNER* ⌋\n│\n├─⊷ *reactowner on*\n│  └⊷ Enable\n├─⊷ *reactowner off*\n│  └⊷ Disable\n├─⊷ *reactowner emoji <emoji>*\n│  └⊷ Change emoji\n╰⊷ " + getFooter(_0x4cd50f.key.participant || _0x4cd50f.key.remoteJid)
+      text: "╭┄〔 " + AUTOMATION.U26A0_FE0F + " *REACT OWNER* 〕┄╮\n┆\n┆ ✦ *reactowner on*\n┆   └─ Enable\n┆ ✦ *reactowner off*\n┆   └─ Disable\n┆ ✦ *reactowner emoji <emoji>*\n┆   └─ Change emoji\n╰┄ " + getFooter(_0x4cd50f.key.participant || _0x4cd50f.key.remoteJid)
     });
   }
 };

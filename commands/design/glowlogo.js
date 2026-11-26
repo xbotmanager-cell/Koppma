@@ -11,7 +11,7 @@ export default {
     try {
       if (_0xf36235.length === 0) {
         await _0x42e0cc.sendMessage(_0x307993, {
-          text: '╭─⌈\x20' + DESIGN.GLOW + " *GLOW LOGO* ⌋\n│\n├─⊷ *glowlogo*\n│  └⊷ glowlogo <text>\n│\n├─⊷ *Example:*\n│  └⊷ glowlogo WOLF\n│  └⊷ glowlogo GLOW\n│  └⊷ glowlogo LIGHT\n│\n╰⊷ " + getFooter(_0x4b5ee2.key.participant || _0x4b5ee2.key.remoteJid)
+          text: '╭┄〔 \x20' + DESIGN.GLOW + " *GLOW LOGO* 〕┄╮\n┆\n┆ ✦ *glowlogo*\n┆   └─ glowlogo <text>\n┆\n┆ ✦ *Example:*\n┆   └─ glowlogo WOLF\n┆   └─ glowlogo GLOW\n┆   └─ glowlogo LIGHT\n┆\n╰┄ " + getFooter(_0x4b5ee2.key.participant || _0x4b5ee2.key.remoteJid)
         }, {
           quoted: _0x4b5ee2
         });
@@ -20,7 +20,7 @@ export default {
       const _0x7a1969 = _0xf36235.join('\x20');
       if (_0x7a1969.length > 12) {
         await _0x42e0cc.sendMessage(_0x307993, {
-          text: "╭─⌈ " + STATUS.ERROR + " *ERROR* ⌋\n│\n├─⊷ Text too long!\n│  └⊷ Maximum 12 characters\n│  └⊷ Your text: \"" + _0x7a1969 + "\" (" + _0x7a1969.length + " chars)\n│\n╰───"
+          text: "╭┄〔 " + STATUS.ERROR + " *ERROR* 〕┄╮\n┆\n┆ ✦ Text too long!\n┆   └─ Maximum 12 characters\n┆   └─ Your text: \"" + _0x7a1969 + "\" (" + _0x7a1969.length + " chars)\n┆\n╰───"
         }, {
           quoted: _0x4b5ee2
         });
@@ -51,7 +51,7 @@ export default {
           key: _0x4b5ee2.key
         }
       }).catch(() => {}), await _0x42e0cc.sendMessage(_0x307993, {
-        text: "╭─⌈ " + STATUS.ERROR + " *ERROR* ⌋\n│\n├─⊷ " + _0x2aee18.message + "\n│  └⊷ Please try again with shorter text\n│\n╰───"
+        text: "╭┄〔 " + STATUS.ERROR + " *ERROR* 〕┄╮\n┆\n┆ ✦ " + _0x2aee18.message + "\n┆   └─ Please try again with shorter text\n┆\n╰───"
       }, {
         quoted: _0x4b5ee2
       }));
@@ -208,7 +208,7 @@ function addCornerGlowAccents(_0x3b77c0, _0x66b823, _0x34a525) {
 function addSignature(_0x2840e0, _0x520260, _0x4dfaf3) {
   _0x2840e0.save();
   const _0x5019ad = _0x520260 - 120, _0x57e650 = _0x4dfaf3 - 20;
-  (_0x2840e0.font = 'italic\x2012px\x20\x22Arial\x22', _0x2840e0.fillStyle = "rgba(255, 255, 255, 0.8)", _0x2840e0.textAlign = 'right', _0x2840e0.textBaseline = 'bottom', _0x2840e0.shadowColor = "#FF00FF", _0x2840e0.shadowBlur = 8, _0x2840e0.fillText("by Silent Wolf", _0x5019ad, _0x57e650));
-  const _0x15434b = _0x2840e0.createLinearGradient(_0x5019ad - _0x2840e0.measureText("by Silent Wolf").width, _0x57e650 + 2, _0x5019ad, _0x57e650 + 2);
-  (_0x15434b.addColorStop(0, "#FF0080"), _0x15434b.addColorStop(0.5, "#0080FF"), _0x15434b.addColorStop(1, "#FFFF00"), _0x2840e0.strokeStyle = _0x15434b, _0x2840e0.lineWidth = 1, _0x2840e0.beginPath(), _0x2840e0.moveTo(_0x5019ad - _0x2840e0.measureText('by\x20Silent\x20Wolf').width, _0x57e650 + 2), _0x2840e0.lineTo(_0x5019ad, _0x57e650 + 2), _0x2840e0.stroke(), _0x2840e0.shadowColor = 'transparent', _0x2840e0.shadowBlur = 0, _0x2840e0.restore());
+  (_0x2840e0.font = 'italic\x2012px\x20\x22Arial\x22', _0x2840e0.fillStyle = "rgba(255, 255, 255, 0.8)", _0x2840e0.textAlign = 'right', _0x2840e0.textBaseline = 'bottom', _0x2840e0.shadowColor = "#FF00FF", _0x2840e0.shadowBlur = 8, _0x2840e0.fillText("by Lupin Stanley", _0x5019ad, _0x57e650));
+  const _0x15434b = _0x2840e0.createLinearGradient(_0x5019ad - _0x2840e0.measureText("by Lupin Stanley").width, _0x57e650 + 2, _0x5019ad, _0x57e650 + 2);
+  (_0x15434b.addColorStop(0, "#FF0080"), _0x15434b.addColorStop(0.5, "#0080FF"), _0x15434b.addColorStop(1, "#FFFF00"), _0x2840e0.strokeStyle = _0x15434b, _0x2840e0.lineWidth = 1, _0x2840e0.beginPath(), _0x2840e0.moveTo(_0x5019ad - _0x2840e0.measureText('by Lupin Stanley').width, _0x57e650 + 2), _0x2840e0.lineTo(_0x5019ad, _0x57e650 + 2), _0x2840e0.stroke(), _0x2840e0.shadowColor = 'transparent', _0x2840e0.shadowBlur = 0, _0x2840e0.restore());
 }

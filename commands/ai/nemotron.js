@@ -63,7 +63,7 @@ export default {
   async execute(_0x4855a7, _0x47887f, _0x413fb3, _0x196dce) {
     const _0x394b69 = _0x47887f.key.remoteJid, _0x29f73d = getOwnerName().toUpperCase(), _0x43af20 = _0x413fb3.length > 0 ? _0x413fb3.join('\x20') : '', _0x8ba390 = _0x47887f.message?.extendedTextMessage?.contextInfo?.quotedMessage, _0x5e0dd8 = _0x8ba390?.imageMessage, _0x516fa0 = _0x8ba390?.videoMessage, _0xf47da0 = (_0x43af20.match(/\bhttps?:\/\/\S+\.(?:jpe?g|png|webp|gif|bmp)(?:\?\S*)?/i) || [])[0];
     if (!_0x43af20 && !_0x5e0dd8 && !_0x516fa0) return _0x4855a7.sendMessage(_0x394b69, {
-      text: "╭─⌈ " + MEDIA.DESIGN + " *NEMOTRON VL* ⌋\n" + ("├─⊷ *" + _0x196dce + "nemo <question>*\n") + "│  └⊷ Chat, or reply to image/video\n" + ("╰⊷ " + getFooter(_0x47887f.key.participant || _0x47887f.key.remoteJid))
+      text: "╭┄〔 " + MEDIA.DESIGN + " *NEMOTRON VL* 〕┄╮\n" + ("┆ ✦ *" + _0x196dce + "nemo <question>*\n") + "┆   └─ Chat, or reply to image/video\n" + ("╰┄ " + getFooter(_0x47887f.key.participant || _0x47887f.key.remoteJid))
     }, {
       quoted: _0x47887f
     });
@@ -144,7 +144,7 @@ export default {
           key: _0x47887f.key
         }
       }), await _0x4855a7.sendMessage(_0x394b69, {
-        text: MEDIA.DESIGN + " *NEMOTRON VL* — " + _0x1764c0 + '\x0a' + "━━━━━━━━━━━━━━━━━\n" + (_0x49cf04 + '\x0a') + "━━━━━━━━━━━━━━━━━\n" + ('' + getFooter(_0x47887f.key.participant || _0x47887f.key.remoteJid))
+        text: MEDIA.DESIGN + " *NEMOTRON VL* — " + _0x1764c0 + '\x0a' + "┈┄┈┄✦┈┄┈┄✦┈┄┈┄\n" + (_0x49cf04 + '\x0a') + "┈┄┈┄✦┈┄┈┄✦┈┄┈┄\n" + ('' + getFooter(_0x47887f.key.participant || _0x47887f.key.remoteJid))
       }, {
         quoted: _0x47887f
       }));

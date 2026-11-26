@@ -11,7 +11,7 @@ export default {
     const _0xde0275 = _0x42f1fe.key.remoteJid;
     let _0x5d2138 = _0x1a9de7.length > 0 ? _0x1a9de7.join('\x20') : _0x42f1fe.quoted?.text || '';
     if (!_0x5d2138) return _0x5cde0f.sendMessage(_0xde0275, {
-      text: '╭─⌈\x20' + UI.WIZARD + " *WIZARD AI* ⌋\n├─⊷ *" + _0x24e580 + 'wizard\x20<question>*\x0a│\x20\x20└⊷\x20WizardLM\x20instruction\x20model\x0a╰⊷\x20' + getFooter(_0x42f1fe.key.participant || _0x42f1fe.key.remoteJid)
+      text: '╭┄〔 \x20' + UI.WIZARD + " *WIZARD AI* 〕┄╮\n┆ ✦ *" + _0x24e580 + 'wizard\x20<question>*\x0a┆ \x20╰┄ \x20WizardLM\x20instruction\x20model\x0a╰┄ \x20' + getFooter(_0x42f1fe.key.participant || _0x42f1fe.key.remoteJid)
     }, {
       quoted: _0x42f1fe
     });
@@ -30,7 +30,7 @@ export default {
           key: _0x42f1fe.key
         }
       }), await _0x5cde0f.sendMessage(_0xde0275, {
-        text: UI.WIZARD + " *WIZARD AI*\n━━━━━━━━━━━━━━━━━\n" + _0x2e0548 + '\x0a━━━━━━━━━━━━━━━━━\x0a' + getFooter(_0x42f1fe.key.participant || _0x42f1fe.key.remoteJid)
+        text: UI.WIZARD + " *WIZARD AI*\n┈┄┈┄✦┈┄┈┄✦┈┄┈┄\n" + _0x2e0548 + '\x0a┈┄┈┄✦┈┄┈┄✦┈┄┈┄\x0a' + getFooter(_0x42f1fe.key.participant || _0x42f1fe.key.remoteJid)
       }, {
         quoted: _0x42f1fe
       }));

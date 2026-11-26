@@ -11,7 +11,7 @@ export default {
     const _0x46fbed = _0x2bfc9f.key.remoteJid, _0x275f67 = getOwnerName().toUpperCase();
     let _0xf8c723 = _0x11b12f.length > 0 ? _0x11b12f.join('\x20') : _0x2bfc9f.quoted?.text || '';
     if (!_0xf8c723) return _0x4f2c27.sendMessage(_0x46fbed, {
-      text: "╭─⌈ " + UI.BRAIN + " *KIMI K2 THINKING* ⌋\n" + ("├─⊷ *" + _0x44190d + "kimi <question>*\n") + "│  └⊷ Moonshot AI reasoning model via NVIDIA\n" + ("╰⊷ " + getFooter(_0x2bfc9f.key.participant || _0x2bfc9f.key.remoteJid))
+      text: "╭┄〔 " + UI.BRAIN + " *KIMI K2 THINKING* 〕┄╮\n" + ("┆ ✦ *" + _0x44190d + "kimi <question>*\n") + "┆   └─ Moonshot AI reasoning model via NVIDIA\n" + ("╰┄ " + getFooter(_0x2bfc9f.key.participant || _0x2bfc9f.key.remoteJid))
     }, {
       quoted: _0x2bfc9f
     });
@@ -38,7 +38,7 @@ export default {
           key: _0x2bfc9f.key
         }
       }), await _0x4f2c27.sendMessage(_0x46fbed, {
-        text: UI.BRAIN + " *KIMI K2 THINKING*\n" + "━━━━━━━━━━━━━━━━━\n" + (_0x474ff1 + '\x0a') + "━━━━━━━━━━━━━━━━━\n" + ('' + getFooter(_0x2bfc9f.key.participant || _0x2bfc9f.key.remoteJid))
+        text: UI.BRAIN + " *KIMI K2 THINKING*\n" + "┈┄┈┄✦┈┄┈┄✦┈┄┈┄\n" + (_0x474ff1 + '\x0a') + "┈┄┈┄✦┈┄┈┄✦┈┄┈┄\n" + ('' + getFooter(_0x2bfc9f.key.participant || _0x2bfc9f.key.remoteJid))
       }, {
         quoted: _0x2bfc9f
       }));

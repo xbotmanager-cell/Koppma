@@ -11,7 +11,7 @@ export default {
     const _0x1c74a4 = _0xb9aa79.key.remoteJid;
     let _0x5169ce = _0x3d103f.length > 0 ? _0x3d103f.join('\x20') : _0xb9aa79.quoted?.text || '';
     if (!_0x5169ce) return _0x4160a0.sendMessage(_0x1c74a4, {
-      text: "╭─⌈ " + MEDIA.EAGLE + '\x20*FALCON\x20AI*\x20⌋\x0a├─⊷\x20*' + _0x10e7a8 + 'falcon\x20<question>*\x0a│\x20\x20└⊷\x20Falcon\x20open-source\x20LLM\x0a╰⊷\x20' + getFooter(_0xb9aa79.key.participant || _0xb9aa79.key.remoteJid)
+      text: "╭┄〔 " + MEDIA.EAGLE + '\x20*FALCON\x20AI*\x20 〕┄╮\x0a┆ ✦ *' + _0x10e7a8 + 'falcon\x20<question>*\x0a┆ \x20╰┄ \x20Falcon\x20open-source\x20LLM\x0a╰┄ \x20' + getFooter(_0xb9aa79.key.participant || _0xb9aa79.key.remoteJid)
     }, {
       quoted: _0xb9aa79
     });
@@ -30,7 +30,7 @@ export default {
           key: _0xb9aa79.key
         }
       }), await _0x4160a0.sendMessage(_0x1c74a4, {
-        text: MEDIA.EAGLE + " *FALCON AI*\n━━━━━━━━━━━━━━━━━\n" + _0x210d72 + "\n━━━━━━━━━━━━━━━━━\n" + getFooter(_0xb9aa79.key.participant || _0xb9aa79.key.remoteJid)
+        text: MEDIA.EAGLE + " *FALCON AI*\n┈┄┈┄✦┈┄┈┄✦┈┄┈┄\n" + _0x210d72 + "\n┈┄┈┄✦┈┄┈┄✦┈┄┈┄\n" + getFooter(_0xb9aa79.key.participant || _0xb9aa79.key.remoteJid)
       }, {
         quoted: _0xb9aa79
       }));
